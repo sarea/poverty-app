@@ -1,0 +1,545 @@
+/**
+ *  If you want to override some bootstrap variables, you have to change values here.
+ *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+ */
+$navbar-inverse-link-color: #5AADBB;
+$icon-font-path: "../../bootstrap-sass/assets/fonts/bootstrap/";
+
+/**
+ *  Do not remove the comments below. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+// bower:scss
+// endbower
+
+
+/* typography */
+body {
+color:#4a4a49;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size:36px;
+  line-height:66px;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size:34px;
+  line-height:44px;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size:30px;
+  line-height:40px;
+}
+
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size:26px;
+  line-height:36px;
+}
+
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-size:22px;
+  line-height:32px;
+}
+
+h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-size:18px;
+  line-height:28px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size:14px;
+  line-height:24px;
+}
+
+a {
+  color:#4a4a49;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+/* colors */
+
+.light-orange {
+  color:#e7d725;
+}
+
+.dark-orange {
+  color:#d99800;
+}
+
+.white {
+  color:#fff;
+}
+
+.background-pink {
+  background-color: #e6007e;
+}
+
+.background-blue {
+  background-color: #0fa4cc;
+}
+
+.background-orange {
+  background-color: #f99b01;
+}
+
+.background-green {
+  background-color: #bdd400;
+}
+
+.background-light-orange {
+  background-color:#e7d725;
+}
+
+.background-dark-orange {
+  background-color:#d99800;
+}
+
+.background-white {
+  background-color:#fff;
+}
+
+/* paddings and margins */
+
+.no-padding {
+  padding: 0;
+}
+
+.padding-1 {
+  padding:1px;
+}
+
+.padding-10 {
+  padding:10px;
+}
+
+.padding-25 {
+  padding:25px;
+}
+
+.padding-bottom-25 {
+  padding-bottom:25px;
+}
+
+.margin-top-20 {
+  margin-top:20px;
+}
+
+.no-margin {
+  margin: 0px;
+}
+
+/* specific */
+
+.background-home {
+  background-image: url(../img/background-picture.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.background-questions {
+  background-image: url(../img/background-gradient.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.background-results {
+  background-image: url(../img/background-gradient.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* button 1 */
+
+.button {
+  font-family: 'Open Sans', sans-serif;
+  font-size:20px;
+  font-weight: 600;
+  text-align: center;
+  background-color:#ff9c01;
+  color:#fff;
+  padding:15px;
+  border-radius: 10px;
+  transition: all 1s;
+  cursor:pointer;
+  height:60px;
+  width:100%;
+}
+
+.button:hover {
+  background-color:#fff;
+  color:#ff9c01;
+}
+
+.center-content-both {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Heading style */
+.title,
+.title:after{
+  background-color: #fff;
+}
+.title {
+  position: relative;
+  color: #ff9c01;
+  display: inline;
+  white-space: pre-wrap;
+  border: 0 solid #fff;
+  border-width: 0.25em 0; /* 0.25em is roughly equal to one space character. */
+}
+.title:after {
+  content: "";
+  position: absolute;
+  top: -0.25em;
+  right: 100%;
+  bottom: -0.25em;
+  width: 0.25em;
+}
+.title > span {
+  position: relative;
+  z-index: 1;
+
+}
+
+.title.show {
+  outline: 3px solid #ff9c01;
+}
+.title.show::after {
+  outline: 3px solid #ff9c01;
+}
+
+.filter-container {
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #fff;
+  padding:0;
+}
+
+.filter-header {
+  background-color: #ff9c01;
+  border-radius: 5px 5px 0 0;
+  color:#fff;
+  margin:0;
+  padding: 5px 0 5px 25px;
+}
+
+.filter-content {
+  width:100%;
+  height:100%;
+  padding:25px;
+}
+
+.button-family {
+  background-color: #fff;
+  border: 2px solid #fff;
+  width: 100%;
+  text-align: left;
+  margin-bottom:25px;
+  padding-left: 20%;
+  transition: all 1s;
+}
+
+.button-family:last-child {
+  margin-bottom:0px;
+}
+
+.button-family:hover {
+  border: 2px solid #ff9c01;
+  color:#ff9c01;
+}
+
+
+.button-family:focus {
+  background-color: #ff9c01;
+  border: 2px solid #ff9c01;
+  outline: 0;
+  color:#fff;
+}
+
+#button-family-single {
+  background-image: url('../img/button-single-inactive.svg');
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  background-size: 25px;
+}
+
+#button-family-single:focus {
+  background-image: url('../img/button-single-active.svg');
+  background-color: #ff9c01;
+  border: 2px solid #ff9c01;
+  outline: 0;
+  color:#fff;
+}
+
+#button-family-singlekids {
+  background-image: url('../img/button-singlekids-inactive.svg');
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  background-size: 30px;
+}
+
+#button-family-singlekids:focus {
+  background-image: url('../img/button-singlekids-active.svg');
+  background-color: #ff9c01;
+  border: 2px solid #ff9c01;
+  outline: 0;
+  color:#fff;
+}
+
+#button-family-livingwithpartner {
+  background-image: url('../img/button-livingwithpartner-inactive.svg');
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  background-size: 38px;
+}
+
+#button-family-livingwithpartner:focus {
+  background-image: url('../img/button-livingwithpartner-active.svg');
+  background-color: #ff9c01;
+  border: 2px solid #ff9c01;
+  outline: 0;
+  color:#fff;
+}
+
+#button-family-livingwithpartnerandkids {
+  background-image: url('../img/livingwithpartnerandkids-inactive.svg');
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  background-size: 38px;
+}
+
+#button-family-livingwithpartnerandkids:focus {
+  background-image: url('../img/livingwithpartnerandkids-active.svg');
+  background-color: #ff9c01;
+  border: 2px solid #ff9c01;
+  outline: 0;
+  color:#fff;
+}
+
+.button-borough {
+  background-color: #fff;
+  border: 2px solid #fff;
+  width: 100%;
+  text-align: left;
+  margin: 5px 0;
+  padding: 0 0 0 15px;
+  transition: all 1s;
+
+}
+
+.button-borough:hover {
+  border: 2px solid #ff9c01;
+  color:#ff9c01;
+}
+
+.button-borough:focus {
+  background-color: #ff9c01;
+  border: 2px solid #ff9c01;
+  outline: 0;
+  color:#fff;
+}
+
+.button-age {
+  background-color: #fff;
+  border: 2px solid #fff;
+  width: 100%;
+  text-align: left;
+  margin-bottom:25px;
+  padding: 0 0 0 15px;
+  transition: all 1s;
+}
+
+.button-age:last-child {
+  margin-bottom:0px;
+}
+
+.button-age:hover {
+  border: 2px solid #ff9c01;
+  color:#ff9c01;
+}
+
+.button-age:focus {
+  background-color: #ff9c01;
+  border: 2px solid #ff9c01;
+  outline: 0;
+  color:#fff;
+}
+
+.age-icon {
+  width:22%;
+  float: left;
+}
+
+.age-age {
+  width:75%;
+  float: left;
+}
+
+.button-back {
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  width: 100%;
+  text-align: left;
+  padding:10px 0 10px 50px;
+  transition: all 1s;
+}
+
+.button-back:hover {
+  border: 2px solid #ff9c01;
+  color:#ff9c01;
+}
+
+#button-back-to-filters {
+  background-image: url('../img/button-back-to-filters-inactive.svg');
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  background-size: 15px;
+  border: 2px solid #fff;
+  color: #ff9c01;
+}
+
+#button-back-to-filters:hover {
+  background-image: url('../img/button-back-to-filters-active.svg');
+  background-color: #ff9c01;
+  border: 2px solid #ff9c01;
+  outline: 0;
+  color:#fff;
+}
+
+.result-container {
+  background-color: #fff;
+  border-radius: 5px;
+  height:175px;
+  padding:0px;
+}
+
+.result-heading {
+  border-radius: 5px 5px 0 0;
+  padding-left: 15px;
+}
+
+.result-content {
+  padding:0 10px;
+}
+
+.result-controls {
+  background-color: #fff;
+  width: 100%;
+  height:100% !important;
+  margin: 0 0 30px 0;
+  padding:0 !important;
+  border-radius: 0 0 10px 10px;
+}
+
+.filter-resultpage {
+  border: 2px solid #ff9c01 !important;
+  border-radius:5px;
+  padding: 10px;
+  color:#ff9c01;
+}
+
+@media only screen and (max-width: 992px) {
+    .filter-resultpage {
+        display:none;
+    }
+    .boroughs {
+      display:none;
+    }
+}
+
+.footer {
+  margin-top: 25px;
+  color:#fff;
+  text-align: center;
+}
+
+.footer a {
+  color:#fff;
+}
+
+.footer a:hover {
+  color:#e6007e;
+}
+
+///////
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.thumbnail {
+  height: 200px;
+
+  img.pull-right {
+    width: 50px;
+  }
+}
+
+/**
+ *  Do not remove the comments below. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+// injector
+// endinjector
