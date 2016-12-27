@@ -3,7 +3,7 @@
     <div class="col-md-12">
         <div class="col-md-3 col-sm-12">
             <a ui-sref="filters">
-                <button id="button-back-to-filters" class="button-back">
+                <button class="button-back">
                     <p class="no-margin semibold"><i class="fa fa-chevron-left" aria-hidden="true"></i> Antwoorden aanpassen</p>
                 </button>
             </a>
@@ -22,22 +22,22 @@
             <div class="col-md-12">
                 <h6 class="semibold white">Gezinsregelingen</h6>
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 padding-10 result-parent" ng-model="listBoolean" ng-repeat="list in vm.list">
+            <div class="col-md-3 col-sm-6 col-xs-12 padding-10" ng-model="listBoolean" ng-repeat="list in vm.list">
                 <div class="col-md-12 result-container" ng-hide="listBoolean" ng-click="listBoolean = true">
                     <div class="result-heading padding-1" ng-style="{background: vm.colors[$index % vm.colors.length]}">
-                        <h6 class="semibold white">{{list.name}}</h6>
+                        <h6 class="semibold white">{{list.subtitle}}</h6>
                     </div>
                     <div class="result-content">
-                        <h5>{{list.category}}</h5>
-                        <p>{{list.subtitle}}</p>
+                        <h5>{{list.name}}</h5>
+                        <p>{{list.description}}</p>
                     </div>
                 </div>
                 <div class="col-md-12 result-container-clicked" ng-show="listBoolean">
                     <div class="result-heading padding-1" ng-style="{background: vm.colors[$index % vm.colors.length]}">
-                        <h6 class="semibold white">{{list.name}}<i class="fa fa-times cancel-button" ng-click="listBoolean = false" aria-hidden="true"></i></h6>
+                        <h6 class="semibold white">{{list.subtitle}}<i class="fa fa-times cancel-button" ng-click="listBoolean = false" aria-hidden="true"></i></h6>
                     </div>
                     <div class="result-content-clicked">
-                        <h5>{{list.category}}</h5>
+                        <h5>{{list.name}}</h5>
                         <p>{{list.description}}</p>
                     </div>
                     <div class="result-footer text-center" ng-style="{color: vm.colors[$index % vm.colors.length]}">
@@ -47,12 +47,12 @@
                 </div>
             </div>
             <div class="col-md-12 result-container" ng-if="!vm.list[0]">
-                    <div class="result-heading padding-1 background-orange">
-                        <h6 class="semibold white">No Result Found!</h6>
-                    </div>
-                    <div class="result-content padding-25">
-                        <h5>Please try again later!</h5>
-                    </div>
+                <div class="result-heading padding-1 background-orange">
+                    <h6 class="semibold white">No Result Found!</h6>
+                </div>
+                <div class="result-content padding-25">
+                    <h5>Please try again later!</h5>
+                </div>
             </div>
         </div>
         <footer>
