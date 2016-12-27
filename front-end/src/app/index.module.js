@@ -1,19 +1,22 @@
-/* global malarkey:false, moment:false */
+/* global moment:false */
 
 import { config } from './index.config';
 import { routerConfig } from './index.route';
 import { runBlock } from './index.run';
-import { MainController } from './main/main.controller';
-import { GithubContributorService } from '../app/components/githubContributor/githubContributor.service';
-import { WebDevTecService } from '../app/components/webDevTec/webDevTec.service';
-import { NavbarDirective } from '../app/components/navbar/navbar.directive';
-import { MalarkeyDirective } from '../app/components/malarkey/malarkey.directive';
+import povertyWelcome from './components/welcome';
+import povertyNavbar from './components/navbar';
 import povertyFilters from './components/filters';
+import povertyFamily from './components/family';
+import povertyBoroughs from './components/boroughs';
+import povertyAge from './components/age';
 import povertyResults from './components/results';
+
+
 
 
 angular.module('povertyApp', [
   'ngAnimate',
+  //'ngMapHilight',
   'ngCookies',
   'ngTouch',
   'ngSanitize',
@@ -22,16 +25,15 @@ angular.module('povertyApp', [
   'ui.router',
   'ui.bootstrap',
   'toastr',
+  povertyWelcome,
+  povertyNavbar,
   povertyFilters,
+  povertyFamily,
+  povertyBoroughs,
+  povertyAge,
   povertyResults
   ])
-  .constant('malarkey', malarkey)
   .constant('moment', moment)
   .config(config)
   .config(routerConfig)
   .run(runBlock)
-  .service('githubContributor', GithubContributorService)
-  .service('webDevTec', WebDevTecService)
-  .controller('MainController', MainController)
-  .directive('acmeNavbar', NavbarDirective)
-  .directive('acmeMalarkey', MalarkeyDirective);

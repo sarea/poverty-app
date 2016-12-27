@@ -1,17 +1,22 @@
-.acme-navbar-text{
-  color: white;
-}
 
-a {
-  color: black;
+.navbar-header {
+	font-size: 16px;
+	background-color: #fff;
+	color: #ff9c01;
+	position: fixed;
+	z-index: 1;
+	height: 40px;
+	width: 100%;
+	-webkit-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
+  	-moz-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
+  	box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
 }
-
-h1 {
-  font-size: 2em;
-  margin: 0;
-  line-height: 1.25em;
+.navbar-button-back {
+	padding: 0 0 0 10px;
+	width: 25%;
 }
-
-a:hover, a:focus {
-  color: greenyellow;
+.status {
+	padding: 0;
+	text-align: center;
+	width: 50%;
 }

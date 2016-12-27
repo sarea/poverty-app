@@ -1,0 +1,56 @@
+.background-home {
+	background-image: url(../img/background-picture.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	margin-left: auto;
+	margin-right: auto;
+}
+.title {
+	background-color: #fff;
+	position: relative;
+	color: #ff9c01;
+	display: inline;
+	white-space: pre-wrap;
+	border: 0 solid #fff;
+	> span {
+		position: relative;
+		z-index: 1;
+	}
+	border-width: 0.25em 0; /* 0.25em is roughly equal to one space character. */
+	&:after {
+		top: -0.25em;
+		right: 100%;
+		bottom: -0.25em;
+		width: 0.25em;
+	}
+}
+.button-welcome {
+	width: 80%;
+	margin: auto;
+	display: block;
+}
+
+
+@media (max-width: 414px) {
+	.title {
+		font-size: 1.4em;
+		line-height: 35px;
+	}  
+	.font-desc-welcome {
+		font-size: 1.2em;
+	}
+}
+@media (max-width: 360px) {
+	.title {
+		font-size: 1.5em;
+		line-height: 35px;
+	}  
+	.font-desc-welcome {
+		font-size: 1em;
+	}
+	.button-welcome {
+		width: 90%;
+	}
+}

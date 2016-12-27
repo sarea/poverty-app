@@ -1,0 +1,45 @@
+<poverty-navbar status="Vraag 2 van 3" state-to="family"></poverty-navbar>
+<div class="background-questions center-content-both padding-to-navbar">
+	<div class="col-md-12">
+		<div class="col-md-4 padding-10">
+			<div class="col-md-12 filter-container">
+				<div class="filter-header">
+					<h6 class="light">In welk <span class="semibold">stadsdeel</span> woon je?</h6>
+				</div>
+				<div class="col-md-12" style="width:100%;">
+				<!-- <angular-maphilight id="MapTitle" angular-maphilight-config="vm.mapHilightConfig"> -->
+					<img class="margin-top-20" id="img_ID" src="../img/map-boroughs.svg" usemap="#map" border="0" width="100%" alt="" >
+				<!-- </angular-maphilight> -->
+				</div>
+				<div class="filter-content col-md-12">
+					<div class="col-md-6 col-xs-6 borough">
+						<button id="button-borough-centrum" class="button-borough" ng-model="vm.borough" uib-btn-radio="['CE', 'Centrum']" ng-click="vm.sendFilterInfo()"><h6>Centrum</h6></button>
+						<button id="button-borough-nieuw-west" class="button-borough" ng-model="vm.borough" uib-btn-radio="['NW', 'Nieuw-West']" ng-click="vm.sendFilterInfo()"><h6>Nieuw-West</h6></button>
+						<button id="button-borough-noord" class="button-borough" ng-model="vm.borough" uib-btn-radio="['NO', 'Noord']" ng-click="vm.sendFilterInfo()"><h6>Noord</h6></button>
+						<button id="button-borough-oost" class="button-borough"  ng-model="vm.borough" uib-btn-radio="['OO', 'Oost']" ng-click="vm.sendFilterInfo()"><h6>Oost</h6></button>
+					</div>
+					<div class="col-md-6 col-xs-6 borough">
+						<button id="button-borough-west" class="button-borough" ng-model="vm.borough" uib-btn-radio="['WE', 'West']" ng-click="vm.sendFilterInfo()"><h6>West</h6></button>
+						<button id="button-borough-zuid" class="button-borough" ng-model="vm.borough" uib-btn-radio="['ZU', 'Zuid']" ng-click="vm.sendFilterInfo()"><h6>Zuid</h6></button>
+						<button id="button-borough-zuidoost" class="button-borough" ng-model="vm.borough" uib-btn-radio="['ZO', 'Zuidoost']" ng-click="vm.sendFilterInfo()"><h6>Zuidoost</h6></button>
+						<button id="button-borough-westpoort" class="button-borough" ng-model="vm.borough" uib-btn-radio="['WP', 'Westpoort']" ng-click="vm.sendFilterInfo()"><h6>Westpoort</h6></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<map id="map_ID" name="map" class="map">
+	<area alt="Westpoort" title="Westpoort" href="null:;" shape="poly" ng-model="vm.borough" uib-btn-radio="['WP', 'Westpoort']" coords="68,30,164,51,192,49,513,123,521,119,529,122,539,126,626,219,588,256,571,250,548,265,514,246,524,280,523,291,469,293,466,317,421,316,421,299,371,299,369,287,177,285,168,292,145,292,141,233,32,209" />
+	<area alt="Nieuw-West" title="Nieuw-West" href="sarea:;" shape="poly" ng-model="vm.borough" uib-btn-radio="['NW', 'Nieuw-West']" coords="141,296,167,298,180,292,363,294,364,304,416,307,416,323,444,322,427,395,453,402,454,420,476,418,485,431,479,504,465,504,466,556,452,563,454,606,461,613,469,611,464,634,454,642,372,652,354,667,290,620,282,618,260,581,130,489,142,386,135,361,142,330" />
+	<area alt="West" title="West" href="sarea:;" shape="poly" ng-model="vm.borough" uib-btn-radio="['WE', 'West']" coords="475,299,525,298,529,283,520,259,544,271,574,259,589,262,621,237,652,271,660,292,620,296,580,404,604,460,505,493,500,486,486,484,491,444,488,431,483,414,459,412,457,394,434,387,449,322,471,320" />
+	<area alt="Noord" title="Noord" href="sarea:;" shape="poly" ng-model="vm.borough" uib-btn-radio="['NO', 'Noord']" coords="522,116,532,91,527,67,543,37,557,35,575,40,597,68,669,71,802,157,855,137,874,99,966,83,1002,66,1025,87,1036,77,1070,75,1141,112,1155,105,1181,112,1198,129,1227,129,1262,136,1285,131,1315,124,1327,126,1325,138,1289,132,1268,145,1247,177,1183,224,1175,243,1167,291,1117,328,1116,387,1092,391,1077,377,1063,355,1020,366,999,387,966,344,921,328,909,340,867,335,751,342,710,347,685,335,668,317,664,283,653,256,622,232,635,218,545,121" />
+	<area alt="Centrum" title="Centrum" href="sarea:;" shape="poly" ng-model="vm.borough" uib-btn-radio="['CE', 'Centrum']" coords="626,298,663,295,667,321,668,328,695,350,722,351,728,374,773,381,807,414,802,434,784,433,742,460,689,480,658,483,611,459,587,406,587,392,617,309" />
+	<area alt="Oost" title="Oost" href="sarea:;" shape="poly" ng-model="vm.borough" uib-btn-radio="['OO', 'Oost']" coords="728,350,869,338,908,343,915,364,980,420,906,423,905,443,927,462,963,477,975,461,989,449,1019,441,1031,454,995,493,1038,477,1123,551,1097,591,1057,587,975,509,951,504,927,520,875,602,822,629,788,621,762,643,731,660,727,668,724,730,712,731,661,705,679,660,677,646,701,637,711,620,732,600,735,590,731,560,703,492,708,475,759,458,778,444,810,435,812,412,772,372,733,367" />
+	<area alt="Zuid" title="Zuid" href="sarea:;" shape="poly" ng-model="vm.borough" uib-btn-radio="['ZU', 'Zuid']" coords="485,503,485,487,497,489,506,497,607,464,616,466,646,483,677,488,702,479,701,493,723,550,731,590,716,606,707,619,695,635,677,637,674,644,673,662,656,707,513,706,509,654,449,657,441,671,364,681,360,668,373,655,445,650,462,645,476,628,475,607,460,605,458,562,473,558,471,504" />
+	<area alt="Zuidoost" title="Zuidoost" href="sarea:;" shape="poly" ng-model="vm.borough" uib-btn-radio="['ZO', 'Zuidoost']" coords="800,800,833,756,843,727,830,709,858,687,884,717,979,662,1002,668,1022,684,1051,745,1053,773,1129,709,1146,830,1111,830,1066,883,1067,901,1050,918,1005,915,947,961,938,982,890,985,799,809" />
+</map>
+
+

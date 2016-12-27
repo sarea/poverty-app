@@ -1,280 +1,64 @@
-<div class="background-results center-content-both">
-
+<poverty-navbar status="Uw regelingen" state-to="{{vm.stateTo()}}"></poverty-navbar>
+<div id="hide" class="center-content-both result-controls">
     <div class="col-md-12">
-        <div class="col-md-12 result-controls">
-
-            <div class="col-md-3 col-sm-12 padding-10">
-                <a href="filters.html"><button id="button-back-to-filters" class="button-back"><p class="no-margin semibold">Antwoorden aanpassen</p></button></a>
-            </div>
-
-            <div class="col-md-3 col-sm-12 padding-10">
-                <div class="filter-resultpage">
-                    <p class="no-margin">Samenwonend met partner en kinderen</p>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-12 padding-10">
-                <div class="filter-resultpage">
-                    <p class="no-margin">Stadsdeel Zuidoost</p>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-12 padding-10">
-                <div class="filter-resultpage">
-                    <p class="no-margin">Tussen 18 en 65 jaar oud</p>
-                </div>
-            </div>
-
+        <div class="col-md-3 col-sm-12">
+            <a ui-sref="filters">
+                <button id="button-back-to-filters" class="button-back">
+                    <p class="no-margin semibold"><i class="fa fa-chevron-left" aria-hidden="true"></i> Antwoorden aanpassen</p>
+                </button>
+            </a>
         </div>
-
-
-
-        <div class="col-md-12">
-
-            <!-- row one -->
-
-            <div class="col-md-12">
-                <h6 class="semibold white">Gezinsregelingen</h6>
+        <div class="col-md-3 col-sm-12" ng-repeat="filter in vm.parseFilterUrl(1) track by $index">
+            <div class="filter-resultpage">
+                <p class="no-margin">{{filter}}</p>
             </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12 padding-10">
-                <div class="col-md-12 result-container">
-                        <div class="result-heading background-pink padding-1">
-                            <h6 class="semibold white">tot €250,-</h6></div>
-                        <div class="result-content">
-                            <h5>Regelingnaam</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                </div>
-
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12 padding-10">
-                <div class="col-md-12 result-container">
-                        <div class="result-heading background-blue padding-1">
-                            <h6 class="semibold white">tot €250,-</h6></div>
-                        <div class="result-content">
-                            <h5>Regelingnaam</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12 padding-10">
-                <div class="col-md-12 result-container">
-                    <div class="result-heading background-orange padding-1">
-                        <h6 class="semibold white">tot €250,-</h6></div>
-                    <div class="result-content">
-                        <h5>Regelingnaam</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12 padding-10">
-                <div class="col-md-12 result-container">
-                    <div class="result-heading background-green padding-1">
-                        <h6 class="semibold white">tot €250,-</h6></div>
-                    <div class="result-content">
-                        <h5>Regelingnaam</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- row two -->
-
-            <div class="col-md-3 col-sm-6 col-xs-12 padding-10">
-                <div class="col-md-12 result-container">
-                    <div class="result-heading background-green padding-1">
-                        <h6 class="semibold white">tot €250,-</h6></div>
-                    <div class="result-content">
-                        <h5>Regelingnaam</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12 padding-10">
-                <div class="col-md-12 result-container">
-                    <div class="result-heading background-orange padding-1">
-                        <h6 class="semibold white">tot €250,-</h6></div>
-                    <div class="result-content">
-                        <h5>Regelingnaam</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12 padding-10">
-                <div class="col-md-12 result-container">
-                    <div class="result-heading background-blue padding-1">
-                        <h6 class="semibold white">tot €250,-</h6></div>
-                    <div class="result-content">
-                        <h5>Regelingnaam</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12 padding-10">
-                <div class="col-md-12 result-container">
-                    <div class="result-heading background-pink padding-1">
-                        <h6 class="semibold white">tot €250,-</h6></div>
-                    <div class="result-content">
-                        <h5>Regelingnaam</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- row three -->
-
-            <div class="col-md-3 col-sm-6 col-xs-12 padding-10">
-                <div class="col-md-12 result-container">
-                    <div class="result-heading background-pink padding-1">
-                        <h6 class="semibold white">tot €250,-</h6></div>
-                    <div class="result-content">
-                        <h5>Regelingnaam</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12 padding-10">
-                <div class="col-md-12 result-container">
-                    <div class="result-heading background-blue padding-1">
-                        <h6 class="semibold white">tot €250,-</h6></div>
-                    <div class="result-content">
-                        <h5>Regelingnaam</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12 padding-10">
-                <div class="col-md-12 result-container">
-                    <div class="result-heading background-orange padding-1">
-                        <h6 class="semibold white">tot €250,-</h6></div>
-                    <div class="result-content">
-                        <h5>Regelingnaam</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12 padding-10">
-                <div class="col-md-12 result-container">
-                    <div class="result-heading background-green padding-1">
-                        <h6 class="semibold white">tot €250,-</h6></div>
-                    <div class="result-content">
-                        <h5>Regelingnaam</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- row four -->
-            <div class="col-md-12">
-                <h6 class="semibold white">Gezinsregelingen</h6>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12 padding-10">
-                <div class="col-md-12 result-container">
-                    <div class="result-heading background-green padding-1">
-                        <h6 class="semibold white">tot €250,-</h6></div>
-                    <div class="result-content">
-                        <h5>Regelingnaam</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12 padding-10">
-                <div class="col-md-12 result-container">
-                    <div class="result-heading background-orange padding-1">
-                        <h6 class="semibold white">tot €250,-</h6></div>
-                    <div class="result-content">
-                        <h5>Regelingnaam</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12 padding-10">
-                <div class="col-md-12 result-container">
-                    <div class="result-heading background-blue padding-1">
-                        <h6 class="semibold white">tot €250,-</h6></div>
-                    <div class="result-content">
-                        <h5>Regelingnaam</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12 padding-10">
-                <div class="col-md-12 result-container">
-                    <div class="result-heading background-pink padding-1">
-                        <h6 class="semibold white">tot €250,-</h6></div>
-                    <div class="result-content">
-                        <h5>Regelingnaam</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- row five -->
-
-            <div class="col-md-3 col-sm-6 col-xs-12 padding-10">
-                <div class="col-md-12 result-container">
-                    <div class="result-heading background-pink padding-1">
-                        <h6 class="semibold white">tot €250,-</h6></div>
-                    <div class="result-content">
-                        <h5>Regelingnaam</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12 padding-10">
-                <div class="col-md-12 result-container">
-                    <div class="result-heading background-blue padding-1">
-                        <h6 class="semibold white">tot €250,-</h6></div>
-                    <div class="result-content">
-                        <h5>Regelingnaam</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12 padding-10">
-                <div class="col-md-12 result-container">
-                    <div class="result-heading background-orange padding-1">
-                        <h6 class="semibold white">tot €250,-</h6></div>
-                    <div class="result-content">
-                        <h5>Regelingnaam</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12 padding-10 padding-bottom-25">
-                <div class="col-md-12 result-container">
-                    <div class="result-heading background-green padding-1">
-                        <h6 class="semibold white">tot €250,-</h6></div>
-                    <div class="result-content">
-                        <h5>Regelingnaam</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col-md-12 footer">
-            <p>&copy; Copyright <a href="http://www.stichtingsina.nl/" target="_blank">Stichting Sina</a> | Design <a href="http://www.roxanneallard.nl/" target="_blank">Roxanne Allard</a> | Development <a href="http://www.hackyourfuture.net/#/" target="_blank">Hack Your Future</a></p>
-        </div>
+        </div>     
     </div>
-
-	
+</div>
+<div id="result" class="background-results center-content-both" style="padding-top: 50px;">
+    <div class="col-md-12">
+        <div class="col-md-12">
+            <!-- row -->
+            <div class="col-md-12">
+                <h6 class="semibold white">Gezinsregelingen</h6>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 padding-10 result-parent" ng-model="listBoolean" ng-repeat="list in vm.list">
+                <div class="col-md-12 result-container" ng-hide="listBoolean" ng-click="listBoolean = true">
+                    <div class="result-heading padding-1" ng-style="{background: vm.colors[$index % vm.colors.length]}">
+                        <h6 class="semibold white">{{list.name}}</h6>
+                    </div>
+                    <div class="result-content">
+                        <h5>{{list.category}}</h5>
+                        <p>{{list.subtitle}}</p>
+                    </div>
+                </div>
+                <div class="col-md-12 result-container-clicked" ng-show="listBoolean">
+                    <div class="result-heading padding-1" ng-style="{background: vm.colors[$index % vm.colors.length]}">
+                        <h6 class="semibold white">{{list.name}}<i class="fa fa-times cancel-button" ng-click="listBoolean = false" aria-hidden="true"></i></h6>
+                    </div>
+                    <div class="result-content-clicked">
+                        <h5>{{list.category}}</h5>
+                        <p>{{list.description}}</p>
+                    </div>
+                    <div class="result-footer text-center" ng-style="{color: vm.colors[$index % vm.colors.length]}">
+                        <p class="semibold">HULP NODIG BIJ AANVRAGEN?</p>
+                        <p>{{list.action}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 result-container" ng-if="!vm.list[0]">
+                    <div class="result-heading padding-1 background-orange">
+                        <h6 class="semibold white">No Result Found!</h6>
+                    </div>
+                    <div class="result-content padding-25">
+                        <h5>Please try again later!</h5>
+                    </div>
+            </div>
+        </div>
+        <footer>
+            <div class="col-xs-12 footer">
+                <p>&copy; Copyright <a href="http://www.stichtingsina.nl/" target="_blank">Stichting Sina</a> | Design <a href="http://www.roxanneallard.nl/" target="_blank">Roxanne Allard</a> | Development <a href="http://www.hackyourfuture.net/#/" target="_blank">Hack Your Future</a></p>
+            </div>
+        </footer>
+    </div>
 </div>
