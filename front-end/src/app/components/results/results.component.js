@@ -11,6 +11,7 @@ function PovertyResults($state, $document) {
 	vm.$onInit = init;
 	vm.parseFilterUrl = parseFilterUrl;
 	vm.stateTo = stateTo;
+	vm.shortDescription = shortDescription;
 
 	vm.filters = vm.$state.params.filter;	
 	vm.listAfterFilter = [];
@@ -43,6 +44,13 @@ function PovertyResults($state, $document) {
 		return fitlerResult;
 	}
 
+	function shortDescription(list) {
+		if(list.description.length <= 30)
+			return list.description;
+		var desc = list.description.slice(0, 30) + "...";
+		return desc;
+	}
+
 	function stateTo() {
 		var width = $document[0].getElementById("result").offsetWidth;
 		if(width < 440){
@@ -60,7 +68,7 @@ function PovertyResults($state, $document) {
 		'subtitle': 'Subtitle',
 		'category': 'category',
 		'name': 'Name Provision',
-		'description': 'description',
+		'description': 'description description description description description description description description ',
 		'action': 'action',
 		'filterCity': '*',
 		'filterAge': '*',
@@ -89,9 +97,9 @@ function PovertyResults($state, $document) {
 		'name': 'Name Provision3',
 		'description': 'description3',
 		'action': 'action3',
-		'filterCity': '',
-		'filterAge': '',
-		'filterFamily': ''
+		'filterCity': 'NW',
+		'filterAge': '3',
+		'filterFamily': 'AK'
 	},{
 		'subtitle': 'Subtitle4',
 		'category': 'category4',

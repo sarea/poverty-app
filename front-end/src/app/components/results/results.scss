@@ -41,38 +41,48 @@
     background-color: #fff;
     border-radius: 5px;
     padding:0px;
+    position: relative;
     -webkit-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
     -moz-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
     box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
+    .result-heading {
+      border-radius: 5px 5px 0 0;
+      padding-left: 15px;
+      .cancel-button {
+        float: right;
+        padding-right: 10px;
+        padding-top: 5px;
+        &:focus, &:active {
+          outline: none; 
+        }
+      }
+    }
     .result-content {
       padding:0 10px 10px 15px;
-    }
-  }
-  .result-heading {
-    border-radius: 5px 5px 0 0;
-    padding-left: 15px;
-  }
-  .result-container-clicked {
-    border-radius: 5px;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    padding: 10px;
-    width: 100%;
-    .result-content-clicked {
       background-color: #fff;
-      padding:10px 10px 10px 15px;
-    }
-    .cancel-button {
-      float: right;
-      padding-right: 10px;
-      padding-top: 5px;
-    }
-    .result-footer {
-      background-color: #EDEDED;
       border-radius: 0 0 5px 5px;
-      padding: 5px
+      &:focus, &:active {
+        outline: none; 
+      }
+    }
+    .full-description {
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      top:50px;
+      border-radius: 0 0 5px 5px;
+      .result-content-collapsed {
+        background-color: #fff;
+        padding:0 10px 10px 15px;        
+      }
+      .result-footer {
+        background-color: #EDEDED;
+        border-radius: 0 0 5px 5px;
+        padding: 5px;
+        -webkit-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
+        -moz-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
+        box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
+      }
     }
   }
   .footer {
