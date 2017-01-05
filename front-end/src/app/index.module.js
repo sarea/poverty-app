@@ -3,6 +3,7 @@
 import { config } from './index.config';
 import { routerConfig } from './index.route';
 import { runBlock } from './index.run';
+import { DataModels } from './index.constants';
 import povertyWelcome from './components/welcome';
 import povertyNavbar from './components/navbar';
 import povertyFilters from './components/filters';
@@ -35,5 +36,6 @@ angular.module('povertyApp', [
   ])
   .constant('moment', moment)
   .config(config)
+  .constant('DataModels', DataModels)
   .config(routerConfig)
   .run(runBlock)

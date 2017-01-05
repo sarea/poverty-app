@@ -34,7 +34,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  //height: 100vh;
   margin-left: auto;
   margin-right: auto;
   .result-container {
@@ -46,8 +46,15 @@
     -moz-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
     box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
     .result-heading {
+      height: 45px;
       border-radius: 5px 5px 0 0;
-      padding-left: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      >p {
+        margin: 0;
+        padding: 10px 0px 10px 10px;
+      }
       .cancel-button {
         float: right;
         padding-right: 10px;
@@ -56,32 +63,60 @@
           outline: none; 
         }
       }
+      &:focus, &:active {
+        outline: none; 
+      }
     }
     .result-content {
       padding:0 10px 10px 15px;
       background-color: #fff;
       border-radius: 0 0 5px 5px;
-      &:focus, &:active {
-        outline: none; 
+      height: 125px;
+      //padding: 10px;
+      >h6 {
+        font-size: 14px;
+        font-weight: 600;
+      }
+      >p {
+        >a {
+          color: #0fa4cc;
+          font-weight: 600;
+        }
       }
     }
     .full-description {
       position: absolute;
       z-index: 1;
       width: 100%;
-      top:50px;
+      top:45px;
       border-radius: 0 0 5px 5px;
       .result-content-collapsed {
         background-color: #fff;
-        padding:0 10px 10px 15px;        
+        padding:0 10px 10px 15px;
+        >h6 {
+          font-size: 14px;
+          font-weight: 600;
+        } 
+        >p {
+          >a {
+            color: #0fa4cc;
+            font-weight: 600;
+          }
+        }               
       }
       .result-footer {
         background-color: #EDEDED;
         border-radius: 0 0 5px 5px;
-        padding: 5px;
+        padding: 10px;
         -webkit-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
         -moz-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
         box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
+        >p {
+          >a {
+            color: #0fa4cc;
+            font-weight: 600;
+          }
+        }
       }
     }
   }
@@ -104,6 +139,6 @@
     padding:0 0 0 5px;
   }
   .background-results {
-    height: 100%;
+    //height: 100%;
   }
 }

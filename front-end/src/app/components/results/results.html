@@ -18,36 +18,33 @@
 <div id="result" class="background-results center-content-both" style="padding-top: 50px;">
     <div class="col-md-12">
         <div class="col-md-12">
-<!--             <div class="col-md-12">
-                <h6 class="semibold white">Gezinsregelingen</h6>
-            </div> -->
             <div class="col-md-3 col-sm-6 col-xs-12 padding-10" ng-repeat="list in vm.listAfterFilter">
                 <div class="col-md-12 result-container">
-                    <div class="result-heading padding-1" ng-style="{background: vm.colors[$index % vm.colors.length]}">
-                        <h6 class="semibold white">{{list.subtitle}}<i ng-show="isCollapsed" class="fa fa-times cancel-button" ng-click="isCollapsed = false" aria-hidden="true"></i></h6>
+                    <div class="result-heading padding-1" ng-click="isCollapsed = !isCollapsed" ng-style="{background: vm.colors[$index % vm.colors.length]}">
+                        <p class="semibold white">{{list.naam}}<i ng-show="isCollapsed" class="fa fa-times cancel-button" aria-hidden="true"></i></p>
                     </div>
-                    <div class="result-content" ng-click="isCollapsed = !isCollapsed" >
-                        <h5>{{list.name}}</h5>
-                        <p>{{vm.shortDescription(list)}}</p>
+                    <div class="result-content">
+                        <h6>{{list.levert}}</h6>
+                        <p ng-bind-html="vm.linkify(vm.shortDescription(list.korteOmschrijving))"></p>
                     </div>
                     <div class="full-description" uib-collapse="!isCollapsed">
                         <div class="result-content-collapsed">
-                            <h5>{{list.name}}</h5>
-                            <p>{{list.description}}</p>
+                            <h6>{{list.levert}}</h6>
+                            <p ng-bind-html="vm.linkify(list.korteOmschrijving)"></p>
                         </div>
                         <div class="result-footer text-center" ng-style="{color: vm.colors[$index % vm.colors.length]}">
                             <p class="semibold">HULP NODIG BIJ AANVRAGEN?</p>
-                            <p>{{list.action}}</p>
+                            <p ng-bind-html="vm.linkify(list.calltoAction)"></p>
                         </div>                   
                     </div>
                 </div>
             </div>
-            <div class="col-md-12 result-container" ng-if="!vm.listAfterFilter[0]">
-                <div class="result-heading padding-1 background-orange">
-                    <h6 class="semibold white">No Result Found!</h6>
+            <div class="col-md-12 result-container margin-top-40" ng-if="!vm.listAfterFilter[0]">
+                <div class="result-heading padding-10 background-blue">
+                    <h5 class="semibold white text-center"><strong>Geen resultaat gevonden!</strong></h5>
                 </div>
-                <div class="result-content padding-25">
-                    <h5>Please try again later!</h5>
+                <div class="result-content-collapsed padding-25 margin-top-40 text-center">
+                    <h5>Voor <strong>{{vm.parseFilterUrl(1)[0]}}</strong> en <strong>{{vm.parseFilterUrl(1)[1]}}</strong> en <strong>{{vm.parseFilterUrl(1)[2]}}</strong> Probeer het later opnieuw!</h5>
                 </div>
             </div>
         </div>
