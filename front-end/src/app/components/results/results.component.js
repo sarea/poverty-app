@@ -56,10 +56,10 @@ function PovertyResults($state, $document, DataModels) {
 	}
 
 	function linkify(text) {
-    	var urlRegex =/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-	    return text.replace(urlRegex, function(url) {
-	        return '<a href="' + url + '" target="_blank">' + 'Here' + '</a>';
-	    });
+		var urlRegex =/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+		return text.replace(urlRegex, function(url) {
+			return '<a href="' + url + '" target="_blank">' + 'Here' + '</a>';
+		});
 	}
 
 	function stateTo() {

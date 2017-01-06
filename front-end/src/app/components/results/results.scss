@@ -72,7 +72,6 @@
       background-color: #fff;
       border-radius: 0 0 5px 5px;
       height: 125px;
-      //padding: 10px;
       >h6 {
         font-size: 14px;
         font-weight: 600;
@@ -134,11 +133,19 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .result-content {
+    height: 170px !important;
+  }
+}
 @media (max-width: 414px) {
   .button-back {
     padding:0 0 0 5px;
   }
   .background-results {
     //height: 100%;
+  }
+  .result-content {
+    height: 100% !important;
   }
 }
