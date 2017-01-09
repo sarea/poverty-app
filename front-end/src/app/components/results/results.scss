@@ -45,6 +45,9 @@
     -webkit-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
     -moz-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
     box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
+    &:focus, &:active {
+      outline: none; 
+    }
     .result-heading {
       height: 45px;
       border-radius: 5px 5px 0 0;
@@ -59,9 +62,6 @@
         float: right;
         padding-right: 10px;
         padding-top: 5px;
-        &:focus, &:active {
-          outline: none; 
-        }
       }
       &:focus, &:active {
         outline: none; 
@@ -89,6 +89,8 @@
       width: 100%;
       top:45px;
       border-radius: 0 0 5px 5px;
+      background-color: #fff;
+      //transition: all 3s;
       .result-content-collapsed {
         background-color: #fff;
         padding:0 10px 10px 15px;
@@ -133,6 +135,13 @@
   }
 }
 
+.slide{
+   transition: all 0.5s;
+}
+.slide.ng-hide{
+   opacity: 0;
+}
+
 @media (max-width: 1024px) {
   .result-content {
     height: 170px !important;
@@ -147,5 +156,16 @@
   }
   .result-content {
     height: 100% !important;
+  }
+  .full-description {
+    position: relative !important;
+    z-index: 0 ;
+    top: 0px !important;
+  }
+  .slide{
+   transition: all 0s;
+  }
+  .slide.ng-hide{
+     opacity: 1;
   }
 }

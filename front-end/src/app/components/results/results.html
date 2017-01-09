@@ -19,11 +19,11 @@
     <div class="col-md-12">
         <div class="col-md-12">
             <div class="col-md-3 col-sm-6 col-xs-12 padding-10" ng-repeat="list in vm.listAfterFilter">
-                <div class="col-md-12 result-container">
-                    <div class="result-heading padding-1" ng-click="isCollapsed = !isCollapsed" ng-style="{background: vm.colors[$index % vm.colors.length]}">
+                <div class="col-md-12 result-container" ng-click="isCollapsed = !isCollapsed">
+                    <div class="result-heading padding-1" ng-style="{background: vm.colors[$index % vm.colors.length]}">
                         <p class="semibold white">{{list.naam}}<i ng-show="isCollapsed" class="fa fa-times cancel-button" aria-hidden="true"></i></p>
                     </div>
-                    <div class="result-content">
+                    <div class="result-content slide" ng-show="!isCollapsed">
                         <h6>{{list.levert}}</h6>
                         <p ng-bind-html="vm.linkify(vm.shortDescription(list.korteOmschrijving))"></p>
                     </div>
@@ -50,7 +50,7 @@
         </div>
         <footer>
             <div class="col-xs-12 footer">
-                <p>&copy; Copyright <a href="http://www.stichtingsina.nl/" target="_blank">Stichting Sina</a> | Design <a href="http://www.roxanneallard.nl/" target="_blank">Roxanne Allard</a> | Development <a href="http://www.hackyourfuture.net/#/" target="_blank">Hack Your Future</a></p>
+                <p>&copy; Copyright <a href="http://www.stichtingsina.nl/" target="_blank">Stichting Sina</a> | Design <a href="http://www.roxanneallard.nl/" target="_blank">Roxanne Allard</a> | Development <a href="http://www.hackyourfuture.net/#/" target="_blank">HackYourFuture</a></p>
             </div>
         </footer>
     </div>

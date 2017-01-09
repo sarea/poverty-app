@@ -4,7 +4,7 @@ export var povertyAge = {
 	templateUrl: 'app/components/age/age.html'
 };
 
-function PovertyAge($state) {
+function PovertyAge($state, $timeout) {
 	'ngInject';
 
 	var vm = this;
@@ -16,7 +16,9 @@ function PovertyAge($state) {
 
 	function sendFilterInfo(){
 		var filter = vm.familyBorough+','+vm.age;
-		vm.$state.go('results.filter', {filter: filter});
+		$timeout(function() {
+			vm.$state.go('results.filter', {filter: filter});
+		}, 700);
 	}
 
 }

@@ -4,7 +4,7 @@ export var povertyBoroughs = {
 	templateUrl: 'app/components/boroughs/boroughs.html'
 };
 
-function PovertyBoroughs($state, $window, $document, uibButtonConfig) {
+function PovertyBoroughs($state, $timeout, $window, $document, uibButtonConfig) {
 	'ngInject';
 
 	var vm = this;
@@ -23,7 +23,9 @@ function PovertyBoroughs($state, $window, $document, uibButtonConfig) {
 
 	function sendFilterInfo(){
 		var familyBorough = vm.family+','+vm.borough;
-		vm.$state.go('age.familyBorough', {familyBorough: familyBorough});
+        $timeout(function() {
+            vm.$state.go('age.familyBorough', {familyBorough: familyBorough});
+        }, 700);
 	}
 
 	function mapping () {

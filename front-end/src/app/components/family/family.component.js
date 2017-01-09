@@ -4,7 +4,7 @@ export var povertyFamily = {
 	templateUrl: 'app/components/family/family.html'
 };
 
-function PovertyFamily($state) {
+function PovertyFamily($state, $timeout) {
 	'ngInject';
 
 	var vm = this;
@@ -14,6 +14,9 @@ function PovertyFamily($state) {
 
 	function sendFilterInfo(){
 		var family = vm.family;
-		vm.$state.go('boroughs.family', {family: family});
+		$timeout(function() {
+			vm.$state.go('boroughs.family', {family: family});
+		}, 700);
 	}
+
 }
