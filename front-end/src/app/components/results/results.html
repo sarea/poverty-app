@@ -1,5 +1,5 @@
 <poverty-navbar status="Uw regelingen" state-to="{{vm.stateTo()}}"></poverty-navbar>
-<div id="hide" class="center-content-both result-controls">
+<div id="hide" class="result-controls">
     <div class="col-md-12">
         <div class="col-md-3 col-sm-12">
             <a ui-sref="filters">
@@ -15,43 +15,30 @@
         </div>     
     </div>
 </div>
-<div id="result" class="background-results center-content-both" style="padding-top: 50px;">
-    <div class="col-md-12">
-        <div class="col-md-12">
-            <div class="col-md-3 col-sm-6 col-xs-12 padding-10" ng-repeat="list in vm.listAfterFilter">
-                <div class="col-md-12 result-container" ng-click="isCollapsed = !isCollapsed">
+<div id="result" class="background-results" style="padding-top: 50px;"> 
+    <div gridster="vm.gridsterOpts">
+        <ul class="cards">
+            <li gridster-item="list" gridster-item="item" class="padding-10" ng-repeat="list in vm.listAfterFilter">
+                <div class="col-md-12 result-container" ng-click="isCollapsed = !isCollapsed;vm.updateHieghtItem($index)">
                     <div class="result-heading padding-1" ng-style="{background: vm.colors[$index % vm.colors.length]}">
-                        <p class="semibold white">{{list.naam}}<i ng-show="isCollapsed" class="fa fa-times cancel-button" aria-hidden="true"></i></p>
+                        <p class="semibold white">{{list.list.naam}}<i ng-show="isCollapsed" class="fa fa-times cancel-button" aria-hidden="true"></i></p>
                     </div>
-                    <div class="result-content slide" ng-show="!isCollapsed">
-                        <h6>{{list.levert}}</h6>
-                        <p ng-bind-html="vm.linkify(vm.shortDescription(list.korteOmschrijving))"></p>
+                    <div class="result-content" ng-class="{'active': isCollapsed}">
+                        <h6>{{list.list.levert}}</h6>
+                        <p ng-hide="isCollapsed" ng-bind-html="vm.linkify(vm.shortDescription(list.list.korteOmschrijving))"></p>
+                        <p ng-show="isCollapsed" ng-bind-html="vm.linkify(list.list.korteOmschrijving)"></p>
                     </div>
-                    <div class="full-description" uib-collapse="!isCollapsed">
-                        <div class="result-content-collapsed">
-                            <h6>{{list.levert}}</h6>
-                            <p ng-bind-html="vm.linkify(list.korteOmschrijving)"></p>
-                        </div>
-                        <div class="result-footer text-center" ng-style="{color: vm.colors[$index % vm.colors.length]}">
-                            <p class="semibold">HULP NODIG BIJ AANVRAGEN?</p>
-                            <p ng-bind-html="vm.linkify(list.calltoAction)"></p>
-                        </div>                   
+                    <div class="result-footer text-center" ng-style="{color: vm.colors[$index % vm.colors.length]}" uib-collapse="!isCollapsed">
+                        <p class="semibold">HULP NODIG BIJ AANVRAGEN?</p>
+                        <p ng-bind-html="vm.linkify(list.list.calltoAction)"></p>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-12 result-container margin-top-40" ng-if="!vm.listAfterFilter[0]">
-                <div class="result-heading padding-10 background-blue">
-                    <h5 class="semibold white text-center"><strong>Geen resultaat gevonden!</strong></h5>
-                </div>
-                <div class="result-content-collapsed padding-25 margin-top-40 text-center">
-                    <h5>Voor <strong>{{vm.parseFilterUrl(1)[0]}}</strong> en <strong>{{vm.parseFilterUrl(1)[1]}}</strong> en <strong>{{vm.parseFilterUrl(1)[2]}}</strong> Probeer het later opnieuw!</h5>
-                </div>
-            </div>
-        </div>
-        <footer>
-            <div class="col-xs-12 footer">
-                <p>&copy; Copyright <a href="http://www.stichtingsina.nl/" target="_blank">Stichting Sina</a> | Design <a href="http://www.roxanneallard.nl/" target="_blank">Roxanne Allard</a> | Development <a href="http://www.hackyourfuture.net/#/" target="_blank">HackYourFuture</a></p>
-            </div>
-        </footer>
+            </li>
+        </ul>
     </div>
+    <footer>
+        <div class="footer">
+            <p>&copy; Copyright <a href="http://www.stichtingsina.nl/" target="_blank">Stichting Sina</a> | Development <a href="http://www.hackyourfuture.net/#/" target="_blank">HackYourFuture</a></p>
+        </div>
+    </footer>
 </div>

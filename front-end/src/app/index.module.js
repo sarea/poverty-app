@@ -26,6 +26,8 @@ angular.module('povertyApp', [
   'ui.router',
   'ui.bootstrap',
   'toastr',
+  // 'wu.masonry',
+  'gridster',
   povertyWelcome,
   povertyNavbar,
   povertyFilters,
