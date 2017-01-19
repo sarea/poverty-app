@@ -191,7 +191,7 @@ map {
 		height: 100vh;
 	}
 	.button-family {
-		margin-bottom: 15px;
+		margin-bottom: 10px;
 		> h6 {
 			margin-left: 5px;
 		}
@@ -223,6 +223,15 @@ map {
 	}
 	.padding-to-navbar{
 		padding-top: 75px;
+	}
+}
+
+@media (max-width: 320px) {
+	.padding-to-navbar{
+		padding-top: 55px;
+	}
+	.filter-content {
+		padding:5px;
 	}
 }
 
