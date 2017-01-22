@@ -23,18 +23,26 @@
                     <div class="result-heading padding-1" ng-style="{background: vm.colors[$index % vm.colors.length]}">
                         <p class="semibold white">{{list.list.naam}}<i ng-show="isCollapsed" class="fa fa-times cancel-button" aria-hidden="true"></i></p>
                     </div>
-                    <div class="result-content" ng-class="{'active': isCollapsed}">
+                    <div class="result-content fade-in" ng-class="{'active': isCollapsed}">
                         <h6>{{list.list.levert}}</h6>
                         <p ng-hide="isCollapsed" ng-bind-html="vm.linkify(vm.shortDescription(list.list.korteOmschrijving))"></p>
                         <p ng-show="isCollapsed" ng-bind-html="vm.linkify(list.list.korteOmschrijving)"></p>
                     </div>
-                    <div class="result-footer text-center" ng-style="{color: vm.colors[$index % vm.colors.length]}" uib-collapse="!isCollapsed">
+                    <div class="result-footer text-center" ng-style="{color: vm.colors[$index % vm.colors.length]}" ng-show="isCollapsed">
                         <p class="semibold">HULP NODIG BIJ AANVRAGEN?</p>
                         <p ng-bind-html="vm.linkify(list.list.calltoAction)"></p>
                     </div>
                 </div>
             </li>
         </ul>
+        <div class="col-md-12 result-container margin-top-40" ng-if="!vm.listAfterFilter[0]">
+            <div class="result-heading padding-10 background-orange">
+                <h5 class="semibold white text-center"><strong>Geen resultaat gevonden!</strong></h5>
+            </div>
+            <div class="result-content padding-25 background-white text-center">
+                <p ng-bind-html="vm.noResult()"></p>
+            </div>
+        </div>
     </div>
     <footer>
         <div class="footer">

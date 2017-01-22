@@ -14,6 +14,7 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 	vm.linkify = linkify;
 	vm.stateTo = stateTo;
 	vm.updateHieghtItem = updateHieghtItem;
+	vm.noResult = noResult;
 
 	vm.filters = vm.$state.params.filter;
 	vm.list = DataModels.dataResult;	
@@ -68,14 +69,14 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 			$timeout(function() {
 				var newHeight = $document[0].getElementsByClassName("result-container")[index].offsetHeight;
 				vm.listAfterFilter[index].sizeY = Math.ceil(newHeight/20) + 1
-			}, 380);
+			}, 50);
 
 		}else {
 			vm.listAfterFilter[index].sizeY = 10
 		}		
 	}
 
-	function calcHeight() {
+	function calcWidth() {
 		//vm.width = $document[0].getElementById('result').offsetWidth;
 		vm.width = $window.innerWidth;
 		if(vm.width > 1024) {
@@ -93,6 +94,14 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 		// }
 	}
 
+	function noResult() {
+		if(vm.parseFilterUrl(1)[0]==='All' && vm.parseFilterUrl(1)[1]==='All' && vm.parseFilterUrl(1)[2]==='All') {
+			return '<h5>Voor <strong>'+vm.parseFilterUrl(1)[0]+'</strong> Probeer het later opnieuw!</h5>'
+		} else {
+			return '<h5>Voor <strong>'+vm.parseFilterUrl(1)[0]+'</strong> en <strong>'+vm.parseFilterUrl(1)[1]+'</strong> en <strong>'+vm.parseFilterUrl(1)[2]+'</strong> Probeer het later opnieuw!</h5>'
+		}
+	}
+
 	function stateTo() {
 		var width = $document[0].getElementById('result').offsetWidth;
 		if(width < 440){
@@ -103,12 +112,12 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 	}
 
 	function init() {
-		calcHeight();
+		calcWidth();
 		getResultList();
 	}
 
 	angular.element($window).bind('resize', function () {
-		calcHeight();
+		calcWidth();
 	});
 
 	vm.gridsterOpts = {
