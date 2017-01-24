@@ -77,7 +77,6 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 	}
 
 	function calcWidth() {
-		//vm.width = $document[0].getElementById('result').offsetWidth;
 		vm.width = $window.innerWidth;
 		if(vm.width > 1024) {
 			vm.gridsterOpts.columns = 4;
@@ -87,11 +86,6 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 			vm.gridsterOpts.columns = 2;
 			return;
 		}
-		// if(vm.width < 600) {
-		// 	vm.gridsterOpts.columns = 1;
-		// 	console.log(vm.gridsterOpts.columns, "columns", vm.width, "width")
-		// 	return;
-		// }
 	}
 
 	function noResult() {

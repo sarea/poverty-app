@@ -15,7 +15,7 @@
         </div>     
     </div>
 </div>
-<div id="result" class="background-results" style="padding-top: 50px;"> 
+<div id="result" class="background-results" style="padding-top: 20px;"> 
     <div gridster="vm.gridsterOpts">
         <ul class="cards">
             <li gridster-item="list" gridster-item="item" class="padding-10" ng-repeat="list in vm.listAfterFilter">
@@ -35,14 +35,22 @@
                 </div>
             </li>
         </ul>
-        <div class="col-md-12 result-container margin-top-40" ng-if="!vm.listAfterFilter[0]">
-            <div class="result-heading padding-10 background-orange">
-                <h5 class="semibold white text-center"><strong>Geen resultaat gevonden!</strong></h5>
-            </div>
-            <div class="result-content padding-25 background-white text-center">
-                <p ng-bind-html="vm.noResult()"></p>
-            </div>
+        <div class="cards padding-10 margin-top-40">
+            <div class="col-md-12 result-container " ng-if="!vm.listAfterFilter[0]">
+                <div class="result-heading padding-1 background-orange">
+                    <h5 class="semibold white text-center"><strong>Geen resultaat gevonden!</strong></h5>
+                </div>
+                <div class="result-content padding-25 background-white text-center">
+                    <p ng-bind-html="vm.noResult()"></p>
+                </div>
+            </div>            
         </div>
+
+<!--         <footer>
+            <div class="footer">
+                <p>&copy;Copyright <a href="http://www.stichtingsina.nl/" target="_blank">Stichting Sina</a> | Development <a href="http://www.hackyourfuture.net/#/" target="_blank">HackYourFuture</a></p>
+            </div>
+        </footer> -->
     </div>
     <footer>
         <div class="footer">
