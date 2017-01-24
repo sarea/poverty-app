@@ -34,7 +34,7 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 			if(	(vm.list[i].gezinssamens.includes(keys[0]) || vm.list[i].gezinssamens[0] === '*') &&
 				(keys[1] === vm.list[i].stadsdeel || vm.list[i].stadsdeel === '*') && 
 				(keys[2] === vm.list[i].leedtijd || vm.list[i].leedtijd === '*') ){
-				vm.listAfterFilter.push({"sizeX":1,"sizeY":10,'list':vm.list[i]})
+				vm.listAfterFilter.push({"sizeX":1,"sizeY":10,'content':vm.list[i]})
 			}
 		}
 	}
@@ -68,11 +68,11 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 		if(vm.listAfterFilter[index].sizeY === 10){
 			$timeout(function() {
 				var newHeight = $document[0].getElementsByClassName("result-container")[index].offsetHeight;
-				vm.listAfterFilter[index].sizeY = Math.ceil(newHeight/20) + 1
+				vm.listAfterFilter[index].sizeY = Math.ceil(newHeight/20) + 1;
 			}, 50);
 
 		}else {
-			vm.listAfterFilter[index].sizeY = 10
+			vm.listAfterFilter[index].sizeY = 10;
 		}		
 	}
 
@@ -90,15 +90,14 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 
 	function noResult() {
 		if(vm.parseFilterUrl(1)[0]==='All' && vm.parseFilterUrl(1)[1]==='All' && vm.parseFilterUrl(1)[2]==='All') {
-			return '<h5>Voor <strong>'+vm.parseFilterUrl(1)[0]+'</strong> Probeer het later opnieuw!</h5>'
+			return '<h6>Voor <strong>'+vm.parseFilterUrl(1)[0]+'</strong> Probeer het later opnieuw!</h6>'
 		} else {
-			return '<h5>Voor <strong>'+vm.parseFilterUrl(1)[0]+'</strong> en <strong>'+vm.parseFilterUrl(1)[1]+'</strong> en <strong>'+vm.parseFilterUrl(1)[2]+'</strong> Probeer het later opnieuw!</h5>'
+			return '<h6>Voor <strong>'+vm.parseFilterUrl(1)[0]+'</strong> en <strong>'+vm.parseFilterUrl(1)[1]+'</strong> en <strong>'+vm.parseFilterUrl(1)[2]+'</strong> Probeer het later opnieuw!</h6>'
 		}
 	}
 
 	function stateTo() {
-		var width = $document[0].getElementById('result').offsetWidth;
-		if(width < 440){
+		if(vm.width < 440){
 			return 'family';
 		}else {
 			return 'filters';

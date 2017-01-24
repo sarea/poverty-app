@@ -15,44 +15,39 @@
         </div>     
     </div>
 </div>
-<div id="result" class="background-results" style="padding-top: 20px;"> 
+<div class="background-results"> 
     <div gridster="vm.gridsterOpts">
         <ul class="cards">
-            <li gridster-item="list" gridster-item="item" class="padding-10" ng-repeat="list in vm.listAfterFilter">
+            <li gridster-item="list" class="padding-10" ng-repeat="list in vm.listAfterFilter">
                 <div class="col-md-12 result-container" ng-click="isCollapsed = !isCollapsed;vm.updateHieghtItem($index)">
                     <div class="result-heading padding-1" ng-style="{background: vm.colors[$index % vm.colors.length]}">
-                        <p class="semibold white">{{list.list.naam}}<i ng-show="isCollapsed" class="fa fa-times cancel-button" aria-hidden="true"></i></p>
+                        <p class="semibold white">{{list.content.naam}}<i ng-show="isCollapsed" class="fa fa-times cancel-button" aria-hidden="true"></i></p>
                     </div>
-                    <div class="result-content fade-in" ng-class="{'active': isCollapsed}">
-                        <h6>{{list.list.levert}}</h6>
-                        <p ng-hide="isCollapsed" ng-bind-html="vm.linkify(vm.shortDescription(list.list.korteOmschrijving))"></p>
-                        <p ng-show="isCollapsed" ng-bind-html="vm.linkify(list.list.korteOmschrijving)"></p>
+                    <div class="result-content" ng-class="{'active': isCollapsed}">
+                        <h6>{{list.content.levert}}</h6>
+                        <p ng-hide="isCollapsed" ng-bind-html="vm.linkify(vm.shortDescription(list.content.korteOmschrijving))"></p>
+                        <p ng-show="isCollapsed" ng-bind-html="vm.linkify(list.content.korteOmschrijving)"></p>
                     </div>
-                    <div class="result-footer text-center" ng-style="{color: vm.colors[$index % vm.colors.length]}" ng-show="isCollapsed">
+                    <div class="result-footer" ng-style="{color: vm.colors[$index % vm.colors.length]}" ng-show="isCollapsed">
                         <p class="semibold">HULP NODIG BIJ AANVRAGEN?</p>
-                        <p ng-bind-html="vm.linkify(list.list.calltoAction)"></p>
+                        <p ng-bind-html="vm.linkify(list.content.calltoAction)"></p>
                     </div>
                 </div>
             </li>
         </ul>
-        <div class="cards padding-10 margin-top-40">
-            <div class="col-md-12 result-container " ng-if="!vm.listAfterFilter[0]">
-                <div class="result-heading padding-1 background-orange">
-                    <h5 class="semibold white text-center"><strong>Geen resultaat gevonden!</strong></h5>
+        <div class="cards no-result">
+            <div class="result-container" ng-if="!vm.listAfterFilter[0]">
+                <div class="result-heading padding-10">
+                    <h6 class="semibold"><strong>Geen resultaat gevonden!</strong></h6>
                 </div>
-                <div class="result-content padding-25 background-white text-center">
+                <hr>
+                <div class="result-content margin-top-40">
                     <p ng-bind-html="vm.noResult()"></p>
                 </div>
-            </div>            
-        </div>
-
-<!--         <footer>
-            <div class="footer">
-                <p>&copy;Copyright <a href="http://www.stichtingsina.nl/" target="_blank">Stichting Sina</a> | Development <a href="http://www.hackyourfuture.net/#/" target="_blank">HackYourFuture</a></p>
             </div>
-        </footer> -->
+        </div>
     </div>
-    <footer>
+    <footer class="padding-10">
         <div class="footer">
             <p>&copy; Copyright <a href="http://www.stichtingsina.nl/" target="_blank">Stichting Sina</a> | Development <a href="http://www.hackyourfuture.net/#/" target="_blank">HackYourFuture</a></p>
         </div>

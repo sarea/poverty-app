@@ -31,6 +31,7 @@
 }
 
 .background-results {
+  position: relative;
   background-image: url(../img/background-gradient.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -38,6 +39,7 @@
   min-height: 100vh;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 50px;
   .cards {
     //display: flex;
     //width: 100%;
@@ -57,9 +59,6 @@
       .result-heading {
         height: 45px;
         border-radius: 5px 5px 0 0;
-        //display: flex;
-        //flex-direction: column;
-        //justify-content: center;
         >p {
           margin: 0;
           padding: 10px 0px 10px 10px;
@@ -74,8 +73,6 @@
         }
       }
       .result-content {
-        // position: relative;
-        // z-index: 1;
         padding:0 10px 10px 15px;
         background-color: #fff;
         border-radius: 0 0 5px 5px;
@@ -98,6 +95,7 @@
         background-color: #EDEDED;
         border-radius: 0 0 5px 5px;
         padding: 10px;
+        text-align: center;
         >p {
           >a {
             color: #0fa4cc;
@@ -107,20 +105,15 @@
       }
     }
   }
-
+  .no-result {
+    padding: 150px;
+    text-align: center;
+  }
   .footer {
-  // position: relative;
-  // margin-top: -450px; 
-  // //height: 150px;
-  // clear:both;
-  // padding-top:20px;
-  // position: absolute;
-  // right: 0;
-  // bottom: 0;
-  // left: 0;
-  // padding: 1rem;
-  // background-image: url(../img/background-gradient.png);
-    margin-top: 30px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     color:#fff;
     text-align: center;
     > p {
@@ -141,23 +134,13 @@ div,p,i {
   }
 } 
 
-
-// @media (max-width: 1024px) {
-//   .result-content {
-//     height: 120px !important;
-//   }
-// }
-// @media (max-width: 991px) {
-//   .result-content {
-//     height: 120px !important;
-//   }
-// }
 @media (max-width: 414px) {
   .button-back {
     padding:0 0 0 5px;
   }
   .background-results {
     height: 100%;
+    padding-top: 40px;
   }
   .result-content {
    height: 100% !important;
@@ -165,12 +148,12 @@ div,p,i {
   .cards {
     height: 100% !important;
   }
+  .no-result {
+    padding: 10px !important;
+    margin-top: 35px !important;
+  }
 }
 
 .active{
   height: 100% !important;
-}
-
-.active-bg{
-  height: 100vh !important;
 }
