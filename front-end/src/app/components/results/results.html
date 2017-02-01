@@ -1,42 +1,67 @@
 <poverty-navbar status="Uw regelingen" state-to="{{vm.stateTo()}}"></poverty-navbar>
 <div id="hide" class="result-controls">
     <div class="col-md-12">
-        <div class="col-md-3 col-sm-12">
+        <div class="col-md-2">
             <a ui-sref="filters">
                 <button class="button-back">
-                    <p class="no-margin semibold"><i class="fa fa-chevron-left" aria-hidden="true"></i> Antwoorden aanpassen</p>
+                    <p class="no-margin semibold navbar-font"><i class="fa fa-chevron-left" aria-hidden="true"></i> Antwoorden aanpassen</p>
                 </button>
             </a>
         </div>
-        <div class="col-md-3 col-sm-12" ng-repeat="filter in vm.parseFilterUrl(1) track by $index">
+        <div class="col-md-1">
+            <button class="button-back" ng-click="isCollapsedFilter = !isCollapsedFilter">
+                <p class="no-margin semibold navbar-font"><i class="fa fa-chevron-down" aria-hidden="true"></i> Filter</p>
+            </button>
+        </div>
+        <div class="col-md-3" ng-repeat="filter in vm.parseFilterUrl(1) track by $index">
             <div class="filter-resultpage">
                 <p class="no-margin">{{filter}}</p>
             </div>
-        </div>     
+        </div>
     </div>
 </div>
 <div class="background-results"> 
-    <div gridster="vm.gridsterOpts">
-        <ul class="cards">
-            <li gridster-item="list" class="padding-10" ng-repeat="list in vm.listAfterFilter">
+    <div uib-collapse="!isCollapsedFilter">
+        <div class="well well-lg center-content-both">
+            <div class="col-md-3">
+                <div class="button" ng-click="vm.resultByCategories('all');">
+                    <p class="no-margin semibold">All</p>
+                </div>
+            </div>
+            <div class="col-md-3" ng-repeat="catigory in vm.categories track by $index">
+                <div class="button" ng-click="vm.resultByCategories(vm.categories[$index]);">
+                    <p class="no-margin semibold">{{catigory}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cards" gridster="vm.gridsterOpts">
+        <ul>
+            <li gridster-item="listFiltered" class="padding-10" ng-repeat="listFiltered in vm.listAfterFilter">
                 <div class="col-md-12 result-container" ng-click="isCollapsed = !isCollapsed;vm.updateHieghtItem($index)">
                     <div class="result-heading padding-1" ng-style="{background: vm.colors[$index % vm.colors.length]}">
-                        <p class="semibold white">{{list.content.naam}}<i ng-show="isCollapsed" class="fa fa-times cancel-button" aria-hidden="true"></i></p>
+                        <p class="semibold white">{{listFiltered.content.naam}}<i ng-show="isCollapsed" class="fa fa-times cancel-button" aria-hidden="true"></i></p>
                     </div>
                     <div class="result-content" ng-class="{'active': isCollapsed}">
-                        <h6>{{list.content.levert}}</h6>
-                        <p ng-hide="isCollapsed" ng-bind-html="vm.linkify(vm.shortDescription(list.content.korteOmschrijving))"></p>
-                        <p ng-show="isCollapsed" ng-bind-html="vm.linkify(list.content.korteOmschrijving)"></p>
+                        <h6>{{listFiltered.content.levert}}</h6>
+                        <p ng-hide="isCollapsed" ng-bind-html="vm.linkify(vm.shortDescription(listFiltered.content.korteOmschrijving))"></p>
+                        <p ng-show="isCollapsed" ng-bind-html="vm.linkify(listFiltered.content.korteOmschrijving)"></p>
                     </div>
                     <div class="result-footer" ng-style="{color: vm.colors[$index % vm.colors.length]}" ng-show="isCollapsed">
-                        <p class="semibold">HULP NODIG BIJ AANVRAGEN?</p>
-                        <p ng-bind-html="vm.linkify(list.content.calltoAction)"></p>
+                        <div class="call-to-action">
+                            <p class="semibold">IK WIL DIT</p>
+                            <p ng-bind-html="vm.linkify(listFiltered.content.calltoAction)"></p>
+                        </div>
+                        <div class="help-item">
+                            Hulp nodig via whatsapp of telefoon?<br>
+                            <a ng-click="$event.stopPropagation()" href="tel: +310628380433"><strong>06-28380433</strong></a>
+                        </div>
                     </div>
                 </div>
             </li>
         </ul>
-        <div class="cards no-result">
-            <div class="result-container" ng-if="!vm.listAfterFilter[0]">
+        <div class="cards no-result" ng-if="!vm.listAfterFilter[0]">
+            <div class="result-container">
                 <div class="result-heading padding-10">
                     <h6 class="semibold"><strong>Geen resultaat gevonden!</strong></h6>
                 </div>
@@ -49,7 +74,12 @@
     </div>
     <footer class="padding-10">
         <div class="footer">
-            <p>&copy; Copyright <a href="http://www.stichtingsina.nl/" target="_blank">Stichting Sina</a> | Development <a href="http://www.hackyourfuture.net/#/" target="_blank">HackYourFuture</a></p>
+            <div class="col-md-6 col-sm-12">
+                <p>&copy; Copyright <a href="http://www.stichtingsina.nl/" target="_blank">Stichting Sina</a> | Design <a href="http://www.roxanneallard.nl/" target="_blank">Roxanne Allard</a> | Development <a href="http://www.hackyourfuture.net/#/" target="_blank">HackYourFuture</a></p>        
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <span class="help-footer"><i class="fa fa-whatsapp" aria-hidden="true"></i> Hulp nodig via whatsapp of telefoon?&nbsp;<a href="tel: +310628380433"><strong>0628380433</strong></a></span>
+            </div>
         </div>
     </footer>
 </div>

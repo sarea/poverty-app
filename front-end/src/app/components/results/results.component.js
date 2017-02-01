@@ -10,6 +10,7 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 	vm.$state = $state;
 	vm.$onInit = init;
 	vm.parseFilterUrl = parseFilterUrl;
+	vm.resultByCategories = resultByCategories;
 	vm.shortDescription = shortDescription;
 	vm.linkify = linkify;
 	vm.stateTo = stateTo;
@@ -17,8 +18,10 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 	vm.noResult = noResult;
 
 	vm.filters = vm.$state.params.filter;
-	vm.list = DataModels.dataResult;	
+	vm.list = DataModels.dataResult;
+	vm.switch = true;	
 	vm.listAfterFilter = [];
+	vm.categories = [];
 	vm.colors = [
 		'#e6007e',
 		'#0fa4cc',
@@ -46,6 +49,32 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 			fitlerResult.push(filters[i]);
 		}
 		return fitlerResult;
+	}
+
+	function categoriesList() {
+		vm.categories.push(vm.listAfterFilter[0].content.categorieen);
+		for (var i = 1; i < vm.listAfterFilter.length; i++){
+			if(!vm.categories.includes(vm.listAfterFilter[i].content.categorieen)){
+				vm.categories.push(vm.listAfterFilter[i].content.categorieen);
+			}
+		}
+	}
+
+	function resultByCategories(category) {
+		var keys = parseFilterUrl(0);
+		vm.listAfterFilter = [];
+		if(category === 'all'){
+			getResultList();
+		}else {
+			for(var i = 0; i < vm.list.length; i++){
+				if(	(vm.list[i].gezinssamens.includes(keys[0]) || vm.list[i].gezinssamens[0] === '*') &&
+					(keys[1] === vm.list[i].stadsdeel || vm.list[i].stadsdeel === '*') && 
+					(keys[2] === vm.list[i].leedtijd || vm.list[i].leedtijd === '*') &&
+					(vm.list[i].categorieen === category)){
+					vm.listAfterFilter.push({"sizeX":1,"sizeY":10,'content':vm.list[i]})
+				}
+			}
+		}
 	}
 
 	function shortDescription(korteOmschrijving) {
@@ -107,6 +136,7 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 	function init() {
 		calcWidth();
 		getResultList();
+		categoriesList();
 	}
 
 	angular.element($window).bind('resize', function () {
