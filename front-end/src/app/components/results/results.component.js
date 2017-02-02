@@ -21,6 +21,7 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 	vm.list = DataModels.dataResult;
 	vm.switch = true;	
 	vm.listAfterFilter = [];
+	vm.categoryClickedList = [];
 	vm.categories = [];
 	vm.colors = [
 		'#e6007e',
@@ -66,11 +67,19 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 		if(category === 'all'){
 			getResultList();
 		}else {
+			if(vm.categoryClickedList.includes(category)){
+				 vm.categoryClickedList.splice(vm.categoryClickedList.indexOf(category), 1);
+				 if(vm.categoryClickedList.length === 0){
+				 	getResultList();
+				 }
+			}else {
+				vm.categoryClickedList.push(category);
+			}
 			for(var i = 0; i < vm.list.length; i++){
 				if(	(vm.list[i].gezinssamens.includes(keys[0]) || vm.list[i].gezinssamens[0] === '*') &&
 					(keys[1] === vm.list[i].stadsdeel || vm.list[i].stadsdeel === '*') && 
 					(keys[2] === vm.list[i].leedtijd || vm.list[i].leedtijd === '*') &&
-					(vm.list[i].categorieen === category)){
+					(vm.categoryClickedList.includes(vm.list[i].categorieen)) ){
 					vm.listAfterFilter.push({"sizeX":1,"sizeY":10,'content':vm.list[i]})
 				}
 			}

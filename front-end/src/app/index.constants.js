@@ -2,7 +2,7 @@ export const DataModels = {
   "dataResult" : [
     {
       "naam" : "Kinderactiviteiten Dynamo",
-      "gezinssamens" : ["AK, SPK"],
+      "gezinssamens" : ["AK", "SPK"],
       "stadsdeel" : "OO",
       "leedtijd" : "*",
       "calltoAction" : "Aanmelden via: 020 46 28 480",
@@ -72,7 +72,7 @@ export const DataModels = {
     },
     {
       "naam" : "Balletles\nvdEnde",
-      "gezinssamens" : ["AK, SPK"],
+      "gezinssamens" : ["AK","SPK"],
       "stadsdeel" : "OO",
       "leedtijd" : "*",
       "calltoAction" : "Hoekhuis\nFizeaustraat 3 1097 SC Amsterdam 0204623353",

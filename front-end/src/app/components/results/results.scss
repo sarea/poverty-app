@@ -47,6 +47,42 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 45px;
+  .filters-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:15px;
+    .filter-button {
+      text-align: center;
+      background-color:#ff9c01;
+      color:#fff;
+      padding:10px;
+      margin: 10px 0px;
+      border-radius: 7px;
+      transition: all 1s;
+      cursor:pointer;
+      height:45px;
+      -webkit-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
+      -moz-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
+      box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
+      .title-category {
+        margin: auto;
+        padding: 2px;
+        float: right;
+        font-weight: 600;
+      }
+      .checkbox {
+        margin: auto;
+        padding: 2px;
+        float: left;
+      }
+      &:hover {
+        background-color:#fff;
+        color:#ff9c01;
+      }
+    }
+  }
   .cards {
     //display: flex;
     //width: 100%;
@@ -195,6 +231,10 @@ div,p,i,button {
   .background-results {
     height: 100%;
     padding-top: 40px;
+  }
+  .title-category {
+    font-size: 1em;
+    font-weight: 400 !important;
   }
   .result-content {
    height: 100% !important;
