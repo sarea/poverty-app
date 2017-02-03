@@ -53,10 +53,12 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 	}
 
 	function categoriesList() {
-		vm.categories.push(vm.listAfterFilter[0].content.categorieen);
-		for (var i = 1; i < vm.listAfterFilter.length; i++){
-			if(!vm.categories.includes(vm.listAfterFilter[i].content.categorieen)){
-				vm.categories.push(vm.listAfterFilter[i].content.categorieen);
+		if(vm.listAfterFilter[0]) {
+			vm.categories.push(vm.listAfterFilter[0].content.categorieen);
+			for (var i = 1; i < vm.listAfterFilter.length; i++){
+				if(!vm.categories.includes(vm.listAfterFilter[i].content.categorieen)){
+					vm.categories.push(vm.listAfterFilter[i].content.categorieen);
+				}
 			}
 		}
 	}
@@ -68,10 +70,10 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 			getResultList();
 		}else {
 			if(vm.categoryClickedList.includes(category)){
-				 vm.categoryClickedList.splice(vm.categoryClickedList.indexOf(category), 1);
-				 if(vm.categoryClickedList.length === 0){
-				 	getResultList();
-				 }
+				vm.categoryClickedList.splice(vm.categoryClickedList.indexOf(category), 1);
+				if(vm.categoryClickedList.length === 0){
+					getResultList();
+				}
 			}else {
 				vm.categoryClickedList.push(category);
 			}

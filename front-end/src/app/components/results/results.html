@@ -1,37 +1,23 @@
 <poverty-navbar status="Uw regelingen" state-to="{{vm.stateTo()}}" ng-click="isCollapsedFilter = !isCollapsedFilter"></poverty-navbar>
-<div id="hide" class="result-controls">
-    <div class="col-md-12">
-        <div class="col-md-3">
-            <a ui-sref="filters">
-                <button class="button-back">
-                    <p class="no-margin semibold navbar-font"><i class="fa fa-chevron-left" aria-hidden="true"></i> Antwoorden aanpassen</p>
-                </button>
-            </a>
-        </div>
-<!--         <div class="col-md-1">
-            <button class="button-back" ng-click="isCollapsedFilter = !isCollapsedFilter">
-                <p class="no-margin semibold navbar-font"><i class="fa fa-chevron-left" ng-class="{'fa-chevron-down': isCollapsedFilter}" aria-hidden="true"></i> Filter</p>
-            </button>
-        </div>
-        <div class="col-md-3" ng-repeat="filter in vm.parseFilterUrl(1) track by $index">
-            <div class="filter-resultpage">
-                <p class="no-margin">{{filter}}</p>
+<div id="hide" class="filter-controls">
+    <div class="filters-content">
+        <div class="col-md-2" ng-model="checkbox" ng-repeat="catigory in vm.categories track by $index">
+            <div class="filter-button" ng-click="vm.resultByCategories(vm.categories[$index]); checkbox = !checkbox">
+                <i ng-if="!checkbox" class="fa fa-square-o" aria-hidden="true"></i><i ng-if="checkbox" class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;{{catigory}}
             </div>
-        </div> -->
+        </div>
     </div>
 </div>
-<div class="background-results"> 
+<div class="background-results">
     <div uib-collapse="isCollapsedFilter">
-        <div class="well well-lg filters-content">
-            <div class="col-md-2 col-xs-6">
-                <div class="filter-button" ng-click="vm.resultByCategories('all');">
-                    <p class="no-margin semibold">All</p>
-                </div>
+        <div class="filter-info">
+            <div class="col-md-3">
+                <a ui-sref="filters" class="button-back">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i> Antwoorden aanpassen
+                </a>
             </div>
-            <div class="col-md-2 col-xs-6" ng-model="checkbox" ng-repeat="catigory in vm.categories track by $index">
-                <div class="filter-button" ng-click="vm.resultByCategories(vm.categories[$index]); checkbox = !checkbox">
-                    <div class="col-xs-2 checkbox"><i ng-if="!checkbox" class="fa fa-square-o" aria-hidden="true"></i><i ng-if="checkbox" class="fa fa-check-square" aria-hidden="true"></i></div>
-                    <div class="col-xs-10 title-category">{{catigory}}</div>
+            <div class="col-md-9">
+                <div class="filter-resultpage" ng-if="vm.listAfterFilter[0]">U heeft ingevuld:<span class="no-margin" ng-repeat="filter in vm.parseFilterUrl(1) track by $index"> {{filter}}, </span>
                 </div>
             </div>
         </div>
