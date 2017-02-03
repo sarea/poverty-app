@@ -10,13 +10,19 @@
 	-webkit-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
   	-moz-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
   	box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
+  	.navbar-button-back {
+		padding: 0 0 0 10px;
+		width: 25%;
+	}
+	.status {
+		padding: 0;
+		text-align: center;
+		width: 50%;
+	}
+	.navbar-filter{
+		text-align: right;
+		padding: 0 10px 0 0;
+		width: 25%;
+	}
 }
-.navbar-button-back {
-	padding: 0 0 0 10px;
-	width: 25%;
-}
-.status {
-	padding: 0;
-	text-align: center;
-	width: 50%;
-}
+

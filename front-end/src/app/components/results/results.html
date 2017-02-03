@@ -1,24 +1,32 @@
-<poverty-navbar status="Uw regelingen" state-to="{{vm.stateTo()}}" ng-click="isCollapsedFilter = !isCollapsedFilter"></poverty-navbar>
-<div id="hide" class="filter-controls">
+<div id="show">
+    <div class="navbar-header center-content-both">
+        <div class="navbar-button-back" ng-click="vm.stateTo()">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i> Terug
+        </div>
+        <div class="status">Uw regelingen</div>
+        <div class="navbar-filter" ng-click="isCollapsedFilter = !isCollapsedFilter">
+            Filter <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </div>
+    </div>
+</div>
+<div class="filter-controls" uib-collapse="isCollapsedFilter">
     <div class="filters-content">
-        <div class="col-md-2" ng-model="checkbox" ng-repeat="catigory in vm.categories track by $index">
+        <div class="col-md-2 col-sm-3 col-xs-6" ng-model="checkbox" ng-repeat="catigory in vm.categories track by $index">
             <div class="filter-button" ng-click="vm.resultByCategories(vm.categories[$index]); checkbox = !checkbox">
-                <i ng-if="!checkbox" class="fa fa-square-o" aria-hidden="true"></i><i ng-if="checkbox" class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;{{catigory}}
+                <i ng-if="!checkbox" class="fa fa-square-o" aria-hidden="true"></i><i ng-if="checkbox" class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;<span>{{catigory}}</span>
             </div>
         </div>
     </div>
 </div>
 <div class="background-results">
-    <div uib-collapse="isCollapsedFilter">
-        <div class="filter-info">
-            <div class="col-md-3">
-                <a ui-sref="filters" class="button-back">
-                    <i class="fa fa-chevron-left" aria-hidden="true"></i> Antwoorden aanpassen
-                </a>
-            </div>
-            <div class="col-md-9">
-                <div class="filter-resultpage" ng-if="vm.listAfterFilter[0]">U heeft ingevuld:<span class="no-margin" ng-repeat="filter in vm.parseFilterUrl(1) track by $index"> {{filter}}, </span>
-                </div>
+    <div class="filter-info">
+        <div class="col-md-3">
+            <a ui-sref="filters" class="button-back">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i> Antwoorden aanpassen
+            </a>
+        </div>
+        <div class="col-md-9">
+            <div class="filter-resultpage" ng-if="vm.listAfterFilter[0]">U heeft ingevuld:<span class="no-margin" ng-repeat="filter in vm.parseFilterUrl(1) track by $index"> {{filter}}, </span>
             </div>
         </div>
     </div>

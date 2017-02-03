@@ -137,10 +137,15 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 	}
 
 	function stateTo() {
+		// if(vm.width < 440){
+		// 	return 'family';
+		// }else {
+		// 	return 'filters';
+		// }
 		if(vm.width < 440){
-			return 'family';
+			vm.$state.go('family');
 		}else {
-			return 'filters';
+			vm.$state.go('filters');
 		}
 	}
 
