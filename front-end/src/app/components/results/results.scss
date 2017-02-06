@@ -58,6 +58,7 @@
     margin-bottom:50px;
     .result-container {
       background-color: #fff;
+      opacity: 0.85;
       border-radius: 5px;
       padding:0px;
       position: relative;
@@ -268,4 +269,7 @@ div,p,i,button {
 }
 .active{
   height: 100% !important;
+}
+.transparency {
+  opacity: 1 !important;
 }

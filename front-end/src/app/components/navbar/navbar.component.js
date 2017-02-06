@@ -10,5 +10,5 @@ export var povertyNavbar = {
 
 function PovertyNavbar() {
 	'ngInject';
-	var vm = this;
+	//var vm = this;
 }

@@ -33,7 +33,7 @@
     <div class="cards" gridster="vm.gridsterOpts">
         <ul>
             <li gridster-item="listFiltered" class="padding-10" ng-repeat="listFiltered in vm.listAfterFilter">
-                <div class="col-md-12 result-container" ng-click="isCollapsed = !isCollapsed;vm.updateHieghtItem($index)">
+                <div class="col-md-12 result-container" ng-class="{'transparency': isCollapsed}" ng-click="isCollapsed = !isCollapsed;vm.updateHieghtItem($index)">
                     <div class="result-heading padding-1" ng-style="{background: vm.colors[$index % vm.colors.length]}">
                         <p class="semibold white">{{listFiltered.content.naam}}<i ng-show="isCollapsed" class="fa fa-times cancel-button" aria-hidden="true"></i></p>
                     </div>
