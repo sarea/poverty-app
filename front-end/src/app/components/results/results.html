@@ -26,7 +26,7 @@
             </a>
         </div>
         <div class="col-md-9">
-            <div class="filter-resultpage" ng-if="vm.listAfterFilter[0]">U heeft ingevuld:<span class="no-margin" ng-repeat="filter in vm.parseFilterUrl(1) track by $index"> {{filter}}, </span>
+            <div class="filter-resultpage check-element animate-show-hide" ng-hide="!vm.listAfterFilter[0]">U heeft ingevuld:<span class="no-margin" ng-repeat="filter in vm.parseFilterUrl(1) track by $index"> {{filter}}, </span>({{vm.listAfterFilter.length}}&nbsp;{{vm.lengthItem(vm.listAfterFilter.length)}}).
             </div>
         </div>
     </div>
@@ -38,8 +38,8 @@
                         <p class="semibold white">{{listFiltered.content.naam}}<i ng-show="isCollapsed" class="fa fa-times cancel-button" aria-hidden="true"></i></p>
                     </div>
                     <div class="result-content" ng-class="{'active': isCollapsed}">
-                        <h6>{{listFiltered.content.levert}}</h6>
-                        <p ng-hide="isCollapsed" ng-bind-html="vm.linkify(vm.shortDescription(listFiltered.content.korteOmschrijving))"></p>
+                        <h5>{{vm.checkName(listFiltered.content.levert)}}</h5>
+                       <!--  <p ng-hide="isCollapsed" ng-bind-html="vm.linkify(vm.shortDescription(listFiltered.content.korteOmschrijving))"></p> -->
                         <p ng-show="isCollapsed" ng-bind-html="vm.linkify(listFiltered.content.korteOmschrijving)"></p>
                     </div>
                     <div class="result-footer" ng-style="{color: vm.colors[$index % vm.colors.length]}" ng-show="isCollapsed">

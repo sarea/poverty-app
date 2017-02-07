@@ -11,7 +11,9 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 	vm.$onInit = init;
 	vm.parseFilterUrl = parseFilterUrl;
 	vm.resultByCategories = resultByCategories;
-	vm.shortDescription = shortDescription;
+	//vm.shortDescription = shortDescription;
+	vm.checkName = checkName;
+	vm.lengthItem  = lengthItem
 	vm.linkify = linkify;
 	vm.stateTo = stateTo;
 	vm.updateHieghtItem = updateHieghtItem;
@@ -38,7 +40,7 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 			if(	(vm.list[i].gezinssamens.includes(keys[0]) || vm.list[i].gezinssamens[0] === '*') &&
 				(keys[1] === vm.list[i].stadsdeel || vm.list[i].stadsdeel === '*') && 
 				(keys[2] === vm.list[i].leedtijd || vm.list[i].leedtijd === '*') ){
-				vm.listAfterFilter.push({"sizeX":1,"sizeY":10,'content':vm.list[i]})
+				vm.listAfterFilter.push({"sizeX":1,"sizeY":7,'content':vm.list[i]})
 			}
 		}
 	}
@@ -82,19 +84,31 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 					(keys[1] === vm.list[i].stadsdeel || vm.list[i].stadsdeel === '*') && 
 					(keys[2] === vm.list[i].leedtijd || vm.list[i].leedtijd === '*') &&
 					(vm.categoryClickedList.includes(vm.list[i].categorieen)) ){
-					vm.listAfterFilter.push({"sizeX":1,"sizeY":10,'content':vm.list[i]})
+					vm.listAfterFilter.push({"sizeX":1,"sizeY":7,'content':vm.list[i]})
 				}
 			}
 		}
 	}
 
-	function shortDescription(korteOmschrijving) {
-		if(korteOmschrijving.length == '')
-			return 'Geen beschrijving beschikbaar!!';
-		if(korteOmschrijving.length < 60)
-			return korteOmschrijving;
-		var desc = korteOmschrijving.slice(0, 60) + '...';
-		return desc;
+	// function shortDescription(korteOmschrijving) {
+	// 	if(korteOmschrijving.length == '')
+	// 		return 'Geen beschrijving beschikbaar!!';
+	// 	if(korteOmschrijving.length < 60)
+	// 		return korteOmschrijving;
+	// 	var desc = korteOmschrijving.slice(0, 60) + '...';
+	// 	return desc;
+	// }
+
+	function checkName(name) {
+		if(name.length == '')
+			return 'Onbekende naam';
+		return name;
+	}
+
+	function lengthItem(num) {
+		if(num > 1)
+			return 'Items';
+		return 'Item';
 	}
 
 	function linkify(text) {
@@ -105,14 +119,14 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 	}
 
 	function updateHieghtItem(index) {
-		if(vm.listAfterFilter[index].sizeY === 10){
+		if(vm.listAfterFilter[index].sizeY === 7){
 			$timeout(function() {
 				var newHeight = $document[0].getElementsByClassName("result-container")[index].offsetHeight;
 				vm.listAfterFilter[index].sizeY = Math.ceil(newHeight/20) + 1;
 			}, 50);
 
 		}else {
-			vm.listAfterFilter[index].sizeY = 10;
+			vm.listAfterFilter[index].sizeY = 7;
 		}		
 	}
 
@@ -137,11 +151,6 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 	}
 
 	function stateTo() {
-		// if(vm.width < 440){
-		// 	return 'family';
-		// }else {
-		// 	return 'filters';
-		// }
 		if(vm.width < 440){
 			vm.$state.go('family');
 		}else {
