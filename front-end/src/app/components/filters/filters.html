@@ -3,11 +3,11 @@
 	<div class="col-md-12">
 		<!-- Question family -->
 		<div class="col-md-4 padding-10">
-			<div class="col-md-12 filter-container">
+			<div class="col-md-12 filter-container family-height">
 				<div class="filter-header">
 					<h6 class="light">Wat is je <span class="semibold">gezinssamenstelling?</span></h6>
 				</div>
-				<div class="filter-content content-family">
+				<div class="filter-content">
 					<button id="button-family-single" class="button-family" ng-model="vm.family" uib-btn-radio="['A','Alleenstaand']"><h6>Alleenstaand</h6></button>
 					<button id="button-family-singlekids" class="button-family" ng-model="vm.family" uib-btn-radio="['AK', 'Alleenstaand met kinderen']"><h6>Alleenstaand<br>met kinderen</h6></button>
 					<button id="button-family-livingwithpartner" class="button-family" ng-model="vm.family" uib-btn-radio="['SP', 'Samenwonend met partner']"><h6>Samenwonend<br>met partner</h6></button>
@@ -17,16 +17,14 @@
 		</div>
 		<!-- Question boroughs -->
 		<div class="col-md-4 padding-10">
-			<div class="col-md-12 filter-container">
+			<div class="col-md-12 filter-container boroughs-height">
 				<div class="filter-header">
 					<h6 class="light">In welk <span class="semibold">stadsdeel</span> woon je?</h6>
 				</div>
 				<div class="col-md-12" style="width:100%;">
-				<!-- <angular-maphilight id="MapTitle" angular-maphilight-config="vm.mapHilightConfig"> -->
 					<img class="margin-top-20" id="img_ID" src="../img/map-boroughs.svg" usemap="#map" border="0" width="100%" alt="" >
-				<!-- </angular-maphilight> -->
 				</div>
-				<div class="filter-content col-md-12 content-borough">
+				<div class="filter-content col-md-12">
 					<div class="col-md-6 col-xs-6 borough">
 						<button id="button-borough-centrum" class="button-borough" ng-model="vm.borough" uib-btn-radio="['CE', 'Centrum']"><h6>Centrum</h6></button>
 						<button id="button-borough-nieuw-west" class="button-borough" ng-model="vm.borough" uib-btn-radio="['NW', 'Nieuw-West']"><h6>Nieuw-West</h6></button>
@@ -44,11 +42,11 @@
 		</div>
 		<!-- Question age -->
 		<div class="col-md-4 padding-10">
-			<div class="col-md-12 filter-container">
+			<div class="col-md-12 filter-container age-height">
 				<div class="filter-header">
 					<h6 class="light">Wat is je <span class="semibold">leeftijd?</span></h6>
 				</div>
-				<div class="filter-content content-age">
+				<div class="filter-content">
 					<button id="button-age-underaged" class="button-age"  ng-model="vm.age" uib-btn-radio="['1', 'Jonger dan 18 jaar oud']">
 					<div class="age-icon bold"><h6 class="bold"><i class="bold fa fa-angle-left" aria-hidden="true"></i>18</h6></div>
 					<div class="age-age"><h6>Jonger dan 18 jaar oud</h6></div>

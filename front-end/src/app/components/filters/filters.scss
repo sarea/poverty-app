@@ -127,15 +127,15 @@
 	color:#fff;
 }
 
-.content-family {
-	height: 535px;
+.family-height,
+.boroughs-height {
+	height:600px;
 }
-.content-age {
-	height: 350px;
+
+.age-height {
+	height:415px;
 }
-.content-borough {
-	height: 220px;
-}
+
 .margin-send-filter {
 	margin-top: 105px;
 }
@@ -143,8 +143,6 @@
 map {
 	>area:focus, area:active{
 		outline-color: #ff9c01;
-		//outline-width: 5px !important;
-		//background-color: #ff9c01 !important;
 	}
 	.checked {
 		border:none;
@@ -177,8 +175,10 @@ map {
 			padding-bottom: 5px;
 		}
 	}
-	.content-family, .content-age, .content-borough {
-		height: 100%;
+	.age-height,
+	.family-height,
+	.boroughs-height {
+		height:100%;
 	}
 	.margin-top-125 {
 		margin-top: 60px;

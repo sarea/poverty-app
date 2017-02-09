@@ -26,7 +26,7 @@
             </a>
         </div>
         <div class="col-md-9">
-            <div class="filter-resultpage check-element animate-show-hide" ng-hide="!vm.listAfterFilter[0]">U heeft ingevuld:<span class="no-margin" ng-repeat="filter in vm.parseFilterUrl(1) track by $index"> {{filter}}, </span>({{vm.listAfterFilter.length}}&nbsp;{{vm.lengthItem(vm.listAfterFilter.length)}}).
+            <div class="filter-resultpage" ng-hide="!vm.listAfterFilter[0]">U heeft ingevuld:<span class="no-margin" ng-repeat="filter in vm.parseFilterUrl(1) track by $index"> {{filter}}, </span>({{vm.listAfterFilter.length}}&nbsp;{{vm.lengthItem(vm.listAfterFilter.length)}}).
             </div>
         </div>
     </div>
@@ -35,11 +35,11 @@
             <li gridster-item="listFiltered" class="padding-10" ng-repeat="listFiltered in vm.listAfterFilter">
                 <div class="col-md-12 result-container" ng-style="isCollapsed && {'opacity':'1'} || {'opacity': '0.85'}" ng-click="isCollapsed = !isCollapsed;vm.updateHieghtItem($index)">
                     <div class="result-heading padding-1" ng-style="{background: vm.colors[$index % vm.colors.length]}">
-                        <p class="semibold white">{{listFiltered.content.naam}}<i ng-show="isCollapsed" class="fa fa-times cancel-button" aria-hidden="true"></i></p>
+                        <p class="semibold white">{{vm.checkNameLength(listFiltered.content.naam)}}<i ng-show="isCollapsed" class="fa fa-times cancel-button" aria-hidden="true"></i></p>
                     </div>
                     <div class="result-content" ng-class="{'active': isCollapsed}">
-                        <h5>{{vm.checkName(listFiltered.content.levert)}}</h5>
-                       <!--  <p ng-hide="isCollapsed" ng-bind-html="vm.linkify(vm.shortDescription(listFiltered.content.korteOmschrijving))"></p> -->
+                        <h5 ng-hide="isCollapsed">{{vm.checkSubtitleLength(listFiltered.content.levert)}}</h5>
+                        <h5 ng-show="isCollapsed">{{listFiltered.content.levert}}</h5>
                         <p ng-show="isCollapsed" ng-bind-html="vm.linkify(listFiltered.content.korteOmschrijving)"></p>
                     </div>
                     <div class="result-footer" ng-style="{color: vm.colors[$index % vm.colors.length]}" ng-show="isCollapsed">

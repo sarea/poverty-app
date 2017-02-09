@@ -11,8 +11,8 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 	vm.$onInit = init;
 	vm.parseFilterUrl = parseFilterUrl;
 	vm.resultByCategories = resultByCategories;
-	//vm.shortDescription = shortDescription;
-	vm.checkName = checkName;
+	vm.checkSubtitleLength = checkSubtitleLength;
+	vm.checkNameLength = checkNameLength;
 	vm.lengthItem  = lengthItem
 	vm.linkify = linkify;
 	vm.stateTo = stateTo;
@@ -90,19 +90,23 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 		}
 	}
 
-	// function shortDescription(korteOmschrijving) {
-	// 	if(korteOmschrijving.length == '')
-	// 		return 'Geen beschrijving beschikbaar!!';
-	// 	if(korteOmschrijving.length < 60)
-	// 		return korteOmschrijving;
-	// 	var desc = korteOmschrijving.slice(0, 60) + '...';
-	// 	return desc;
-	// }
+	function checkSubtitleLength(value) {
+		if(value.length == '')
+			return 'Onbekende levert';
+		if(value.length < 45)
+			return value;
+		var shortValue = value.slice(0, 45) + '...';
+		return shortValue;
+	}
 
-	function checkName(name) {
-		if(name.length == '')
+	function checkNameLength(value) {
+		if(value.length == '')
 			return 'Onbekende naam';
-		return name;
+		if(vm.width > 1024 && vm.width < 1300 && value.length > 30){
+			var shortValue = value.slice(0, 30) + '...';
+			return shortValue;
+		}
+		return value;
 	}
 
 	function lengthItem(num) {
@@ -164,7 +168,7 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 		categoriesList();
 	}
 
-	angular.element($window).bind('resize', function () {
+	angular.element($window).bind('resize', checkNameLength, function () {
 		calcWidth();
 	});
 
