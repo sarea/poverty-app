@@ -129,11 +129,15 @@
 
 .family-height,
 .boroughs-height {
-	height:600px;
+	min-height:600px;
+	//max-height:900px;
+	max-width: 600px;
 }
 
 .age-height {
-	height:415px;
+	min-height:415px;
+	//max-height:900px;
+	max-width: 600px;
 }
 
 .margin-send-filter {
@@ -181,7 +185,7 @@ map {
 		height:100%;
 	}
 	.margin-top-125 {
-		margin-top: 60px;
+		margin-top: 75px;
 	}
 }
 
