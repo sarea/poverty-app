@@ -1,149 +1,154 @@
-
 .background-questions {
 	background-image: url(../img/background-gradient.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	height: 100vh;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.filter-container {
-	overflow: hidden;
-	border-radius: 5px;
-	background-color: #fff;
-	padding:0;
-	-webkit-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
-	-moz-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
-	box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
-}
-
-.filter-header {
-	background-color: #ff9c01;
-	border-radius: 5px 5px 0 0;
-	color:#fff;
-	margin:0;
-	padding: 5px 0 5px 25px;
-}
-
-.filter-content {
-	width:100%;
-	height:100%;
-	padding:20px;
-}
-
-.button-family {
-	background-color: #fff;
-	border: 2px solid #fff;
-	width: 100%;
-	text-align: left;
-	margin-bottom:35px; //35px
-	padding-left: 20%;
-	transition: all 1s;
-	> h6 {
-		margin-left: 15px;
-	}
-	&:first-child {
-    	margin-top: 20px;
-	}
-	&:hover {
-		border: 2px solid #ff9c01;
-		color:#ff9c01;
-	}
-	&:focus {
-		background-color: #ff9c01;
-		border: 2px solid #ff9c01;
-		outline: 0;
-		color:#fff;
-	}
-}
-
-.button-borough {
-	background-color: #fff;
-	border: 2px solid #fff;
-	width: 100%;
-	text-align: left;
-	margin: 2px 0;  //5px 0;
-	padding: 0 0 0 15px;
-	transition: all 1s;
-	> h6 {
-		margin: 5px 0;
-	}
-	&:hover {
-		border: 2px solid #ff9c01;
-		color:#ff9c01;
-	}
-	&:focus {
-		background-color: #ff9c01;
-		border: 2px solid #ff9c01;
-		outline: 0;
-		color:#fff;
-	}
-}
-
-.button-age {
-	background-color: #fff;
-	border: 2px solid #fff;
-	width: 100%;
-	text-align: left;
-	margin-bottom: 35px;
-	padding: 0 0 0 15px;
-	transition: all 1s;
-	&:first-child {
-    	margin-top: 20px;
-	}
-	&:hover {
-		border: 2px solid #ff9c01;
-		color:#ff9c01;
-	}
-	&:focus {
-		background-color: #ff9c01;
-		border: 2px solid #ff9c01;
-		outline: 0;
-		color:#fff;
-	}
-}
-
-.age-icon {
-	//color :#ff9c01;
-	width:22%;
-	float: left;
-}
-
-.age-age {
-	width:75%;
-	float: left;
-}
-
-.padding-to-navbar {
 	padding-top: 0px;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	.family-container,
+	.boroughs-container {
+		min-height:600px;
+		max-width: 410px;
+	}
+	.age-container {
+		min-height:415px;
+		max-width: 410px;
+	}
+	.filter-container {
+		overflow: hidden;
+		border-radius: 5px;
+		background-color: #fff;
+		padding:0;
+		-webkit-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
+		-moz-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
+		box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
+		.filter-header {
+			background-color: #ff9c01;
+			border-radius: 5px 5px 0 0;
+			color:#fff;
+			margin:0;
+			padding: 5px 0 5px 25px;
+		}
+		.filter-content {
+			width:100%;
+			height:100%;
+			padding:20px;
+			.button-filter {
+				background-color: #fff;
+				border: 2px solid #fff;
+				width: 100%;
+				text-align: left;
+				transition: all 1s;
+				&:hover {
+					border: 2px solid #ff9c01;
+					color:#ff9c01;
+				}
+				&:focus {
+					background-color: #ff9c01;
+					border: 2px solid #ff9c01;
+					outline: 0;
+					color:#fff;
+				}
+			}
+			.button-family {
+				margin-bottom:35px;
+				padding-left: 20%;
+				background-repeat: no-repeat;
+				background-position: 5% 50%;
+				> h6 {
+					margin-left: 15px;
+				}
+				&:first-child {
+			    	margin-top: 20px;
+				}
+			}
+			.button-borough {
+				margin: 2px 0;
+				padding: 0 0 0 15px;
+				> h6 {
+					margin: 5px 0;
+				}
+			}
+			.button-age {
+				margin-bottom: 35px;
+				padding: 0 0 0 15px;
+				.age-icon {
+					width:22%;
+					float: left;
+				}
+				.age-age {
+					width:75%;
+					float: left;
+				}
+				&:first-child {
+			    	margin-top: 20px;
+				}
+			}
+			.button-family-single {
+				background-image: url('../img/button-single-inactive.svg');
+				background-size: 25px;
+				&:focus {
+					background-image: url('../img/button-single-active.svg');
+				}
+			}
+			.button-family-singlekids {
+				background-image: url('../img/button-singlekids-inactive.svg');
+				background-size: 30px;
+				&:focus {
+					background-image: url('../img/button-singlekids-active.svg');
+				}
+			}
+			.button-family-livingwithpartner {
+				background-image: url('../img/button-livingwithpartner-inactive.svg');
+				background-size: 38px;
+				&:focus {
+					background-image: url('../img/button-livingwithpartner-active.svg');
+				}
+			}
+			.button-family-livingwithpartnerandkids {
+				background-image: url('../img/livingwithpartnerandkids-inactive.svg');
+				background-size: 38px;
+				&:focus {
+					background-image: url('../img/livingwithpartnerandkids-active.svg');
+				}
+			}
+			.checked {
+				background-color: #ff9c01;
+				border: 2px solid #ff9c01;
+				outline: 0;
+				color:#fff;
+				&:hover {
+					color: #fff;
+				}
+			}
+		}
+	}
+	.confirm-button {
+		font-family: 'Open Sans', sans-serif;
+		font-size:20px;
+		font-weight: 600;
+		text-align: center;
+		background-color:#ff9c01;
+		color:#fff;
+		padding:15px;
+		margin-top: 125px;
+		border-radius: 10px;
+		transition: all 1s;
+		cursor:pointer;
+		height:60px;
+		width:100%;
+		max-width: 410px;
+		-webkit-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
+		-moz-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
+		box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.53);
+		&:hover {
+			background-color:#fff;
+			color:#ff9c01;
+		}
+	}
 }
-
-.checked {
-	background-color: #ff9c01;
-	border: 2px solid #ff9c01;
-	outline: 0;
-	color:#fff;
-}
-
-.family-height,
-.boroughs-height {
-	min-height:600px;
-	//max-height:900px;
-	max-width: 600px;
-}
-
-.age-height {
-	min-height:415px;
-	//max-height:900px;
-	max-width: 600px;
-}
-
-.margin-send-filter {
-	margin-top: 105px;
-}
-
 map {
 	>area:focus, area:active{
 		outline-color: #ff9c01;
@@ -153,149 +158,85 @@ map {
 	}
 }
 
-
-//for ipads
-@media (max-width: 768px) {
+@media (max-width: 1124px) {
 	.background-questions {
-		height: 100%;
-	}
-	.button-borough {
-		margin: 5px 0;  //5px 0;
-		> h6 {
-			margin: 15px 0;
-			padding-bottom: 5px;
+		.family-container,
+		.boroughs-container,
+		.age-container {
+			height:100%;
+		}
+		.filter-container {
+			.filter-content {
+				.button-borough {
+					padding: 0 5px;
+					margin: 10px 0;
+					> h6 {
+						margin: 0px 0;
+						padding-bottom: 5px;
+					}
+				}
+			}
 		}
 	}
-	.content-family, .content-age, .content-borough {
-		height: 100%;
-	}
 }
-@media (max-width: 1024px) {
-	.button-borough {
-		padding: 0 5px;
-		margin: 5px 0;
-		> h6 {
-			margin: 5px 0;
-			padding-bottom: 5px;
+@media (max-width: 1054px) {
+	.background-questions {
+		.confirm-button {
+			margin-top: 75px;
 		}
 	}
-	.age-height,
-	.family-height,
-	.boroughs-height {
-		height:100%;
-	}
-	.margin-top-125 {
-		margin-top: 75px;
-	}
 }
-
-//for mobiles
 @media (max-width: 414px) {
 	.background-questions {
 		height: 100vh;
-	}
-	.button-family {
-		margin-bottom: 10px;
-		> h6 {
-			margin-left: 5px;
-		}
-		&:first-child {
-	    	margin-top: 0px;
-		}
-	}
-	.button-borough {
-		padding: 0;
-		margin: 5px 0;
-		> h6 {
-			margin: 5px 0;
-			padding-bottom: 5px;
-		}
-	}
-	.button-age {
-		margin-bottom:25px;
-		padding: 0 0 0 10px;
-		&:first-child {
-	    	margin-top: 0px;
-		}
-	}
-	.filter-content {
-		padding: 10px;
-	}
-	.borough {
-		padding-left:5px;
-		padding-right:5px;
-	}
-	.padding-to-navbar{
 		padding-top: 75px;
+		.family-container,
+		.boroughs-container,
+		.age-container {
+			min-height:100%;
+		}
+		.filter-container {
+			.filter-content {
+				padding: 10px;
+				.borough {
+					padding-left:5px;
+					padding-right:5px;
+				}
+				.button-family {
+					margin-bottom: 10px;
+					> h6 {
+						margin-left: 5px;
+					}
+					&:first-child {
+						margin-top: 0px;
+					}
+				}
+				.button-borough {
+					padding: 0;
+					margin: 5px 0;
+					> h6 {
+						margin: 5px 0;
+						padding-bottom: 5px;
+					}
+				}
+				.button-age {
+					margin-bottom:25px;
+					padding: 0 0 0 10px;
+					&:first-child {
+						margin-top: 0px;
+					}
+				}
+			}
+		}
 	}
 }
-
 @media (max-width: 320px) {
-	.padding-to-navbar{
+	.background-questions {
 		padding-top: 55px;
+		.filter-container {
+			.filter-content {
+				padding:5px;
+			}
+		}
 	}
-	.filter-content {
-		padding:5px;
-	}
-}
-
-
-#button-family-single {
-	background-image: url('../img/button-single-inactive.svg');
-	background-repeat: no-repeat;
-	background-position: 5% 50%;
-	background-size: 25px;
-}
-
-#button-family-single:focus {
-	background-image: url('../img/button-single-active.svg');
-	background-color: #ff9c01;
-	border: 2px solid #ff9c01;
-	outline: 0;
-	color:#fff;
-}
-
-#button-family-singlekids {
-	background-image: url('../img/button-singlekids-inactive.svg');
-	background-repeat: no-repeat;
-	background-position: 5% 50%;
-	background-size: 30px;
-}
-
-#button-family-singlekids:focus {
-	background-image: url('../img/button-singlekids-active.svg');
-	background-color: #ff9c01;
-	border: 2px solid #ff9c01;
-	outline: 0;
-	color:#fff;
-}
-
-#button-family-livingwithpartner {
-	background-image: url('../img/button-livingwithpartner-inactive.svg');
-	background-repeat: no-repeat;
-	background-position: 5% 50%;
-	background-size: 38px;
-}
-
-#button-family-livingwithpartner:focus {
-	background-image: url('../img/button-livingwithpartner-active.svg');
-	background-color: #ff9c01;
-	border: 2px solid #ff9c01;
-	outline: 0;
-	color:#fff;
-}
-
-#button-family-livingwithpartnerandkids {
-	background-image: url('../img/livingwithpartnerandkids-inactive.svg');
-	background-repeat: no-repeat;
-	background-position: 5% 50%;
-	background-size: 38px;
-}
-
-#button-family-livingwithpartnerandkids:focus {
-	background-image: url('../img/livingwithpartnerandkids-active.svg');
-	background-color: #ff9c01;
-	border: 2px solid #ff9c01;
-	outline: 0;
-	color:#fff;
 }

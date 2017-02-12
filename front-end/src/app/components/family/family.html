@@ -1,16 +1,17 @@
 <poverty-navbar status="Vraag 1 van 3" state-to="welcome"></poverty-navbar>
 <div class="background-questions">
 	<div class="col-md-12">
-		<div class="col-md-4 padding-to-navbar">
-			<div class="col-md-12 filter-container">
+		<!-- Question family -->
+		<div class="col-md-4 padding-10">
+			<div class="col-md-12 filter-container family-container">
 				<div class="filter-header">
 					<h6 class="light">Wat is je <span class="semibold">gezinssamenstelling?</span></h6>
 				</div>
 				<div class="filter-content">
-					<button id="button-family-single" class="button-family" ng-model="vm.family" uib-btn-radio="['A','Alleenstaand']" ng-click="vm.sendFilterInfo()"><h6>Alleenstaand</h6></button>
-					<button id="button-family-singlekids" class="button-family" ng-model="vm.family" uib-btn-radio="['AK', 'Alleenstaand met kinderen']" ng-click="vm.sendFilterInfo()"><h6>Alleenstaand<br>met kinderen</h6></button>
-					<button id="button-family-livingwithpartner" class="button-family" ng-model="vm.family" uib-btn-radio="['SP', 'Samenwonend met partner']" ng-click="vm.sendFilterInfo()"><h6>Samenwonend<br>met partner</h6></button>
-					<button id="button-family-livingwithpartnerandkids" class="button-family" ng-model="vm.family" uib-btn-radio="['SPK', 'Samenwonend met partner en kinderen']" ng-click="vm.sendFilterInfo()"><h6>Samenwonend <br>met partner en kinderen</h6></button>
+					<button class="button-filter button-family button-family-single" ng-model="vm.family" uib-btn-radio="['A','Alleenstaand']" ng-click="vm.sendFilterInfo()"><h6>Alleenstaand</h6></button>
+					<button class="button-filter button-family button-family-singlekids" ng-model="vm.family" uib-btn-radio="['AK', 'Alleenstaand met kinderen']" ng-click="vm.sendFilterInfo()"><h6>Alleenstaand<br>met kinderen</h6></button>
+					<button class="button-filter button-family button-family-livingwithpartner" ng-model="vm.family" uib-btn-radio="['SP', 'Samenwonend met partner']" ng-click="vm.sendFilterInfo()"><h6>Samenwonend<br>met partner</h6></button>
+					<button class="button-filter button-family button-family-livingwithpartnerandkids" ng-model="vm.family" uib-btn-radio="['SPK', 'Samenwonend met partner en kinderen']" ng-click="vm.sendFilterInfo()"><h6>Samenwonend<br>met partner en kinderen</h6></button>
 				</div>
 			</div>
 		</div>

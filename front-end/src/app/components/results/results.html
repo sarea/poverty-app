@@ -5,7 +5,7 @@
         </div>
         <div class="status">Uw regelingen</div>
         <div class="navbar-filter" ng-click="isCollapsedFilter = !isCollapsedFilter">
-            Filter <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            Filter <i ng-if="isCollapsedFilter" class="fa fa-chevron-up" aria-hidden="true"></i><i ng-if="!isCollapsedFilter" class="fa fa-chevron-down" aria-hidden="true"></i>
         </div>
     </div>
 </div>

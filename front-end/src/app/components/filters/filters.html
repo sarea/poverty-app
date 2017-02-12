@@ -1,23 +1,23 @@
 <poverty-navbar status="Filters" state-to="welcome"></poverty-navbar>
-<div class="background-questions center-content-both padding-to-navbar">
+<div class="background-questions">
 	<div class="col-md-12">
 		<!-- Question family -->
 		<div class="col-md-4 padding-10">
-			<div class="col-md-12 filter-container family-height">
+			<div class="col-md-12 filter-container family-container">
 				<div class="filter-header">
 					<h6 class="light">Wat is je <span class="semibold">gezinssamenstelling?</span></h6>
 				</div>
 				<div class="filter-content">
-					<button id="button-family-single" class="button-family" ng-model="vm.family" uib-btn-radio="['A','Alleenstaand']"><h6>Alleenstaand</h6></button>
-					<button id="button-family-singlekids" class="button-family" ng-model="vm.family" uib-btn-radio="['AK', 'Alleenstaand met kinderen']"><h6>Alleenstaand<br>met kinderen</h6></button>
-					<button id="button-family-livingwithpartner" class="button-family" ng-model="vm.family" uib-btn-radio="['SP', 'Samenwonend met partner']"><h6>Samenwonend<br>met partner</h6></button>
-					<button id="button-family-livingwithpartnerandkids" class="button-family" ng-model="vm.family" uib-btn-radio="['SPK', 'Samenwonend met partner en kinderen']"><h6>Samenwonend<br>met partner en kinderen</h6></button>
+					<button class="button-filter button-family button-family-single" ng-model="vm.family" uib-btn-radio="['A','Alleenstaand']"><h6>Alleenstaand</h6></button>
+					<button class="button-filter button-family button-family-singlekids" ng-model="vm.family" uib-btn-radio="['AK', 'Alleenstaand met kinderen']"><h6>Alleenstaand<br>met kinderen</h6></button>
+					<button class="button-filter button-family button-family-livingwithpartner" ng-model="vm.family" uib-btn-radio="['SP', 'Samenwonend met partner']"><h6>Samenwonend<br>met partner</h6></button>
+					<button class="button-filter button-family button-family-livingwithpartnerandkids" ng-model="vm.family" uib-btn-radio="['SPK', 'Samenwonend met partner en kinderen']"><h6>Samenwonend<br>met partner en kinderen</h6></button>
 				</div>
 			</div>
 		</div>
 		<!-- Question boroughs -->
 		<div class="col-md-4 padding-10">
-			<div class="col-md-12 filter-container boroughs-height">
+			<div class="col-md-12 filter-container boroughs-container">
 				<div class="filter-header">
 					<h6 class="light">In welk <span class="semibold">stadsdeel</span> woon je?</h6>
 				</div>
@@ -26,36 +26,36 @@
 				</div>
 				<div class="filter-content col-md-12">
 					<div class="col-md-6 col-xs-6 borough">
-						<button id="button-borough-centrum" class="button-borough" ng-model="vm.borough" uib-btn-radio="['CE', 'Centrum']"><h6>Centrum</h6></button>
-						<button id="button-borough-nieuw-west" class="button-borough" ng-model="vm.borough" uib-btn-radio="['NW', 'Nieuw-West']"><h6>Nieuw-West</h6></button>
-						<button id="button-borough-noord" class="button-borough" ng-model="vm.borough" uib-btn-radio="['NO', 'Noord']"><h6>Noord</h6></button>
-						<button id="button-borough-oost" class="button-borough"  ng-model="vm.borough" uib-btn-radio="['OO', 'Oost']"><h6>Oost</h6></button>
+						<button class="button-filter button-borough" ng-model="vm.borough" uib-btn-radio="['CE', 'Centrum']"><h6>Centrum</h6></button>
+						<button class="button-filter button-borough" ng-model="vm.borough" uib-btn-radio="['NW', 'Nieuw-West']"><h6>Nieuw-West</h6></button>
+						<button class="button-filter button-borough" ng-model="vm.borough" uib-btn-radio="['NO', 'Noord']"><h6>Noord</h6></button>
+						<button class="button-filter button-borough"  ng-model="vm.borough" uib-btn-radio="['OO', 'Oost']"><h6>Oost</h6></button>
 					</div>
 					<div class="col-md-6 col-xs-6 borough">
-						<button id="button-borough-west" class="button-borough" ng-model="vm.borough" uib-btn-radio="['WE', 'West']"><h6>West</h6></button>
-						<button id="button-borough-zuid" class="button-borough" ng-model="vm.borough" uib-btn-radio="['ZU', 'Zuid']"><h6>Zuid</h6></button>
-						<button id="button-borough-zuidoost" class="button-borough" ng-model="vm.borough" uib-btn-radio="['ZO', 'Zuidoost']"><h6>Zuidoost</h6></button>
-						<button id="button-borough-westpoort" class="button-borough" ng-model="vm.borough" uib-btn-radio="['WP', 'Westpoort']"><h6>Westpoort</h6></button>
+						<button class="button-filter button-borough" ng-model="vm.borough" uib-btn-radio="['WE', 'West']"><h6>West</h6></button>
+						<button class="button-filter button-borough" ng-model="vm.borough" uib-btn-radio="['ZU', 'Zuid']"><h6>Zuid</h6></button>
+						<button class="button-filter button-borough" ng-model="vm.borough" uib-btn-radio="['ZO', 'Zuidoost']"><h6>Zuidoost</h6></button>
+						<button class="button-filter button-borough" ng-model="vm.borough" uib-btn-radio="['WP', 'Westpoort']"><h6>Westpoort</h6></button>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!-- Question age -->
 		<div class="col-md-4 padding-10">
-			<div class="col-md-12 filter-container age-height">
+			<div class="col-md-12 filter-container age-container">
 				<div class="filter-header">
 					<h6 class="light">Wat is je <span class="semibold">leeftijd?</span></h6>
 				</div>
 				<div class="filter-content">
-					<button id="button-age-underaged" class="button-age"  ng-model="vm.age" uib-btn-radio="['1', 'Jonger dan 18 jaar oud']">
+					<button class="button-filter button-age"  ng-model="vm.age" uib-btn-radio="['1', 'Jonger dan 18 jaar oud']">
 					<div class="age-icon bold"><h6 class="bold"><i class="bold fa fa-angle-left" aria-hidden="true"></i>18</h6></div>
 					<div class="age-age"><h6>Jonger dan 18 jaar oud</h6></div>
 					</button>
-					<button id="button-age-adult" class="button-age" ng-model="vm.age" uib-btn-radio="['2', 'Tussen de 18 en 65 jaar oud']">
+					<button class="button-filter button-age" ng-model="vm.age" uib-btn-radio="['2', 'Tussen de 18 en 65 jaar oud']">
 						<div class="age-icon bold"><h6 class="bold">18-65</h6></div>
 						<div class="age-age"><h6>Tussen de 18 en 65 jaar oud</h6></div>
 					</button>
-					<button id="button-age-elderly" class="button-age" ng-model="vm.age" uib-btn-radio="['3', 'Ouder dan 65 jaar oud']">
+					<button class="button-filter button-age" ng-model="vm.age" uib-btn-radio="['3', 'Ouder dan 65 jaar oud']">
 						<div class="age-icon bold"><h6 class="bold">65+</h6></div>
 						<div class="age-age"><h6>Ouder dan 65 jaar oud</h6></div>
 					</button>
@@ -64,7 +64,7 @@
 			<!-- Button -->
 			<div class="col-md-12 no-padding">
 				<a  ng-click="vm.sendFilterInfo()">
-					<div class="button margin-top-125"><h6 class="semibold no-margin">Ontdek de regelingen</h6></div>
+					<div class="confirm-button"><h6 class="semibold no-margin">Ontdek de regelingen</h6></div>
 				</a>
 			</div>
 		</div>

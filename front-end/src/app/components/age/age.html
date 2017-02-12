@@ -1,22 +1,21 @@
 <poverty-navbar status="Vraag 3 van 3" state-to="family"></poverty-navbar>
 <div class="background-questions">
 	<div class="col-md-12">
-		<!-- Question three -->
-		<div class="col-md-4 padding-to-navbar">
-			<div class="col-md-12 filter-container">
+		<div class="col-md-4 padding-10">
+			<div class="col-md-12 filter-container age-container">
 				<div class="filter-header">
 					<h6 class="light">Wat is je <span class="semibold">leeftijd?</span></h6>
 				</div>
 				<div class="filter-content">
-					<button id="button-age-underaged" class="button-age"  ng-model="vm.age" uib-btn-radio="['1', 'Jonger dan 18 jaar oud']" ng-click="vm.sendFilterInfo()">
+					<button class="button-filter button-age"  ng-model="vm.age" uib-btn-radio="['1', 'Jonger dan 18 jaar oud']" ng-click="vm.sendFilterInfo()">
 					<div class="age-icon bold"><h6 class="bold"><i class="bold fa fa-angle-left" aria-hidden="true"></i>18</h6></div>
 					<div class="age-age"><h6>Jonger dan 18 jaar oud</h6></div>
 					</button>
-					<button id="button-age-adult" class="button-age" ng-model="vm.age" uib-btn-radio="['2', 'Tussen de 18 en 65 jaar oud']" ng-click="vm.sendFilterInfo()">
+					<button class="button-filter button-age" ng-model="vm.age" uib-btn-radio="['2', 'Tussen de 18 en 65 jaar oud']" ng-click="vm.sendFilterInfo()">
 						<div class="age-icon bold"><h6 class="bold">18-65</h6></div>
 						<div class="age-age"><h6>Tussen de 18 en 65 jaar oud</h6></div>
 					</button>
-					<button id="button-age-elderly" class="button-age" ng-model="vm.age" uib-btn-radio="['3', 'Ouder dan 65 jaar oud']" ng-click="vm.sendFilterInfo()">
+					<button class="button-filter button-age" ng-model="vm.age" uib-btn-radio="['3', 'Ouder dan 65 jaar oud']" ng-click="vm.sendFilterInfo()">
 						<div class="age-icon bold"><h6 class="bold">65+</h6></div>
 						<div class="age-age"><h6>Ouder dan 65 jaar oud</h6></div>
 					</button>

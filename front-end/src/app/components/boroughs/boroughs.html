@@ -1,28 +1,27 @@
 <poverty-navbar status="Vraag 2 van 3" state-to="family"></poverty-navbar>
 <div class="background-questions">
 	<div class="col-md-12">
-		<div class="col-md-4 padding-to-navbar">
-			<div class="col-md-12 filter-container">
+		<!-- Question boroughs -->
+		<div class="col-md-4 padding-10">
+			<div class="col-md-12 filter-container boroughs-container">
 				<div class="filter-header">
 					<h6 class="light">In welk <span class="semibold">stadsdeel</span> woon je?</h6>
 				</div>
 				<div class="col-md-12" style="width:100%;">
-				<!-- <angular-maphilight id="MapTitle" angular-maphilight-config="vm.mapHilightConfig"> -->
 					<img class="margin-top-20" id="img_ID" src="../img/map-boroughs.svg" usemap="#map" border="0" width="100%" alt="" >
-				<!-- </angular-maphilight> -->
 				</div>
 				<div class="filter-content col-md-12">
 					<div class="col-md-6 col-xs-6 borough">
-						<button id="button-borough-centrum" class="button-borough" ng-model="vm.borough" uib-btn-radio="['CE', 'Centrum']" ng-click="vm.sendFilterInfo()"><h6>Centrum</h6></button>
-						<button id="button-borough-nieuw-west" class="button-borough" ng-model="vm.borough" uib-btn-radio="['NW', 'Nieuw-West']" ng-click="vm.sendFilterInfo()"><h6>Nieuw-West</h6></button>
-						<button id="button-borough-noord" class="button-borough" ng-model="vm.borough" uib-btn-radio="['NO', 'Noord']" ng-click="vm.sendFilterInfo()"><h6>Noord</h6></button>
-						<button id="button-borough-oost" class="button-borough"  ng-model="vm.borough" uib-btn-radio="['OO', 'Oost']" ng-click="vm.sendFilterInfo()"><h6>Oost</h6></button>
+						<button class="button-filter button-borough" ng-model="vm.borough" uib-btn-radio="['CE', 'Centrum']" ng-click="vm.sendFilterInfo()"><h6>Centrum</h6></button>
+						<button class="button-filter button-borough" ng-model="vm.borough" uib-btn-radio="['NW', 'Nieuw-West']" ng-click="vm.sendFilterInfo()"><h6>Nieuw-West</h6></button>
+						<button class="button-filter button-borough" ng-model="vm.borough" uib-btn-radio="['NO', 'Noord']" ng-click="vm.sendFilterInfo()"><h6>Noord</h6></button>
+						<button class="button-filter button-borough"  ng-model="vm.borough" uib-btn-radio="['OO', 'Oost']" ng-click="vm.sendFilterInfo()"><h6>Oost</h6></button>
 					</div>
 					<div class="col-md-6 col-xs-6 borough">
-						<button id="button-borough-west" class="button-borough" ng-model="vm.borough" uib-btn-radio="['WE', 'West']" ng-click="vm.sendFilterInfo()"><h6>West</h6></button>
-						<button id="button-borough-zuid" class="button-borough" ng-model="vm.borough" uib-btn-radio="['ZU', 'Zuid']" ng-click="vm.sendFilterInfo()"><h6>Zuid</h6></button>
-						<button id="button-borough-zuidoost" class="button-borough" ng-model="vm.borough" uib-btn-radio="['ZO', 'Zuidoost']" ng-click="vm.sendFilterInfo()"><h6>Zuidoost</h6></button>
-						<button id="button-borough-westpoort" class="button-borough" ng-model="vm.borough" uib-btn-radio="['WP', 'Westpoort']" ng-click="vm.sendFilterInfo()"><h6>Westpoort</h6></button>
+						<button class="button-filter button-borough" ng-model="vm.borough" uib-btn-radio="['WE', 'West']" ng-click="vm.sendFilterInfo()"><h6>West</h6></button>
+						<button class="button-filter button-borough" ng-model="vm.borough" uib-btn-radio="['ZU', 'Zuid']" ng-click="vm.sendFilterInfo()"><h6>Zuid</h6></button>
+						<button class="button-filter button-borough" ng-model="vm.borough" uib-btn-radio="['ZO', 'Zuidoost']" ng-click="vm.sendFilterInfo()"><h6>Zuidoost</h6></button>
+						<button class="button-filter button-borough" ng-model="vm.borough" uib-btn-radio="['WP', 'Westpoort']" ng-click="vm.sendFilterInfo()"><h6>Westpoort</h6></button>
 					</div>
 				</div>
 			</div>
