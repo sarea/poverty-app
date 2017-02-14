@@ -13,7 +13,7 @@
     <div class="filters-content">
         <div class="col-md-2 col-sm-3 col-xs-6" ng-model="checkbox" ng-repeat="catigory in vm.categories track by $index">
             <div class="filter-button" ng-click="vm.resultByCategories(vm.categories[$index]); checkbox = !checkbox">
-                <i ng-if="!checkbox" class="fa fa-square-o" aria-hidden="true"></i><i ng-if="checkbox" class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;<span>{{catigory}}</span><!-- <span><img style="color: blue" height="15%" width="15%" src="{{vm.categoriesUrl(vm.categories[$index])}}"></span> -->
+                <i ng-if="!checkbox" class="fa fa-square-o" aria-hidden="true"></i><i ng-if="checkbox" class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;<span>{{catigory}}</span><span><img class="filter-logo" ng-src="{{vm.categoriesUrl(vm.categories[$index],'')}}"></span>
             </div>
         </div>
     </div>
@@ -35,7 +35,7 @@
             <li gridster-item="listFiltered" class="padding-10" ng-repeat="listFiltered in vm.listAfterFilter">
                 <div class="col-md-12 result-container" ng-style="isCollapsed && {'opacity':'1'} || {'opacity': '0.85'}" ng-click="isCollapsed = !isCollapsed;vm.updateHieghtItem($index)">
                     <div class="result-heading padding-1" ng-style="{background: vm.colors[$index % vm.colors.length]}">
-                        <p class="semibold white">{{vm.checkNameLength(listFiltered.content.naam)}}<i ng-show="isCollapsed" class="fa fa-times cancel-button" aria-hidden="true"></i></p>
+                        <p class="semibold white"><span><img class="result-logo" ng-src="{{vm.categoriesUrl(vm.listAfterFilter[$index].content.categorieen, 'White')}}"></span>{{vm.checkNameLength(listFiltered.content.naam)}}<i ng-show="isCollapsed" class="fa fa-times cancel-button" aria-hidden="true"></i></p>
                     </div>
                     <div class="result-content" ng-class="{'active': isCollapsed}">
                         <h5 ng-hide="isCollapsed">{{vm.checkSubtitleLength(listFiltered.content.levert)}}</h5>
@@ -94,4 +94,5 @@ m=e.createElement(a);m.async=!0;m.src=t;
 p=e.getElementsByTagName(a)[0];p.parentNode.insertBefore(m,p);
 })(window,document,'script','https://u.heatmap.it/log.js');
 </script>
+
 

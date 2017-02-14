@@ -1418,6 +1418,166 @@ export const DataModels = {  "dataResult" : [
     "levert" : "Gratis koffie, Gratis workshops, Netwerk opbouwen",
     "categorieen" : "Ontspanning",
     "korteOmschrijving" : "In de buurtcentra kunt u terecht voor verschillende activiteiten zoals cursussen, sport,knutselen en voorstellingen. De centra zijn er voorkind en ouder en voor de jongeren en volwassenen. Maar ook voor iedereen die zijn of haar bijdrage wil leveren aan het welzijn en de toekomst van iedereen in Zuidoost!\nAgenda: http://www.buurthuizenzuidoost.nl/index.php?id=942"
+  },
+  {
+    "naam" : "Zwemlessen",
+    "gezinssamens" : ["AK, SPK"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Aanmelden via: http://www.stichtingsina.nl/projecten/sponsormaatje/aanmelden-als-kind/",
+    "levert" : "A en B diploma ",
+    "categorieen" : "Ontspanning",
+    "korteOmschrijving" : "Gratis zwemlessen voor kinderen die geen A en B diploma hebben.Meer info: http://www.stichtingsina.nl/projecten/zwemles/"
+  },
+  {
+    "naam" : "Thuisbegeleiding school",
+    "gezinssamens" : ["AK, SPK"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Aanmelden via de Ouder en Kind adviseur op school.",
+    "levert" : "Hulp bij overgang van basisschool naar de middelbare school",
+    "categorieen" : "Onderwijs",
+    "korteOmschrijving" : "Een stadgenoot die de leerling anderhalf jaar lang elke week thuis komt helpen een goede start te maken in het voortgezet onderwijs. Hij of zij doet het werk vrijwillig, met professionele begeleiding van School's cool.Meer info: http://www.schoolscool.nl/amsterdam"
+  },
+  {
+    "naam" : "Voorleesexpress",
+    "gezinssamens" : ["AK, SPK"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Ga naar http://voorleesexpress.nl/locatie/amsterdam",
+    "levert" : "Gratis iemand die thuis komt voorlezen ",
+    "categorieen" : "Onderwijs",
+    "korteOmschrijving" : "De VoorleesExpress stimuleert de taalontwikkeling van kinderen en verrijkt de taalomgeving thuis. Twintig weken lang komt een vrijwillige voorlezer thuis bij een gezin met kinderen van 2 tot en met 8 jaar.Meer info: http://voorleesexpress.nl/locatie/amsterdam"
+  },
+  {
+    "naam" : "Vrijwilligerscentrale ",
+    "gezinssamens" : ["*"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Aanmelden: 020-5301220 of email: m.bacic@vca.nu, of kijk op http://www.vca.nu/ ",
+    "levert" : "Vrijwilligerswerk",
+    "categorieen" : "Algemeen",
+    "korteOmschrijving" : "Het is onze passie om mensen uit alle hoeken van de samenleving te helpen om zich maatschappelijk nuttig te maken om daarmee maatschappelijke organisaties te versterken. Ook willen we deze organisaties op allerlei manieren helpen om hun missie, met de hulp van vrijwilligers, te bereiken.Meer info: http://www.vca.nu/"
+  },
+  {
+    "naam" : "Rechtswinkel ",
+    "gezinssamens" : ["*"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Dagelijks telefonisch spreekuur: 020-6731311",
+    "levert" : "Gratis juridisch advies ",
+    "categorieen" : "Algemeen",
+    "korteOmschrijving" : "Sinds 1972 geeft de Rechtswinkel Amsterdam juridisch advies. Dit is mogelijk door 32 enthousiaste universitaire rechtenstudenten die zich vrijwillig voor de rechtswinkel inzetten naast hun studie.Wij proberen het probleem meteen op te lossen en anders verwijzen wij u door naar een gespecialiseerde instantie of indien nodig een advocaat. Meer info: http://www.rechtswinkelamsterdam.nl/"
+  },
+  {
+    "naam" : "Burennetwerk ",
+    "gezinssamens" : ["*"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Aanmelden: www.burennetwerk.nl/index.php/page/applicants/bb/1/command /enrollqs/qsuid/1eb99020af4239e544ff583f9119ca15/cms_categorie/83203/aid/83302",
+    "levert" : "Hulp van buren bij kleine klussen ",
+    "categorieen" : "Algemeen",
+    "korteOmschrijving" : "Burennetwerk Amsterdam koppelt buurtgenoten aan elkaar voor eenvoudige burenhulp of laagdrempelig sociaal contact.  Meer info: https://www.burennetwerk.nl/"
+  },
+  {
+    "naam" : "Vakantie voor kind  ",
+    "gezinssamens" : ["AK, SPK"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Aanmelden: kantoor.amsterdam@humanitas.nl of 020-7736542",
+    "levert" : "Week vakantie tegen kleine vergoeding",
+    "categorieen" : "Algemeen",
+    "korteOmschrijving" : "Je gunt je kind graag een vakantie, maar soms zit dat er gewoon niet in. Humanitas Kindervakantieweken maakt het tóch mogelijk. Naast groepsweken kunnen kinderen ook op vakantie bij een gastouder.Meer info: https://www.humanitas.nl/programmas/kindervakantieweken/"
+  },
+  {
+    "naam" : "Thuisadministratie",
+    "gezinssamens" : ["*"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Aanmelden: Kantoor.amsterdam@humanitas.nl 020-7736542",
+    "levert" : "Hulp aan huis bij administratie",
+    "categorieen" : "Financiën",
+    "korteOmschrijving" : "Hulp bij je administratie nodig? Blijf niet tobben. Humanitas Thuisadministratie helpt je graag. Een vrijwilliger begeleidt je tijdelijk en helpt je om zaken weer onder controle te krijgen. Meer info: https://www.humanitas.nl/programmas/thuisadministratie/"
+  },
+  {
+    "naam" : "Dress for Succes ",
+    "gezinssamens" : ["*"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Uitnodiging aanvragen via: winkel@dfs-amsterdam.nl",
+    "levert" : "Nette kleding voor sollicitatie of presentatie",
+    "categorieen" : "Algemeen",
+    "korteOmschrijving" : "Dress for Success is een vrijwilligersorganisatie die werkzoekenden voorziet van representatieve kleding en praktische ondersteuning om succesvol te kunnen solliciteren. Op deze manier helpen wij mensen op hun weg naar economische onafhankelijkheid. Meer info: http://www.dressforsuccess.nl/"
+  },
+  {
+    "naam" : "Kindermaatje",
+    "gezinssamens" : ["AK, SPK"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Aanmelden via: http://www.deregenboog.org/bijdehand",
+    "levert" : "Een maatje voor uw kind waarmee hij/zij leuke dingen mee kan doen",
+    "categorieen" : "Ontspanning",
+    "korteOmschrijving" : "Een maatje is in dit project een (afgestudeerde) student tussen de 18 en 28 jaar. Het maatje trekt 9 maanden op met het kind en fungeert daarbij als rolmodel. Samen gaan zij allerlei activiteiten ondernemen. In eerste instantie spreken ze thuis bij het kind af en naarmate het vertrouwen toeneemt gaan ze ook dingen buitenshuis ondernemen.Meer info: http://www.deregenboog.org/bijdehand"
+  },
+  {
+    "naam" : "Zelfredzaamheids Training ",
+    "gezinssamens" : ["*"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Aanmelden via: 020 683 9260",
+    "levert" : "10-weekse training in zelfredzaamheid ",
+    "categorieen" : "Algemeen",
+    "korteOmschrijving" : "Leven van weinig geld is lastig en kan een hoop stress opleveren. Het roept ook vragen op. Hoe hou je overzicht in je financiën? Waar kun je aankloppen voor hulp en waar heb je recht op?Meer info: http://www.deregenboog.org/op-eigen-kracht"
+  },
+  {
+    "naam" : "Geld maatje",
+    "gezinssamens" : ["*"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Aanmelden: http://www.deregenboog.org/vonk",
+    "levert" : "Maatje die helpt met ordenen van je financiën ",
+    "categorieen" : "Financiën",
+    "korteOmschrijving" : "Project Vonk is in het leven geroepen om mensen te helpen die klant zijn van de Voedselbank of  in een schuldhulpverleningstraject zitten. Vonk concentreert zich op hulp bij het aanpakken van de geldproblematiek waar mensen in zitten. Meer info: http://www.deregenboog.org/vonk"
+  },
+  {
+    "naam" : "Talentcoach",
+    "gezinssamens" : ["*"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Aanmelden: http://www.deregenboog.org/talentcoach ",
+    "levert" : "Hulp bij het ontdekken van je talent",
+    "categorieen" : "Algemeen",
+    "korteOmschrijving" : "Talentcoaches denken mee over wat iemand leuk vindt en gaat opzoek naar de sterke kanten van iemand. Ook kijken ze hoe je dat vervolgens in de praktik kunt brengen. Meer info: http://www.deregenboog.org/talentcoach"
+  },
+  {
+    "naam" : "Steuntje in de rug",
+    "gezinssamens" : ["*"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Aanmelden: http://www.deregenboog.org/steuntje-de-rug-nodig",
+    "levert" : "Maatje voor activiteiten of bezoeken aan instanties",
+    "categorieen" : "Algemeen",
+    "korteOmschrijving" : "Vind je het lastig om alleen naar activiteiten of instanties te gaan? In de diverse wijken in Amsterdam wordt er van alles georganiseerd voor buurtbewoners. Denk aan eetgroepen, zang- of filosofiecursussen, creatieve inloop, computerles, yoga, filmclub etc. Voor mensen die te kampen hebben (gehad) met zware problematiek zoals een psychiatrische beperking, verslaving en armoede is alleen gaan vaak een te hoge drempel. Meer info: http://www.deregenboog.org/steuntje-de-rug-nodig"
+  },
+  {
+    "naam" : "Taalles Buurvrouwen contact",
+    "gezinssamens" : ["*"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Aanmelden:https://www.abcamsterdam.org/taalles-nodig/aanmelden-anderstalige-vrouw of mailen met maaike@abcamsterdam.org of bellen naar 020 320 27 10. ",
+    "levert" : "Taalles ",
+    "categorieen" : "Onderwijs",
+    "korteOmschrijving" : "De stichting Amsterdams Buurvrouwen Contact (ABC) is een vrijwilligersorganisatie die anderstalige geïsoleerde vrouwen op weg helpt naar zelfredzaamheid. De stichting doet dit door de vrouwen Nederlands te leren, kennis van de Nederlandse samenleving over te dragen en het sociale netwerk van de anderstalige vrouw te verbreden.Meer info:http://www.abcamsterdam.org/"
+  },
+  {
+    "naam" : "Mobiele schoonmaak",
+    "gezinssamens" : ["*"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Aanmelding via GGD of hulpverlener:020-6301111",
+    "levert" : "Schoon huis",
+    "categorieen" : "Algemeen",
+    "korteOmschrijving" : "Het mobiele schoonmaakteam van het Leger des Heils helpt mensen die in een ernstig vervuild huis leven. Samen maken we de woning bewoonbaar. Zo kunnen we regelmatig huisuitzettingen voorkomen en maken we de weg vrij voor verdere hulpverlening.Meer info: http://www.legerdesheils.nl/mobiele-schoonmaak-van-woningen"
   }
 ]
 }
