@@ -18,9 +18,10 @@
       margin: auto;
       cursor:pointer;
       font-weight: 600;
+      font-size: 15px;
       &:hover {
         background-color:#fff;
-        color:#ff9c01;
+        color:#ff7c01;
       }
     }
   }
@@ -203,26 +204,26 @@ div,p,i,button {
 }
 @media (max-width: 414px) {
   .filter-controls {
-    background-color: #fff;
-    position: fixed;
-    z-index: 3;
-    width: 100%;
+    // background-color: #fff;
+    // position: fixed;
+    // z-index: 3;
+    // width: 100%;
     margin-top: 40px;
     .filters-content {
-      background-color: #fff;
-      display: flex;
+      //background-color: #fff;
+      //display: flex;
       justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
+      //align-items: center;
+      //flex-wrap: wrap;
       padding:12px 0 12px 15px;
       .filter-button {
-        color:#ff9c01;
-        margin: auto;
-        cursor:pointer;
-        font-weight: 600;
+        //color:#ff9c01;
+        //margin: auto;
+        //cursor:pointer;
+        //font-weight: 600;
         &:hover {
-          background-color:#fff;
-          color:#ff9c01;
+          //background-color:#fff;
+          //color:#ff9c01;
         }
       }
     }

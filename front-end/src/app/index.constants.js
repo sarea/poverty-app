@@ -572,7 +572,7 @@ export const DataModels = {  "dataResult" : [
   {
     "naam" : "Buurthuis Plan C",
     "gezinssamens" : ["*"],
-    "stadsdeel" : "SU",
+    "stadsdeel" : "ZU",
     "leedtijd" : "*",
     "calltoAction" : "Binnenlopen:\rSmaragdplein 24, 1074 HB Amsterdam\r",
     "levert" : "\nBuurtactiviteiten, Burenmarktplaats",
@@ -582,7 +582,7 @@ export const DataModels = {  "dataResult" : [
   {
     "naam" : "Buurtgezinnen.nl",
     "gezinssamens" : ["*"],
-    "stadsdeel" : "SU",
+    "stadsdeel" : "ZU",
     "leedtijd" : "*",
     "calltoAction" : "Aanmelden: \rhttp://www.buurtgezinnen.nl/aanmelden/vraaggezin/\r",
     "levert" : "Hulpgezin in de buurt",
@@ -592,7 +592,7 @@ export const DataModels = {  "dataResult" : [
   {
     "naam" : "Carrière coach café",
     "gezinssamens" : ["*"],
-    "stadsdeel" : "SU",
+    "stadsdeel" : "ZU",
     "leedtijd" : "*",
     "calltoAction" : "Aanmelden:\rinfo@carrierecoachcafe.nl\r",
     "levert" : "Ontdekken van je talent op werkgebied",
@@ -602,7 +602,7 @@ export const DataModels = {  "dataResult" : [
   {
     "naam" : "Maatschappelijk werk",
     "gezinssamens" : ["*"],
-    "stadsdeel" : "SU",
+    "stadsdeel" : "ZU",
     "leedtijd" : "*",
     "calltoAction" : "Afspraak maken: 020 2359 120\n",
     "levert" : "Maatschappelijke hulp",
@@ -612,7 +612,7 @@ export const DataModels = {  "dataResult" : [
   {
     "naam" : "Schuldhulpverlening",
     "gezinssamens" : ["*"],
-    "stadsdeel" : "SU",
+    "stadsdeel" : "ZU",
     "leedtijd" : "*",
     "calltoAction" : "Afspraak maken: 020 2359 120\n",
     "levert" : "Gratis schuldhulpverlening",
@@ -622,7 +622,7 @@ export const DataModels = {  "dataResult" : [
   {
     "naam" : "Sociaal raadslid",
     "gezinssamens" : ["*"],
-    "stadsdeel" : "SU",
+    "stadsdeel" : "ZU",
     "leedtijd" : "*",
     "calltoAction" : "Afspraak maken:\r020 2359 120\r",
     "levert" : "Voorzieningencheck",
@@ -632,7 +632,7 @@ export const DataModels = {  "dataResult" : [
   {
     "naam" : "Maatje",
     "gezinssamens" : ["*"],
-    "stadsdeel" : "SU",
+    "stadsdeel" : "ZU",
     "leedtijd" : "*",
     "calltoAction" : "Aanmelden via Jurre:\r06-28543278\r",
     "levert" : "Hulp bij kleine vraagstukken",
@@ -642,7 +642,7 @@ export const DataModels = {  "dataResult" : [
   {
     "naam" : "Praktijkstage in de Wijk",
     "gezinssamens" : ["*"],
-    "stadsdeel" : "SU",
+    "stadsdeel" : "ZU",
     "leedtijd" : "*",
     "calltoAction" : "Aanmelden:\rj.van.vlijmen@amsterdam.nl\r",
     "levert" : "Participatie",
@@ -652,7 +652,7 @@ export const DataModels = {  "dataResult" : [
   {
     "naam" : "Beweging naar werk",
     "gezinssamens" : ["*"],
-    "stadsdeel" : "SU",
+    "stadsdeel" : "ZU",
     "leedtijd" : "*",
     "calltoAction" : "Aanmelden via Jurre van de Kamp:\r06-28543278\r",
     "levert" : "Empowerment Training",
@@ -662,7 +662,7 @@ export const DataModels = {  "dataResult" : [
   {
     "naam" : "Hulp bij klusjes",
     "gezinssamens" : ["*"],
-    "stadsdeel" : "SU",
+    "stadsdeel" : "ZU",
     "leedtijd" : "*",
     "calltoAction" : "Contact via bellen of whatsappen.\nTelefoon: 020 647 10 89 of Mobiel: 06 543 40 370\n",
     "levert" : "Hulp bij klusjes in en rondom de woning",
@@ -672,7 +672,7 @@ export const DataModels = {  "dataResult" : [
   {
     "naam" : "Kinderactiviteiten",
     "gezinssamens" : ["AK", "SPK"],
-    "stadsdeel" : "SU",
+    "stadsdeel" : "ZU",
     "leedtijd" : "*",
     "calltoAction" : "Aanmelden:\r 020 46 09 300\r",
     "levert" : "Theaterles, \rMuziekles\r, Sportles \r",
@@ -682,7 +682,7 @@ export const DataModels = {  "dataResult" : [
   {
     "naam" : "Huis van de wijk de Pijp",
     "gezinssamens" : ["*"],
-    "stadsdeel" : "SU",
+    "stadsdeel" : "ZU",
     "leedtijd" : "*",
     "calltoAction" : "Binnenlopen:\r 2e Van der Helststraat 66\r1072 PG Amsterdam\r",
     "levert" : "Cursussen\r, Workshops, \rTaallessen\r",
@@ -692,7 +692,7 @@ export const DataModels = {  "dataResult" : [
   {
     "naam" : "Buurtbuik",
     "gezinssamens" : ["*"],
-    "stadsdeel" : "SU",
+    "stadsdeel" : "ZU",
     "leedtijd" : "*",
     "calltoAction" : "Aanmelden via: \rzuid@buurtbuik.nl \r",
     "levert" : "Gratis maaltijd",
@@ -702,7 +702,7 @@ export const DataModels = {  "dataResult" : [
   {
     "naam" : "Onder de Pannen Zuid ",
     "gezinssamens" : ["*"],
-    "stadsdeel" : "SU",
+    "stadsdeel" : "ZU",
     "leedtijd" : "*",
     "calltoAction" : "Mee eten:\rhttps://docs.google.com/forms/d/e/1FAIpQLSc7xLmi-387LSZVWKfM7v-2APbzjrNWAfkaiY_EKh1qcB74VA/viewform\r",
     "levert" : "Mee eten tegen kleine vergoeding ",
@@ -712,7 +712,7 @@ export const DataModels = {  "dataResult" : [
   {
     "naam" : "BUUV ",
     "gezinssamens" : ["*"],
-    "stadsdeel" : "SU",
+    "stadsdeel" : "ZU",
     "leedtijd" : "*",
     "calltoAction" : "Aanmelden: \rhttps://amsterdamzuid.buuv.nu/registreer\r",
     "levert" : "Burenhulp",
@@ -722,7 +722,7 @@ export const DataModels = {  "dataResult" : [
   {
     "naam" : "Kuria buddyzorg",
     "gezinssamens" : ["*"],
-    "stadsdeel" : "SU",
+    "stadsdeel" : "ZU",
     "leedtijd" : "*",
     "calltoAction" : "Aanmelden:\r http://www.kuria.nl/buddyzorg/aanvragen/\r",
     "levert" : "Een maatje",
@@ -732,7 +732,7 @@ export const DataModels = {  "dataResult" : [
   {
     "naam" : "Repaircafe ",
     "gezinssamens" : ["*"],
-    "stadsdeel" : "SU",
+    "stadsdeel" : "ZU",
     "leedtijd" : "*",
     "calltoAction" : "Lutmastraat 61A\nLaatste zondag van de maand: 12:00 – 17:00 uur \n",
     "levert" : "Gratis spullen laten maken",
@@ -742,7 +742,7 @@ export const DataModels = {  "dataResult" : [
   {
     "naam" : "Naai/haak/\rbreiles\r",
     "gezinssamens" : ["*"],
-    "stadsdeel" : "SU",
+    "stadsdeel" : "ZU",
     "leedtijd" : "*",
     "calltoAction" : "Lutmastraat 61A\n\rElke woensdag: 14:30 – 16:00 uur \r",
     "levert" : "Gratis leren breien/haken/naaien",
@@ -752,7 +752,7 @@ export const DataModels = {  "dataResult" : [
   {
     "naam" : "Zumba",
     "gezinssamens" : ["*"],
-    "stadsdeel" : "SU",
+    "stadsdeel" : "ZU",
     "leedtijd" : "*",
     "calltoAction" : "Lutmastraat 61A\r\nElke woensdag\r12:30- 13:30 uur\r",
     "levert" : "Gratis dansles",
@@ -762,7 +762,7 @@ export const DataModels = {  "dataResult" : [
   {
     "naam" : "Koken",
     "gezinssamens" : ["*"],
-    "stadsdeel" : "SU",
+    "stadsdeel" : "ZU",
     "leedtijd" : "*",
     "calltoAction" : "Lutmastraat 61A\r\nOp de oneven weken op vrijdag \r14:00 – 16:00 uur \r",
     "levert" : "Gratis kookles en eten",
@@ -772,7 +772,7 @@ export const DataModels = {  "dataResult" : [
   {
     "naam" : "Dichten",
     "gezinssamens" : ["*"],
-    "stadsdeel" : "SU",
+    "stadsdeel" : "ZU",
     "leedtijd" : "*",
     "calltoAction" : "Lutmastraat 61A\r\nElke woensdag\r10:30- 12:30 uur \r",
     "levert" : "Gratis dichtles",
@@ -782,7 +782,7 @@ export const DataModels = {  "dataResult" : [
   {
     "naam" : "Computerles",
     "gezinssamens" : ["*"],
-    "stadsdeel" : "SU",
+    "stadsdeel" : "ZU",
     "leedtijd" : "*",
     "calltoAction" : "Lutmastraat 61A\r\nElke 2e dinsdag van de maand \r19:30 – 21:30 uur \r",
     "levert" : "Gratis computerles",
@@ -792,7 +792,7 @@ export const DataModels = {  "dataResult" : [
   {
     "naam" : "Voedselbank",
     "gezinssamens" : ["*"],
-    "stadsdeel" : "SU",
+    "stadsdeel" : "ZU",
     "leedtijd" : "*",
     "calltoAction" : "Intake op maandag 15:00-16:30",
     "levert" : "Gratis voedsel",

@@ -18,6 +18,7 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 	vm.stateTo = stateTo;
 	vm.updateHieghtItem = updateHieghtItem;
 	vm.noResult = noResult;
+	//vm.categoriesUrl = categoriesUrl;
 
 	vm.filters = vm.$state.params.filter;
 	vm.list = DataModels.dataResult;
@@ -53,6 +54,10 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 		}
 		return fitlerResult;
 	}
+
+	// function categoriesUrl(category){
+	// 	return "../img/category/"+ category +".svg";
+	// }
 
 	function categoriesList() {
 		if(vm.listAfterFilter[0]) {

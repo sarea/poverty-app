@@ -13,7 +13,7 @@
     <div class="filters-content">
         <div class="col-md-2 col-sm-3 col-xs-6" ng-model="checkbox" ng-repeat="catigory in vm.categories track by $index">
             <div class="filter-button" ng-click="vm.resultByCategories(vm.categories[$index]); checkbox = !checkbox">
-                <i ng-if="!checkbox" class="fa fa-square-o" aria-hidden="true"></i><i ng-if="checkbox" class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;<span>{{catigory}}</span>
+                <i ng-if="!checkbox" class="fa fa-square-o" aria-hidden="true"></i><i ng-if="checkbox" class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;<span>{{catigory}}</span><!-- <span><img style="color: blue" height="15%" width="15%" src="{{vm.categoriesUrl(vm.categories[$index])}}"></span> -->
             </div>
         </div>
     </div>

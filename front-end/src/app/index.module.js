@@ -6,6 +6,7 @@ import { runBlock } from './index.run';
 import { DataModels } from './index.constants';
 import povertyWelcome from './components/welcome';
 import povertyNavbar from './components/navbar';
+import povertyMap from './components/map';
 import povertyFilters from './components/filters';
 import povertyFamily from './components/family';
 import povertyBoroughs from './components/boroughs';
@@ -30,6 +31,7 @@ angular.module('povertyApp', [
   'gridster',
   povertyWelcome,
   povertyNavbar,
+  povertyMap,
   povertyFilters,
   povertyFamily,
   povertyBoroughs,

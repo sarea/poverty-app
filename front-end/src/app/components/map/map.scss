@@ -1,0 +1,20 @@
+svg {
+	.st0 {
+		fill:#FFF4E9;
+	}
+	.st1 {
+		fill:#F29100;
+	}
+	.area {
+		fill: transparent;
+		&:hover {
+			fill: #F29100;
+			cursor:pointer;
+			transition: all 1.5s;
+		}
+		&:focus, &:active {
+			outline: none;
+			fill: #F29100;
+		}
+	}
+}

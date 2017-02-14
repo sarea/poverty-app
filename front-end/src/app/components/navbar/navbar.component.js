@@ -1,7 +1,7 @@
 export var povertyNavbar = {
 	bindings: {
-    stateTo: '@',
-    status: '@'
+		stateTo: '@',
+		status: '@'
 	},
 	controller: PovertyNavbar,
 	controllerAs: 'vm',
