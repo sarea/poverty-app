@@ -8,13 +8,14 @@
 	display: flex;
 	justify-content: center;
     align-items: center;
-    .block-container{
+	.block-container{
 		display: flex;
 		justify-content: center;
+		flex-direction: column;
 		//flex-wrap: wrap;
-		//align-items: center;
-    }
-    .family-container,
+		align-items: center;
+	}
+	.family-container,
 	.boroughs-container {
 		min-height:600px;
 		max-width: 410px;
@@ -141,6 +142,8 @@
 		color:#fff;
 		padding:15px;
 		margin-top: 125px;
+		margin-right: auto;
+		margin-left: auto;
 		border-radius: 10px;
 		transition: all 1s;
 		cursor:pointer;
@@ -183,6 +186,16 @@
 	.background-questions {
 		.confirm-button {
 			margin-top: 75px;
+		}
+	}
+}
+@media (max-width: 991px) {
+	.background-questions {
+		.block-container{
+			display: flex;
+			justify-content: center;
+			flex-direction: rows;
+			align-items: stretch;
 		}
 	}
 }
