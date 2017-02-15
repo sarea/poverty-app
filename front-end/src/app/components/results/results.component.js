@@ -33,7 +33,8 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 		'#bdd400',
 		'#4663D9'
 	];
-
+	vm.fullheight = 70;
+	vm.sizeY = 2;
 
 	function getResultList() {
 		var keys = parseFilterUrl(0);
@@ -41,7 +42,7 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 			if(	(vm.list[i].gezinssamens.includes(keys[0]) || vm.list[i].gezinssamens[0] === '*') &&
 				(keys[1] === vm.list[i].stadsdeel || vm.list[i].stadsdeel === '*') && 
 				(keys[2] === vm.list[i].leedtijd || vm.list[i].leedtijd === '*') ){
-				vm.listAfterFilter.push({"sizeX":1,"sizeY":7,'content':vm.list[i]})
+				vm.listAfterFilter.push({"sizeX":1,"sizeY":vm.sizeY,'content':vm.list[i]})
 			}
 		}
 	}
@@ -56,7 +57,6 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 	}
 
 	function categoriesUrl(category, white){
-		
 		return "../img/category/"+ category + white +".svg";
 	}
 
@@ -90,7 +90,7 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 					(keys[1] === vm.list[i].stadsdeel || vm.list[i].stadsdeel === '*') && 
 					(keys[2] === vm.list[i].leedtijd || vm.list[i].leedtijd === '*') &&
 					(vm.categoryClickedList.includes(vm.list[i].categorieen)) ){
-					vm.listAfterFilter.push({"sizeX":1,"sizeY":7,'content':vm.list[i]})
+					vm.listAfterFilter.push({"sizeX":1,"sizeY":vm.sizeY,'content':vm.list[i]})
 				}
 			}
 		}
@@ -108,8 +108,8 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 	function checkNameLength(value) {
 		if(value.length == '')
 			return 'Onbekende naam';
-		if(vm.width > 1024 && vm.width < 1300 && value.length > 30){
-			var shortValue = value.slice(0, 30) + '...';
+		if(vm.width > 1024 && vm.width < 1300 && value.length > 20){
+			var shortValue = value.slice(0, 20) + '...';
 			return shortValue;
 		}
 		return value;
@@ -129,14 +129,13 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 	}
 
 	function updateHieghtItem(index) {
-		if(vm.listAfterFilter[index].sizeY === 7){
+		if(vm.listAfterFilter[index].sizeY === vm.sizeY){
 			$timeout(function() {
 				var newHeight = $document[0].getElementsByClassName("result-container")[index].offsetHeight;
-				vm.listAfterFilter[index].sizeY = Math.ceil(newHeight/20) + 1;
+				vm.listAfterFilter[index].sizeY = Math.ceil(newHeight/ vm.fullheight);
 			}, 50);
-
 		}else {
-			vm.listAfterFilter[index].sizeY = 7;
+			vm.listAfterFilter[index].sizeY = vm.sizeY;
 		}		
 	}
 
@@ -185,7 +184,7 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 		swapping: false, // whether or not to have items of the same size switch places instead of pushing down if they are the same size
 		width: 'auto', // can be an integer or 'auto'. 'auto' scales gridster to be the full width of its containing element
 		colWidth: 'auto', // can be an integer or 'auto'.  'auto' uses the pixel width of the element divided by 'columns'
-		rowHeight: 20, // can be an integer or 'match'.  Match uses the colWidth, giving you square widgets.
+		rowHeight:  vm.fullheight, // can be an integer or 'match'.  Match uses the colWidth, giving you square widgets.
 		margins: [0, 0], // the pixel distance between each widget
 		outerMargin: true, // whether margins apply to outer edges of the grid
 		sparse: true, // "true" can increase performance of dragging and resizing for big grid (e.g. 20x50)

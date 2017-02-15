@@ -75,7 +75,7 @@ export const DataModels = {  "dataResult" : [
     "stadsdeel" : "OO",
     "leedtijd" : "*",
     "calltoAction" : "Hoekhuis\nFizeaustraat 3 1097 SC Amsterdam 0204623353",
-    "levert" : "",
+    "levert" : "balletles",
     "categorieen" : "Ontspanning",
     "korteOmschrijving" : "Dans- en Balletles voor kinderen van 2 t/m 12 jaarWerken aan conditie en houding onder deskundige leiding\nMeer info:\nhttp://balletstudiovandenende.nl/contact/"
   },
@@ -94,10 +94,10 @@ export const DataModels = {  "dataResult" : [
     "gezinssamens" : ["*"],
     "stadsdeel" : "OO",
     "leedtijd" : "*",
-    "calltoAction" : "Langsgaan:",
+    "calltoAction" : "Langsgaan: Sumatraplantsoen 48 H",
     "levert" : "Gratis knipbeurt",
     "categorieen" : "Algemeen",
-    "korteOmschrijving" : ""
+    "korteOmschrijving" : "Langsgaan voor een gratis knipbeurt. Meer info: http://www.samenkappen.nl/"
   },
   {
     "naam" : "Voedselbank",
@@ -151,7 +151,7 @@ export const DataModels = {  "dataResult" : [
   },
   {
     "naam" : "Kinderactiviteiten",
-    "gezinssamens" : ["*"],
+    "gezinssamens" : ["AK", "SPK"],
     "stadsdeel" : "OO",
     "leedtijd" : "*",
     "calltoAction" : "Inschrijven via:\nhttp://workshops.adrez.net/",
@@ -282,7 +282,7 @@ export const DataModels = {  "dataResult" : [
   {
     "naam" : "Jongerenhuis",
     "gezinssamens" : ["AK", "SPK"],
-    "stadsdeel" : "",
+    "stadsdeel" : "*",
     "leedtijd" : "*",
     "calltoAction" : "Langsgaan: Langsgaan:\n2e Leeghwaterstraat 5-B\n1018 RA Amsterdam\nAgenda:\nhttp://www.welzijn.ijsterk.nl/index.php?lc=63&st=rd",
     "levert" : "Gratis Jongeren Activiteiten",
@@ -295,7 +295,7 @@ export const DataModels = {  "dataResult" : [
     "stadsdeel" : "CE",
     "leedtijd" : "*",
     "calltoAction" : "Neem contact op:\r020 590 85 90\rOf via het contactformulier:\rhttps://www.roads.nl/contact/",
-    "levert" : "",
+    "levert" : "ACtiviteiten voor ex-verslaafden",
     "categorieen" : "Algemeen",
     "korteOmschrijving" : "Laagdrempeligheid en een warm ontvangst zijn de pijlers van onze inloop en dagbesteding. Elke inloop- en dagbestedingslocatie van Roads heeft zijn eigen karakter en weekprogramma met activiteiten. Veel van deze activiteiten worden voor en door (ex-)cliënten georganiseerd.\n Meer info:\n https://www.roads.nl/clienten/inloop-en-dagbesteding/inloop-en-dagbesteding-amsterdam/"
   },
@@ -315,7 +315,7 @@ export const DataModels = {  "dataResult" : [
     "stadsdeel" : "CE",
     "leedtijd" : "*",
     "calltoAction" : "Woensdag en vrijdagmiddag van 13:00 tot 17:00 uur open op de Nieuwe Herengracht 18. Je moet eerst klant te worden van de voedselbank.",
-    "levert" : "",
+    "levert" : "goedkope boodschappen, steun, koffie",
     "categorieen" : "Gezondheid",
     "korteOmschrijving" : "Winkel en sociale ontmoetingsplaats voor Amsterdammers in armoede. \rMeer info:\rhttp://www.socialekruidenier.nl/"
   },
@@ -835,7 +835,7 @@ export const DataModels = {  "dataResult" : [
     "stadsdeel" : "WE",
     "leedtijd" : "*",
     "calltoAction" : "Bellen naar: 020-638 44 77 of langs gaan:\nOud West:\ndinsdagavond van 19.30 – 20.00 uur in het gebouw van Het Rode Kruis aan de Valkenburgerstraat 24\nBos en Lommer:\nmaandagavond tussen 19:30 en 20:30 uur langskomen bij de Tagerijn, Balboastraat 18 in De Baarsjes.\nWesterpark:\nwoensdagochtend tussen 10:00 en 11:00 uur langskomen op het volgende adres: Buurtcentrum Horizon, Hembrugstraat 156, 1013 VV Amsterdam\nBaarsjes: \nmaandagavond tussen 19:30 en 20:30 uur langskomen bij de Tagerijn, Balboastraat 18 in De Baarsjes.",
-    "levert" : "",
+    "levert" : "eten",
     "categorieen" : "Gezondheid",
     "korteOmschrijving" : "Wekelijks gratis voedselpakketen.\nMeer info: http://www.amsterdam.voedselbank.org/# "
   },
@@ -1165,7 +1165,7 @@ export const DataModels = {  "dataResult" : [
     "stadsdeel" : "NW",
     "leedtijd" : "*",
     "calltoAction" : "Elke woensdagavond tussen 18:30 en 19:30 langskomen op adres: SEZO, Jan de Louterstraat 19 Amsterdam",
-    "levert" : "",
+    "levert" : "gratis eten",
     "categorieen" : "Gezondheid",
     "korteOmschrijving" : "Wekelijks een gratis voedselpakket. Meer info:http://www.amsterdam.voedselbank.org/geuzenveldslotermeer/ of: http://www.amsterdam.voedselbank.org/osdorp-2/"
   },
@@ -1205,7 +1205,7 @@ export const DataModels = {  "dataResult" : [
     "stadsdeel" : "ZO",
     "leedtijd" : "*",
     "calltoAction" : "Intake Holendrecht: iedere dinsdagavond tussen 18:30 uur en 19:30 uur\nLangskomen op het adres: Buurthuis Holendrechtplein: Holendrechtplein 38\nIntake Zuid oost Bonte Kraai: iedere woensdagavond tussen 18:30 en 19:30 uur \nLangskomen op het adres: Buurthuis de Bonte Kraai: Kraaiennest 68\n",
-    "levert" : "",
+    "levert" : "gratis eten",
     "categorieen" : "Gezondheid",
     "korteOmschrijving" : "Wekelijks gratis voedselpakketen.\nMeer info: http://www.amsterdam.voedselbank.org/zuidoost-holendrechtplein/ of: http://www.amsterdam.voedselbank.org/zuidoost-bonte-kraai/"
   },
@@ -1292,7 +1292,7 @@ export const DataModels = {  "dataResult" : [
   {
     "naam" : "Computerles",
     "gezinssamens" : ["*"],
-    "stadsdeel" : "",
+    "stadsdeel" : "ZO",
     "leedtijd" : "*",
     "calltoAction" : "Bellen naar 06 12848237 ",
     "levert" : "Computercursus",
@@ -1421,7 +1421,7 @@ export const DataModels = {  "dataResult" : [
   },
   {
     "naam" : "Zwemlessen",
-    "gezinssamens" : ["AK, SPK"],
+    "gezinssamens" : ["AK", "SPK"],
     "stadsdeel" : "*",
     "leedtijd" : "*",
     "calltoAction" : "Aanmelden via: http://www.stichtingsina.nl/projecten/sponsormaatje/aanmelden-als-kind/",
@@ -1431,7 +1431,7 @@ export const DataModels = {  "dataResult" : [
   },
   {
     "naam" : "Thuisbegeleiding school",
-    "gezinssamens" : ["AK, SPK"],
+    "gezinssamens" : ["AK", "SPK"],
     "stadsdeel" : "*",
     "leedtijd" : "*",
     "calltoAction" : "Aanmelden via de Ouder en Kind adviseur op school.",
@@ -1441,7 +1441,7 @@ export const DataModels = {  "dataResult" : [
   },
   {
     "naam" : "Voorleesexpress",
-    "gezinssamens" : ["AK, SPK"],
+    "gezinssamens" : ["AK", "SPK"],
     "stadsdeel" : "*",
     "leedtijd" : "*",
     "calltoAction" : "Ga naar http://voorleesexpress.nl/locatie/amsterdam",
@@ -1481,7 +1481,7 @@ export const DataModels = {  "dataResult" : [
   },
   {
     "naam" : "Vakantie voor kind  ",
-    "gezinssamens" : ["AK, SPK"],
+    "gezinssamens" : ["AK", "SPK"],
     "stadsdeel" : "*",
     "leedtijd" : "*",
     "calltoAction" : "Aanmelden: kantoor.amsterdam@humanitas.nl of 020-7736542",
@@ -1511,7 +1511,7 @@ export const DataModels = {  "dataResult" : [
   },
   {
     "naam" : "Kindermaatje",
-    "gezinssamens" : ["AK, SPK"],
+    "gezinssamens" : ["AK", "SPK"],
     "stadsdeel" : "*",
     "leedtijd" : "*",
     "calltoAction" : "Aanmelden via: http://www.deregenboog.org/bijdehand",
@@ -1578,6 +1578,287 @@ export const DataModels = {  "dataResult" : [
     "levert" : "Schoon huis",
     "categorieen" : "Algemeen",
     "korteOmschrijving" : "Het mobiele schoonmaakteam van het Leger des Heils helpt mensen die in een ernstig vervuild huis leven. Samen maken we de woning bewoonbaar. Zo kunnen we regelmatig huisuitzettingen voorkomen en maken we de weg vrij voor verdere hulpverlening.Meer info: http://www.legerdesheils.nl/mobiele-schoonmaak-van-woningen"
+  },
+  {
+    "naam" : "Kindbonnen",
+    "gezinssamens" : ["AK", "SPK"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Deze bonnen ontvangt u automatisch, krijgt u ze niet en voldoet u wel aan de eisen bel 020 252 6000",
+    "levert" : "Bonnen voor speelgoed ",
+    "categorieen" : "Ontspanning",
+    "korteOmschrijving" : "Er zijn drie Kindbonnen: een babybon, een speelgoedbon en een kledingbon. Meer info: https://www.amsterdam.nl/werk-inkomen/pak-je-kans/kindbonnen/#h4a38799b-7896-74ee-fb78-c66c59c7ec54"
+  },
+  {
+    "naam" : "Bijdrage kinderopvang",
+    "gezinssamens" : ["AK", "SPK"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Bellen naar 020 252 6000, u krijgt dan een formulier thuis gestuurd ",
+    "levert" : "5% korting op de kinderopvang",
+    "categorieen" : "Financiën",
+    "korteOmschrijving" : "U betaalt 5% minder voor de kinderopvang. De gemeente betaalt die 5% direct aan de kinderopvang. Meer info: https://www.amsterdam.nl/werk-inkomen/pak-je-kans/bijdrage/"
+  },
+  {
+    "naam" : "Bijzondere bijstand",
+    "gezinssamens" : ["*"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Bellen naar 020 252 6000.",
+    "levert" : "Bijdrage in de hoge extra kosten (afhankelijk van aanvraag)  ",
+    "categorieen" : "Financiën",
+    "korteOmschrijving" : "Met bijzondere bijstand kunt u extra kosten betalen, bijvoorbeeld als u van de dokter een duur dieet moet volgen. Meer info: https://www.amsterdam.nl/werk-inkomen/pak-je-kans/bijzondere-bijstand/"
+  },
+  {
+    "naam" : "Woonkostentoeslag",
+    "gezinssamens" : ["*"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Bellen naar 020 252 6000, u krijgt dan een formulier thuis",
+    "levert" : "Extra toeslag om woonkosten te betalen in noodgevallen",
+    "categorieen" : "Financiën",
+    "korteOmschrijving" : "Wordt uw inkomen plotseling lager? Dan kunt u de huur of hypotheek misschien niet meer betalen. Wij kunnen u tijdelijk helpen. U krijgt extra geld om de huur of hypotheek te betalen. Meer info: https://www.amsterdam.nl/werk-inkomen/pak-je-kans/woonkostentoeslag/"
+  },
+  {
+    "naam" : "Collectieve zorgverzekeringen aanvullend zorgpakket",
+    "gezinssamens" : ["*"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Inloggen met DigiD https://www.amsterdam.nl/werk-inkomen/pak-je-kans/makkelijk-aanvragen/",
+    "levert" : "Gratis aanvullende verzekering (mits bij collectieve verzekering) ",
+    "categorieen" : "Financiën",
+    "korteOmschrijving" : "U kunt meedoen met de zorgverzekering van de gemeente. We hebben een speciale verzekering bij Zilveren Kruis. Meer info: https://www.amsterdam.nl/werk-inkomen/pak-je-kans/collectieve/"
+  },
+  {
+    "naam" : "Scholierenvergoeding",
+    "gezinssamens" : ["AK", "SPK"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Inloggen met DigiD https://www.amsterdam.nl/werk-inkomen/pak-je-kans/makkelijk-aanvragen/",
+    "levert" : "Extra vergoeding ",
+    "categorieen" : "Financiën",
+    "korteOmschrijving" : "Met de Scholierenvergoeding krijgt u extra geld. Daarmee betaalt u bijvoorbeeld schoolreisjes, een fiets, bijles, de sportclub, muzieklessen of ouderbijdrage. Meer info: https://www.amsterdam.nl/werk-inkomen/pak-je-kans/scholierenvergoeding/"
+  },
+  {
+    "naam" : "Gratis laptop voor kind",
+    "gezinssamens" : ["AK", "SPK"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Inloggen met DigiD https://www.amsterdam.nl/werk-inkomen/pak-je-kans/makkelijk-aanvragen/",
+    "levert" : "Gratis laptop + 200,- euro voor internetabonnement ",
+    "categorieen" : "Onderwijs",
+    "korteOmschrijving" : "Uw kind krijgt een laptop. En u krijgt € 200 voor een abonnement op internet. Meer info: https://www.amsterdam.nl/werk-inkomen/pak-je-kans/gratis-laptop/"
+  },
+  {
+    "naam" : "Gratis openbaar vervoer",
+    "gezinssamens" : ["*"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Inloggen met DigiD https://www.amsterdam.nl/werk-inkomen/pak-je-kans/makkelijk-aanvragen/",
+    "levert" : "Overdag gratis met openbaar vervoer van GVB",
+    "categorieen" : "Algemeen",
+    "korteOmschrijving" : "U reist gratis met de tram, de bus en de metro van het GVB. Alleen ’s nachts moet u betalen. Meer info: https://www.amsterdam.nl/werk-inkomen/pak-je-kans/gratis-openbaar/"
+  },
+  {
+    "naam" : "Tegemoetkoming aanvullend openbaar vervoer",
+    "gezinssamens" : ["*"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Inloggen met DigiD https://www.amsterdam.nl/werk-inkomen/",
+    "levert" : "reiskostenvergoeding Tot maximaal 70,- euro per jaar",
+    "categorieen" : "Financiën",
+    "korteOmschrijving" : "U krijgt geld van de gemeente voor aanvullend openbaar vervoer. Dat geld heet een tegemoetkoming. U krijgt € 70,- per jaar. Meer info: https://www.amsterdam.nl/werk-inkomen/pak-je-kans/tegemoetkoming/"
+  },
+  {
+    "naam" : "Regeling tegemoetkoming meerkosten ziekte/handicap",
+    "gezinssamens" : ["*"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Inloggen met DigiD https://www.amsterdam.nl/werk-inkomen/pak-je-kans/makkelijk-aanvragen/",
+    "levert" : "Extra toeslag om extra ziektekosten te betalen",
+    "categorieen" : "Gezondheid",
+    "korteOmschrijving" : "Uw ziekte of uw handicap kost u extra geld. De gemeente betaalt u een deel van dit geld terug. Hoeveel u krijgt, hangt af van uw ziekte of handicap. Meer info: https://www.amsterdam.nl/werk-inkomen/pak-je-kans/regeling/"
+  },
+  {
+    "naam" : "Stadspas",
+    "gezinssamens" : ["*"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Inloggen met DigiD https://www.amsterdam.nl/werk-inkomen/pak-je-kans/makkelijk-aanvragen/",
+    "levert" : "Gebruik maken van diverse regelingen",
+    "categorieen" : "Ontspanning",
+    "korteOmschrijving" : "Met de Stadspas betaalt u minder. Bijvoorbeeld bij het zwembad, de bibliotheek of de bioscoop. Soms is het zelfs gratis. Vóór de schoolvakantie krijgt u extra aanbiedingen voor uw kind. Meer info: https://www.amsterdam.nl/werk-inkomen/pak-je-kans/stadspas/"
+  },
+  {
+    "naam" : "Gratis ID (legitimatie)",
+    "gezinssamens" : ["*"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Aanvragen bij Stadsloket naar keuze, voor adressen: https://www.amsterdam.nl/veelgevraagd/?productid=%7B92908E83-B545-413A-8B5F-E499A79CDC25%7D ",
+    "levert" : "Gratis identiteitskaart  (let op! Geen paspoort)",
+    "categorieen" : "Financiën",
+    "korteOmschrijving" : "U krijgt een gratis identiteitskaart. U hoeft niet eerst zelf te betalen. Wel betaalt u de pasfoto zelf. Meer info: https://www.amsterdam.nl/werk-inkomen/pak-je-kans/gratis/"
+  },
+  {
+    "naam" : "Gratis dierenarts",
+    "gezinssamens" : ["*"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Waardebonnen aanvragen via: stadspas@dierenambulance-amsterdam.nl of bellen met 020 568 1521 (de Dierenambulance)",
+    "levert" : "Een keer per jaar gratis consult huisdier(tot 37,- euro)",
+    "categorieen" : "Algemeen",
+    "korteOmschrijving" : "Is uw huisdier ziek? Het bezoek aan de dierenarts (bezoek) is één keer gratis. Meer info: https://www.amsterdam.nl/werk-inkomen/pak-je-kans/gratis-bezoek/"
+  },
+  {
+    "naam" : "Geld lenen GKA",
+    "gezinssamens" : ["*"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Aanvragen via:https://www.amsterdam.nl/veelgevraagd/?productid={8F28430E-A741-47D1-867B-E12C975FF012}#case_%7BD30A9EBA-8690-4E38-94DD-D655B6E74CF3%7D (Let op! Er dient rente betaald te worden).",
+    "levert" : " lening, minmaal 300,- euro maximaal 4000,- euro ",
+    "categorieen" : "Financiën",
+    "korteOmschrijving" : "De Kredietbank Amsterdam leent u geld.U betaalt minder rente dan bij een gewone bank. Meer info: https://www.amsterdam.nl/werk-inkomen/pak-je-kans/geld-lenen/"
+  },
+  {
+    "naam" : "Scholingslening",
+    "gezinssamens" : ["*"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Bellen met 020 252 6000",
+    "levert" : "Lening voor onderwijs",
+    "categorieen" : "Onderwijs",
+    "korteOmschrijving" : "De gemeente leent u geld om een opleiding te betalen. Soms hoeft u niet de hele lening terug te betalen.Bedrag afhankelijk van aanvraag Meer info: https://www.amsterdam.nl/werk-inkomen/pak-je-kans/scholingslening/"
+  },
+  {
+    "naam" : "Financieel spreekuur",
+    "gezinssamens" : ["*"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Binnenlopen op adres, zie adres voor jouw stadsdeel op: https://www.amsterdam.nl/werk-inkomen/pak-je-kans/financieel-spreekuur",
+    "levert" : "Advies mbt financiën ",
+    "categorieen" : "Financiën",
+    "korteOmschrijving" : "Tijdens een financieel spreekuur kunt u vragen stellen over de extra’s voor Amsterdammers met een laag inkomen. U kunt ook andere vragen stellen over uw geld. U hoeft u geen afspraak te maken. U gaat gewoon naar binnen. Tijdens het telefonisch spreekuur kunt u alleen via de telefoon vragen stellen. Meer info: https://www.amsterdam.nl/werk-inkomen/pak-je-kans/financieel-spreekuur/"
+  },
+    {
+    "naam" : "Kwijtschelding gemeentebelastingen",
+    "gezinssamens" : ["*"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Formulier kwijtschelding ontvangt u thuis bij de gemeentebelastingen ",
+    "levert" : "Geen kosten gemeentebelasting (verschilt per stadsdeel)",
+    "categorieen" : "Financiën",
+    "korteOmschrijving" : "Gemeentebelastingen zijn bijvoorbeeld afvalstoffenheffing, zuiveringsheffing en onroerendezaakbelasting. Kwijtschelding betekent dat u deze belastingen niet hoeft te betalen. Meer info: https://www.amsterdam.nl/werk-inkomen/pak-je-kans/kwijtschelding/"
+  },
+   {
+    "naam" : "Stadsbank van Lening",
+    "gezinssamens" : ["*"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "kijk op https://www.amsterdam.nl/werk-inkomen/pak-je-kans/stadsbank-lening/",
+    "levert" : "Lening met onderpand",
+    "categorieen" : "Financiën",
+    "korteOmschrijving" : "U hebt iets wat geld waard is. Bijvoorbeeld een horloge. Of een gouden ketting. U geeft de ketting aan de Stadsbank van Lening. In ruil voor de ketting leent de Stadsbank van Lening geld aan u. Voor meer info: https://www.amsterdam.nl/werk-inkomen/pak-je-kans/stadsbank-lening/"
+  },
+   {
+    "naam" : "Jeugdsportfonds",
+    "gezinssamens" : ["AK", "SPK"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Aanmelden kan via intermediair, alle Ouder Kind Adviseurs zijn intermediair. Anders via maaike@stichtingsina.nl",
+    "levert" : "Tot maximaal 225,- euro vergoed per jaar voor sporten kind",
+    "categorieen" : "Ontspanning",
+    "korteOmschrijving" : "Het Jeugdsportfonds geeft geld om te sporten. U kunt het geld gebruiken om de sportles van uw kind te betalen. Of de sportspullen. Meer info: https://www.amsterdam.nl/werk-inkomen/pak-je-kans/jeugdsportfonds/"
+  },
+   {
+    "naam" : "Jongeren Cultuurfonds",
+    "gezinssamens" : ["AK", "SPK"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Aanmelden kan via intermediair, alle Ouder Kind Adviseurs zijn intermediair. Anders via maaike@stichtingsina.nl",
+    "levert" : "Tot maximaal 450 euro vergoed voor culturele activiteiten kind ",
+    "categorieen" : "Ontspanning",
+    "korteOmschrijving" : "Het Jongerencultuurfonds geeft geld voor bijvoorbeeld dansles, muziekles of tekenles. U kunt het geld gebruiken om de lessen van uw kind te betalen. Meer info: https://www.amsterdam.nl/werk-inkomen/pak-je-kans/jongerencultuurfonds/"
+  },
+   {
+    "naam" : "Maatjesproject SINA",
+    "gezinssamens" : ["*"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Mailen naar: jurre@stichtingsina.nl of bellen met 06-38480533",
+    "levert" : "Wekelijks hulp op maat aan huis",
+    "categorieen" : "Algemeen",
+    "korteOmschrijving" : "Voor meer info: http://www.stichtingsina.nl/projecten/maatjesproject/"
+  },
+   {
+    "naam" : "Sponsormaatje",
+    "gezinssamens" : ["AK", "SPK"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Mailen naar: sponsormaatje@stichtingsina.nl, bellen met 06-3848053 of aanmelden via: http://www.stichtingsina.nl/projecten/sponsormaatje/aanmelden-als-kind/",
+    "levert" : "Contributie aanvullende tot wat er nodig is (max 300) en kleding tot max 85,- euro ",
+    "categorieen" : "Financiën",
+    "korteOmschrijving" : "Aanvullende vergoeding op Jeugdsportfonds en Jongerencultuurfonds. Meer info: http://www.stichtingsina.nl/projecten/sponsormaatje/"
+  },
+  {
+    "naam" : "Witgoedregeling",
+    "gezinssamens" : ["*"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Ga naar  een hulpverlener. Bijvoorbeeld maatschappelijke dienstverlening in uw stadsdeel of naar een financieel spreekuur.  (https://www.amsterdam.nl/werk-inkomen/pak-je-kans/financieel-spreekuur/) U moet bewijzen dat u weinig geld hebt. En geen geld kunt sparen of lenen. Neem daarvoor documenten mee. Daarna krijgt u een huisbezoek en aan de had daarvan wordt er een beslissing gemaakt",
+    "levert" : "Vervangend apparaat (koelkast, wasmachine of gasfornuis) ",
+    "categorieen" : "Algemeen",
+    "korteOmschrijving" : "Uw wasmachine, koelkast of gasfornuis gaat stuk. U kunt de kosten voor de vervanging van dit apparaat niet zelf betalen.  Een speciaal fonds regelt dan soms het apparaat voor u. Meer info: https://www.amsterdam.nl/werk-inkomen/pak-je-kans/witgoedregeling/"
+  },
+  {
+    "naam" : "Aanvullende inkomensvoorziening ouderen",
+    "gezinssamens" : ["*"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Aanvragen via: http://www.svb.nl/int/nl/aio/aanvragen/hoe_bijstand_aanvragen/",
+    "levert" : "Aanvulling AOW, afhankelijk van inkomsten",
+    "categorieen" : "Financiën",
+    "korteOmschrijving" : "Ontvangt u een lage AOW? Dan kunt u soms een aanvulling krijgen. Meer info: https://www.amsterdam.nl/werk-inkomen/pak-je-kans/aanvullende/"
+  },
+  {
+    "naam" : "Huurtoeslag",
+    "gezinssamens" : ["*"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Aanvragen via: http://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/toeslagen/huurtoeslag/",
+    "levert" : "Teruggaaf kosten huur, afhankelijk van uitgaven aan huur",
+    "categorieen" : "Financiën",
+    "korteOmschrijving" : "Meer info: https://www.amsterdam.nl/veelgevraagd/?caseid=%7B05B5F954-B7BB-4DF9-9BBA-69E2B4E8CE32%7D"
+  },
+  {
+    "naam" : "Kindgebonden budget",
+    "gezinssamens" : ["AK", "SPK"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Aanvragen via: http://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/toeslagen/kindgebonden_budget/",
+    "levert" : "extra geld voor kosten kinderen",
+    "categorieen" : "Financiën",
+    "korteOmschrijving" : "Dit is een bijdrage in de kosten voor uw kinderen tot 18 jaar. Die krijgt u naast de kinderbijslag. Hoe hoog de toeslag is, hangt af van uw inkomen, hoeveel kinderen u hebt en hun leeftijd. Is uw vermogen te hoog? Dan krijgt u geen kindgebonden budget. Meer info: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/toeslagen/kindgebonden_budget/"
+  },
+  {
+    "naam" : "Zorgtoeslag",
+    "gezinssamens" : ["*"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Aanvragen via:http://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/toeslagen/zorgtoeslag/zorgtoeslag",
+    "levert" : " Geld voor zorgverzekeringskosten",
+    "categorieen" : "Financiën",
+    "korteOmschrijving" : "U kunt misschien zorgtoeslag krijgen. Dit is een bijdrage in de kosten voor uw Nederlandse zorgverzekering. Of u zorgtoeslag krijgt en hoe hoog de toeslag is, hangt af van uw inkomen. Meer info: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/toeslagen/zorgtoeslag/zorgtoeslag"
+  },
+  {
+    "naam" : "Tegemoetkoming Scholieren",
+    "gezinssamens" : ["*"],
+    "stadsdeel" : "*",
+    "leedtijd" : "*",
+    "calltoAction" : "Aanvraag via: https://duo.nl/particulier/scholier/financiering-voor-scholieren/een-tegemoetkoming-aanvragen.jsp",
+    "levert" : "Financiele steun voor 18+ scholieren",
+    "categorieen" : "Onderwijs",
+    "korteOmschrijving" : "Je wordt 18 jaar en zit op het voortgezet onderwijs. Je krijgt een tegemoetkoming voor scholieren. Deze tegemoetkoming is een gift. Meer info: https://duo.nl/particulier/scholier/financiering-voor-scholieren/een-tegemoetkoming-aanvragen.jsp"
   }
+  
 ]
 }
