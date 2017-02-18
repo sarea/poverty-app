@@ -39,7 +39,7 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 	function getResultList() {
 		var keys = parseFilterUrl(0);
 		for(var i = 0; i < vm.list.length; i++){
-			if(	(vm.list[i].gezinssamens.includes(keys[0]) || vm.list[i].gezinssamens[0] === '*') &&
+			if(	(vm.list[i].gezinssamens.indexOf(keys[0]) > -1 || vm.list[i].gezinssamens[0] === '*') &&
 				(keys[1] === vm.list[i].stadsdeel || vm.list[i].stadsdeel === '*') && 
 				(keys[2] === vm.list[i].leedtijd || vm.list[i].leedtijd === '*') ){
 				vm.listAfterFilter.push({"sizeX":1,"sizeY":vm.sizeY,'content':vm.list[i]})
@@ -64,7 +64,7 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 		if(vm.listAfterFilter[0]) {
 			vm.categories.push(vm.listAfterFilter[0].content.categorieen);
 			for (var i = 1; i < vm.listAfterFilter.length; i++){
-				if(!vm.categories.includes(vm.listAfterFilter[i].content.categorieen)){
+				if(vm.categories.indexOf(vm.listAfterFilter[i].content.categorieen) === -1){
 					vm.categories.push(vm.listAfterFilter[i].content.categorieen);
 				}
 			}
@@ -77,7 +77,7 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 		if(category === 'all'){
 			getResultList();
 		}else {
-			if(vm.categoryClickedList.includes(category)){
+			if(vm.categoryClickedList.indexOf(category) > -1){
 				vm.categoryClickedList.splice(vm.categoryClickedList.indexOf(category), 1);
 				if(vm.categoryClickedList.length === 0){
 					getResultList();
@@ -86,10 +86,10 @@ function PovertyResults($state, $document, DataModels, $window, $timeout) {
 				vm.categoryClickedList.push(category);
 			}
 			for(var i = 0; i < vm.list.length; i++){
-				if(	(vm.list[i].gezinssamens.includes(keys[0]) || vm.list[i].gezinssamens[0] === '*') &&
+				if(	(vm.list[i].gezinssamens.indexOf(keys[0]) > -1 || vm.list[i].gezinssamens[0] === '*') &&
 					(keys[1] === vm.list[i].stadsdeel || vm.list[i].stadsdeel === '*') && 
 					(keys[2] === vm.list[i].leedtijd || vm.list[i].leedtijd === '*') &&
-					(vm.categoryClickedList.includes(vm.list[i].categorieen)) ){
+					(vm.categoryClickedList.indexOf(vm.list[i].categorieen) > -1) ){
 					vm.listAfterFilter.push({"sizeX":1,"sizeY":vm.sizeY,'content':vm.list[i]})
 				}
 			}
