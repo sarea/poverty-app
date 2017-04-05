@@ -19,7 +19,7 @@
       margin: auto;
       cursor:pointer;
       font-weight: 400;
-      font-size: 15px;
+      font-size: 16px;
       display: inline;
       .filter-logo {
         width: 18%;
@@ -63,7 +63,7 @@
     }
   }
   .cards {
-    margin-bottom:50px;
+    margin-bottom:80px;
     .result-container {
       background-color: #fff;
       border-radius: 5px;
@@ -150,9 +150,8 @@
     bottom: 0;
     width: 100%;
     color: #fff;
-    padding-left: 35px;
     padding-top: 15px;
-    height: 50px;
+    height: 80px;
     background-color: #B07C00;
     >div {
       > p {
@@ -166,8 +165,12 @@
       }
     }
     .help-footer {
-      float: right;
-      padding-right: 35px;
+      > a {
+        color: #fff;
+        &:hover {
+          color: #e6007e !important;
+        }
+      }
     }
   }
 }
@@ -242,10 +245,6 @@ div,p,i,button {
       padding-left:0;
       text-align: center;
       height: 80px;
-      .help-footer {
-        float: none;
-        padding-right: 0px;
-      }
     }
   }
 }
@@ -292,7 +291,7 @@ div,p,i,button {
     }
     .cards {
       height: 100%;
-      margin-bottom:120px; 
+      margin-bottom:170px; 
       .result-container {
         .result-heading {
           .result-logo{
@@ -314,27 +313,10 @@ div,p,i,button {
     .footer {
       padding-left:0;
       text-align: center;
-      height: 130px;
-      .help-footer {
-        float: none;
-        padding-right: 0px;
-      }
+      height: 170px;
     }
   }
 }
 .active{
   height: 100% !important;
 }
-
-
-
-
-// .button-family {
-//   background-color: #fff;
-//   border: 2px solid #fff;
-//   width: 100%;
-//   text-align: left;
-//   margin-bottom:25px;
-//   padding-right: 20%;
-//   transition: all 1s;
-// }
