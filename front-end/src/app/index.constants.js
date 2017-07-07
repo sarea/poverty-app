@@ -1309,7 +1309,7 @@ export const DataModels = {
         "gezinssamens": ["*"],
         "stadsdeel": "*",
         "leedtijd": "*",
-        "calltoAction": "Aanmelden: 020-5301220 of via amsterdam@vca.nu ",
+        "calltoAction": "Aanmelden: 020 - 5301220 of via amsterdam@vca.nu ",
         "levert": "Vrijwilligerswerk",
         "categorieen": "Algemeen",
         "korteOmschrijving": "Het is onze passie om mensen uit alle hoeken van de samenleving te helpen om zich maatschappelijk nuttig te maken om daarmee maatschappelijke organisaties te versterken. Ook willen we deze organisaties op allerlei manieren helpen om hun missie, met de hulp van vrijwilligers, te bereiken.Meer info: http://www.vca.nu/"
@@ -1544,7 +1544,7 @@ export const DataModels = {
         "stadsdeel": "*",
         "leedtijd": "*",
         "calltoAction": "Aanvragen via:https://www.amsterdam.nl/veelgevraagd/?productid={8F28430E-A741-47D1-867B-E12C975FF012}#case_%7BD30A9EBA-8690-4E38-94DD-D655B6E74CF3%7D (Let op! Er dient rente betaald te worden).",
-        "levert": " lening, minmaal 300,- euro maximaal 4000,- euro ",
+        "levert": " Lening: minmaal 300,- euro maximaal 4000,- euro ",
         "categorieen": "Financiën",
         "korteOmschrijving": "De Kredietbank Amsterdam leent u geld.U betaalt minder rente dan bij een gewone bank. Meer info: https://www.amsterdam.nl/werk-inkomen/pak-je-kans/geld-lenen/"
     }, {
@@ -1763,5 +1763,122 @@ export const DataModels = {
         "levert": "Coachingstraject bij conflicten",
         "categorieen": "Gezondheid",
         "korteOmschrijving": "Een Vrijplaats® is een veilige plek en professioneel coachingtraject bij een conflict met iemand anders, of in je zelf. Doel is de situatie in goede banen te leiden. Je coach zal je helpen doorvoelde keuzes te maken en de nodige stappen te zetten. De coaching levert je inzicht en een concreet actieplan op. Je krijgt handvatten om met de stress om te gaan en wordt – indien nodig – voorbereid op het lastige gesprek met de ander. Het traject begint met een oriënterend gesprek, waarna nog maximaal 5 sessies van 1,5 tot 2 uur volgen + een nazorggesprek. Meer info: http://conflicthulpminima.nl/"
+    }, {
+        "naam": "Buurtschoolplus",
+        "gezinssamens": ["AK", "SPK"],
+        "stadsdeel": "ZO",
+        "leedtijd": "*",
+        "calltoAction": "Inschrijven via het inschrijfformulier: http://www.buurtschoolplus.nl/infoouders/inschrijfformulier",
+        "levert": "Leerondersteuning en huiswerkbegeleiding",
+        "categorieen": "Onderwijs",
+        "korteOmschrijving": "BuurtschoolPlus biedt leerondersteuning en huiswerkbegeleiding aan kinderen van het basisonderwijs in de leeftijdscategorie van 6 t/m 12 jaar. Het doel is om kinderen te helpen waarbij het ontbreekt aan rust en/of ruimte thuis of de ouder (s) de vaardigheden niet hebben om hun kinderen te helpen. Per kind wordt er een eigen bijdrage verwacht. Meer info: http://www.buurtschoolplus.nl/"
+    }, {
+        "naam": "Hulp bij opvoeden",
+        "gezinssamens": ["AK", "SPK"],
+        "stadsdeel": "*",
+        "leedtijd": "*",
+        "calltoAction": "Gezinnen kunnen zichzelf aanmelden of via een verwijzer (GGD, huisarts, Ouder-en kindadviseur etc)",
+        "levert": "Ondersteuning voor gezinnen met jonge kinderen",
+        "categorieen": "Algemeen",
+        "korteOmschrijving": "Home-Start ondersteunt gezinnen met jonge kinderen. Kinderen opvoeden en een gezin draaiende houden gaat niet altijd even gemakkelijk. Elk gezin maakt weleens een moeilijke periode door waarin het niet goed gaat: ziekte, moeilijkheden met de kinderen, weinig contact met vrienden en familie, gebrek aan geld of spanningen met je partner. Een vrijwilliger van Home-Start kan dan een steuntje in de rug bieden. Een vrijwilliger bezoekt een gezin een dagdeel in de week voor maximaal een jaar. Voor meer info: https://www.home-start.nl/pages/Home-start/Home"
+    }, {
+        "naam": "Snap de brief",
+        "gezinssamens": ["*"],
+        "stadsdeel": "*",
+        "leedtijd": "*",
+        "calltoAction": "Stuur met je mobiele telefoon een foto van je brief, en krijg uitleg.",
+        "levert": "Uitleg van een ontvangen brief",
+        "categorieen": "Algemeen",
+        "korteOmschrijving": "Moeilijke brief gekregen? Of begrijp je een brief niet? Gebruik snapdebrief.nl. Stuur met je mobiele telefoon een foto van je brief, en krijg uitleg. Voor meer info: https://www.snapdebrief.nl/nl/faq"
+    }, {
+        "naam": "Voor Elkaar in Zuid",
+        "gezinssamens": ["*"],
+        "stadsdeel": "ZU",
+        "leedtijd": "*",
+        "calltoAction": "Bel naar 020-6794441 of email naar info@voorelkaarinzuid.nl",
+        "levert": "De plek voor ondersteuning en ontmoeting",
+        "categorieen": "Algemeen",
+        "korteOmschrijving": "Voor Elkaar in Zuid brengt mensen uit stadsdeel Zuid bij elkaar voor ondersteuning en ontmoeting. Heeft u een helpende hand nodig? Of heeft u behoefte aan contact? Dan bent u bij Voor Elkaar in Zuid aan het juiste adres. Meer info: www.voorelkaarinzuid.nl"
+    }, {
+        "naam": "Buurtbuik",
+        "gezinssamens": ["*"],
+        "stadsdeel": "NO",
+        "leedtijd": "*",
+        "calltoAction": "Aanmelden via het aanmeldformulier: http://buurtbuik.nl/",
+        "levert": "Gratis eten",
+        "categorieen": "Gezondheid",
+        "korteOmschrijving": "Samen eten en niets verspillen. De buurtbuik biedt gratis maaltijden aan met opgehaald voedsel. Meer info: http://buurtbuik.nl/ "
+    }, {
+        "naam": "Buurtbuik",
+        "gezinssamens": ["*"],
+        "stadsdeel": "WE",
+        "leedtijd": "*",
+        "calltoAction": "Aanmelden via het aanmeldformulier: http://buurtbuik.nl/",
+        "levert": "Gratis eten",
+        "categorieen": "Gezondheid",
+        "korteOmschrijving": "Samen eten en niets verspillen. De buurtbuik biedt gratis maaltijden aan met opgehaald voedsel. Meer info: http://buurtbuik.nl/ "
+    }, {
+        "naam": "Coaching voor jonge mantelzorgers",
+        "gezinssamens": ["AK", "SPK"],
+        "stadsdeel": "*",
+        "leedtijd": "*",
+        "calltoAction": "Aanmelden via het aanmeldformulier: http://ennujij.nl/",
+        "levert": "Online coaching",
+        "categorieen": "Gezondheid",
+        "korteOmschrijving": "Ben jij tussen de 10 en 25 jaar oud en zorg jij voor een familielid dat dichtbij of in hetzelfde huis woont? Bijvoorbeeld een ouder, broer of zus die psychiatrisch ziek is of verstandelijk beperkt? Of heb je een opa of oma om de hoek die lichamelijk ziek is of verslaafd? Dan ben je een jonge mantelzorger. Vind je het soms lastig om hier mee om te gaan? Dan is deze e-learning iets voor jou. Meer info: http://ennujij.nl/"
+    }, {
+        "naam": "OV-vergoeding voor mantelzorgers",
+        "gezinssamens": ["*"],
+        "stadsdeel": "*",
+        "leedtijd": "*",
+        "calltoAction": "Aanmelden via het aanvraagformulier: https://www.amsterdam.nl/werk-inkomen/pak-je-kans/ov-vergoeding/ of voor meer informatie bellen naar: 020 252 6000",
+        "levert": "Geld voor bus, tram, metro of trein",
+        "categorieen": "Financiën",
+        "korteOmschrijving": "U reist met bus, tram, metro of trein naar een familielid of vriend(in) voor wie u zorgt. De gemeente betaalt mee aan de kosten van het openbaar vervoer. U krijgt een vast bedrag per maand. De gemeente bepaalt elk half jaar de hoogte van het bedrag. Meer info: https://www.amsterdam.nl/werk-inkomen/pak-je-kans/ov-vergoeding/"
+    }, {
+        "naam": "Makkie",
+        "gezinssamens": ["*"],
+        "stadsdeel": "OO",
+        "leedtijd": "*",
+        "calltoAction": "Verschillende verdienacties in de Indische Buurt. Hou de website goed in de gaten: http://www.makkie.cc/service/verdienen/",
+        "levert": "Ruilmiddel ",
+        "categorieen": "Financiën",
+        "korteOmschrijving": "Makkies kun je verdienen als je voor een buurtbewoner of een organisatie in de Indische Buurt een klus doet. Daarmee help je de buurt, je buren én jezelf, want met gespaarde Makkies vind jij weer de helpende hand van een buur of kun je betalen bij lokale winkeliers en ondernemers. Meer info: http://www.makkie.cc/"
+    }, {
+        "naam": "BOOT",
+        "gezinssamens": ["*"],
+        "stadsdeel": "OO",
+        "leedtijd": "*",
+        "calltoAction": "Langsgaan tijdens spreekuren: Batjanstraat 1b 1094 RC Amsterdam",
+        "levert": "Spreekuren",
+        "categorieen": "Financiën",
+        "korteOmschrijving": "Heeft u een juridische, algemeen maatschappelijke of financiële vraag maar weet u het antwoord daarop niet te vinden? Dan kunt u geheel kosteloos terecht bij een van onze BOOT-spreekuren. De spreekuren worden gegeven door studenten die onder begeleiding staan van professionals. Meer info: http://www.hva.nl/boot/over-boot/kenniswinkels/boot-oost/boot-oost.html"
+    }, {
+        "naam": "BOOT",
+        "gezinssamens": ["*"],
+        "stadsdeel": "WE",
+        "leedtijd": "*",
+        "calltoAction": "Langsgaan tijdens spreekuren: Bernard Loderstraat 39/41 1063 PB Amsterdam",
+        "levert": "Spreekuren",
+        "categorieen": "Financiën",
+        "korteOmschrijving": "Heeft u een juridische, algemeen maatschappelijke of financiële vraag maar weet u het antwoord daarop niet te vinden? Dan kunt u geheel kosteloos terecht bij een van onze BOOT-spreekuren. De spreekuren worden gegeven door studenten die onder begeleiding staan van professionals. Meer info: http://www.hva.nl/boot/over-boot/kenniswinkels/boot-nieuw-west/boot-nieuw-west.html"
+    }, {
+        "naam": "BOOT",
+        "gezinssamens": ["*"],
+        "stadsdeel": "ZO",
+        "leedtijd": "*",
+        "calltoAction": "Langsgaan tijdens spreekuren: Gravestein 22A 103 BH Amsterdam",
+        "levert": "Spreekuren",
+        "categorieen": "Financiën",
+        "korteOmschrijving": "Heeft u een juridische, algemeen maatschappelijke of financiële vraag maar weet u het antwoord daarop niet te vinden? Dan kunt u geheel kosteloos terecht bij een van onze BOOT-spreekuren. De spreekuren worden gegeven door studenten die onder begeleiding staan van professionals. Meer info: http://www.hva.nl/boot/over-boot/kenniswinkels/boot-zuidoost/boot-zuidoost.html"
+    }, {
+        "naam": "Voedselbank Cultuur",
+        "gezinssamens": ["*"],
+        "stadsdeel": "*",
+        "leedtijd": "*",
+        "calltoAction": "Klanten van de Voedselbank kunnen zich met hun Voedselbankpas bij de deelnemende instellingen identificeren,",
+        "levert": "Gratis naar het theater, de bioscoop of het museum",
+        "categorieen": "Ontspanning",
+        "korteOmschrijving": "Mensen die gebruik maken van de Voedselbank moeten het vaak ook stellen zonder kunst en cultuur. Sinds 2012 kunnen klanten van de Voedselbank bij theaters in het hele land gratis terecht voor de onverkochte plaatsen. Daar blijven namelijk vaak stoelen onbezet. Het uitgangspunt van Voedselbank Cultuur is dan ook hetzelfde als dat van de Voedselbank zelf; wat over is, wordt gratis ter beschikking gesteld. Ook een aantal musea, muziekzalen en bioscopen stellen gratis toegangskaarten beschikbaar. Meer info: http://voedselbankcultuur.nl/"
     }]
 }

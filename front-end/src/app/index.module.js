@@ -17,13 +17,13 @@ import povertyResults from './components/results';
 
 
 angular.module('povertyApp', [
-  'ngAnimate',
+  //'ngAnimate',
   //'ngMapHilight',
-  'ngCookies',
-  'ngTouch',
+  //'ngCookies',
+  //'ngTouch',
   'ngSanitize',
-  'ngMessages',
-  'ngAria',
+  // 'ngMessages',
+  // 'ngAria',
   'ui.router',
   'ui.bootstrap',
   'toastr',
