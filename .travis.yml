@@ -1,0 +1,20 @@
+language: node_js
+
+node_js:
+  - "10"
+
+env:
+  global:
+    - VERBOSE=true
+
+script:
+  - make build
+
+deploy:
+  - provider: pages
+    skip_cleanup: true
+    keep_history: true
+    github_token: $GITHUB_TOKEN
+    local_dir: ./front-end/dist
+    on:
+      branch: master
